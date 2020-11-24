@@ -1,0 +1,86 @@
+// removes a drupal link after comfirmation webform 'terug naar het formulier'
+.links {
+    display: none;
+}
+
+/* Webform specific elements */
+.form-managed-file .form-file {
+    margin-bottom: .5rem; //adds extra margin between choose file and submit button for mobile
+}
+
+.webform-component-textarea .grippie {
+    display: none; //removes module gripbar for old browsers
+}
+.webform-datepicker .form-select {
+    width: auto; //fixes 100% width on form-select
+}
+.webform-component-checkboxes,
+.webform-component-radios {
+    margin-top: 24px;
+}
+/* Webform inline error module */
+
+.webform-client-form {
+    div.error {
+        background: #f39696;
+        color: inherit;
+        padding: 1rem;
+        line-height: 1;
+        display: block;
+        margin: .5rem 0;
+        ul {
+            margin: 0;
+            padding-left: 1rem;
+        }
+    }
+    .form-item input.error, .form-item textarea.error, .form-item select.error {
+        border: 2px solid rgb(236, 27, 35);
+    }
+}
+/* Styling of individual webform nodes */
+
+.node-webform {
+    .field-introduction, {
+        max-width: $content-width;
+        margin: auto;
+    }
+}
+.webform-confirmation {
+    max-width: $content-width;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+// PROGRESSBAR MULTISTEP FORM
+.webform-progressbar-outer {
+    position: relative;
+    border: none;
+    width: 100%;
+    height: 2px;
+    margin: 0.35em -1px 3rem;
+    background-color: #888;
+}
+.webform-progressbar-inner {
+    background-color: #40D412; //green
+    height: 2px;
+}
+.webform-progressbar-page {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin: -9px -4px;
+    border: 1px solid #7D7D7D;
+    background-color: white;
+    border-radius: 50%;
+}
+.webform-progressbar-page.current {
+    background-color: #40D412; //green
+}
+.webform-progressbar-page.completed {
+    background-color: #40D412; //green
+}
+.webform-progressbar-page .webform-progressbar-page-label {
+    position: relative;
+    top: 24px;
+    margin: 0 -10em;
+}

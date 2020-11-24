@@ -1,0 +1,36 @@
+name = SP Landing
+description = SP theme for landingpages
+package = Other
+version = 1.0
+core = 7.x
+
+; SPruit core styhlesheets
+stylesheets[all][] = css/main.css
+stylesheets[screen][] = fonts/SPruit-icons.css
+stylesheets[screen][] = css/shame.css
+
+; JavaScript
+scripts[] = js/vendor/modernizr-2.8.3.min.js
+scripts[] = js/vendor/jquery.waypoints.min.js
+scripts[] = js/flexibility.js
+scripts[] = js/main.js
+scripts[] = js/myfonts.js
+scripts[] = js/webform_validate.js
+
+; Regions
+regions[highlight] = Highlighted content
+regions[content]   = Primary content
+regions[secondary] = Secondary content
+regions[footer]    = Footer content
+
+; Panels support
+plugins[panels][layouts] = layouts
+
+; Unset these css
+settings[unset_styles][] = modules/system/system.menus.css
+settings[unset_styles][] = modules/system/system.messages.css
+settings[unset_styles][] = modules/system/system.theme.css
+settings[unset_styles][] = modules/field/theme/field.css
+settings[unset_styles][] = modules/node/node.css
+settings[unset_styles][] = modules/user/user.css
+settings[unset_styles][] = modules/book/book.css

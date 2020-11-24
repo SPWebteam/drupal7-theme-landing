@@ -1,0 +1,47 @@
+/* VARIABLES */
+
+// THEME
+$color1: #EC1B23; //red sp.nl
+$color2: #FFFFFF; // White
+$color3: #333333; // Very dark gray
+$color4: #DDDDDD; // Gray
+$color5: #F5F5F5; // Almost white 
+
+$color1-bg: #FFFFFF; // White
+$color2-bg: #F5F5F5; // Almost white
+$color3-bg: #DDDDDD; // Grey
+
+// DEFAULT COLORS
+$default: #ddd; //grey
+$success: #28a745; //green
+$primary: $color1;
+$secondary: $color3;
+$info: #17a2b8; //cyan
+$warning: #fff154; // warm, friendly yellow
+$danger: #dc3545; //red
+
+// TYPOGRAPHY
+$font-primary: 'HelveticaInseratLTPro', sans-serif;
+$font-strong: 'HelveticaNeueLTStd-Md','Helvetica Neue',Helvetica,'Roboto Sans','Segoe UI',Arial,'Lucida Grande',sans-serif;
+$font-middle: 'HelveticaNeueLTStd-BdCn','Helvetica Neue',Helvetica,'Roboto Sans','Segoe UI',Arial,'Lucida Grande',sans-serif;
+$font-body: 'HelveticaNeueLT-Light','Helvetica Neue',Helvetica,'Roboto Sans','Segoe UI',Arial,'Lucida Grande',sans-serif;
+$font-icons: 'FontAwesome';
+$sp-icons: 'SPruit-icons';
+
+// DEFAULT BOX-SHADOW
+$box-shadow: 0 0 7px 0 #e6e6e6;
+
+// SOCIAL MEDIA
+$facebook: #3b5998;
+$twitter: #55acee;
+$linkedin: #007bb5;
+$whatsapp: #00e676; //old #4dc247
+$snapchat: #fffc00;
+$instagram: #125688;
+$youtube: #bb0000;
+$googleplus: #dd4b39;
+$dropbox: #007ee5;
+$email: $color1;
+
+// SIZING
+$content-width: 1140px; // Maximum width of content

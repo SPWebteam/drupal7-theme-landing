@@ -1,0 +1,35 @@
+/* SEARCH TOGGLE (LEGACY) */
+header .search-toggle {
+  display: table-cell;
+  width: 120px;
+  vertical-align: middle;
+  text-align: center;
+}
+header .search-toggle a {
+  color: $color1;
+  text-decoration: none;
+  font-size: 2.4em;
+}
+.site-search-on header .search-toggle a {
+  color: #eee;
+} 
+header .search-toggle a:hover {
+  color: #000;
+}
+header .search-toggle a:before {
+  font-family: "SPruit-icons";
+  content: "S";
+}
+header .search-toggle a .text {
+  display: none;
+}
+.page-search header .search-toggle a {
+  color: #eee;
+}
+
+@media screen and (max-width: 480px){
+    header .search-toggle {
+        text-align: right;
+        padding-right: 60px;
+    }
+}

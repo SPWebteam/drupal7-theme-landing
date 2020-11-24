@@ -1,0 +1,42 @@
+/* BADGE */
+.badge {
+	display: inline-block;
+    padding: .25em .4em;
+    margin-left: 4px;
+    font-size: 75%;
+    //font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 4px;
+    background: $default;
+}
+.badge-primary {
+	color: #fff;
+	background: $primary;
+}
+.badge-secondary {
+	color: #fff;
+	background: $secondary;
+}
+.badge-success {
+	color: #fff;
+	background: $success;
+}
+.badge-danger {
+	color: #fff;
+	background: $danger;
+}
+.badge-warning {
+	color: #000;
+	background: $warning;
+}
+.badge-info {
+	color: #fff;
+	background: $info;
+}
+.badge-default {
+	color: #fff;
+	background: $default;
+}

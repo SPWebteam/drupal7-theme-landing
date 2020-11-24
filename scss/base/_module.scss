@@ -1,0 +1,7 @@
+/* BASE */
+@import 'normalize'; //import first!
+@import 'variables'; //global variables
+//@import 'mixins';
+
+@import 'base'; //basic html elements
+@import 'type'; 

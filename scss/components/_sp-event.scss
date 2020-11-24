@@ -1,0 +1,56 @@
+/* SP EVENT */
+.page-spevent header .site-logo image,
+.page-spevent header .site-logo svg {
+	position: relative; //quickfix logo
+}
+.page-spevent .primary-content > .content {
+	min-height: 84vh; //needs to be fixed in main theme
+	max-width: 720px;
+	margin: 0 auto;
+}
+.page-spevent .primary-content .content-header .title {
+    padding-left: 0rem!important;
+    padding-right: 0rem!important;
+    text-align: center!important;
+    max-width: 720px;
+    margin-top: .5em;
+}
+
+.page-spevent .primary-content small {
+  color: #888;
+  margin-top: 0;
+}
+
+// END SHAME
+
+// FORM
+.page-spevent form {
+	padding: 0 1rem 4rem 1rem;
+}
+.page-spevent fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+}
+.page-spevent legend {
+	padding: 0 .5rem;
+}
+.page-spevent .form-actions {
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+.page-spevent .form-item-acces-code label {
+    display: block;
+}
+
+// INLINE FIELDS
+[class*="form-item-access-code-"] {
+	display: inline-block;
+	margin-left: 4px; //quickfix
+}
+[class*="-postal-code"],
+[class*="-house-number"] {
+	display: inline-block;
+	max-width: 49%;
+}

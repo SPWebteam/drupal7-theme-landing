@@ -1,0 +1,159 @@
+/* HEADER */
+
+/* SITE HEADER */
+
+#site-header {
+    position: relative; // so that navigation aligns absolute on parent
+    display: table;
+    width: 100%;
+    background: #fff; 
+    border-top: 5px solid $color1;
+}
+
+header .site-branding {
+    display: table-cell;
+    padding: 8px;
+    width: 120px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 576px){
+    header .site-logo {
+        img,svg {
+           height: 35px;
+           width: auto;
+        }
+    }
+    header .site-branding {
+        padding: 16px;
+    }
+    header nav ul li a,
+    header nav ul li a:link,
+    header nav ul li a:visited {
+        padding: 16px;
+    }
+}
+
+header .site-name {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4142em;
+}
+
+header .site-name a {
+    text-decoration: none;
+    color: #222;
+}
+
+/* SITE NAVIGATION */
+
+header nav {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+}
+header nav .title {
+    display: none;
+}
+header nav ul {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center!important;
+    padding: 0;
+}
+header nav ul li {
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+}
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited {
+    color: $color1;
+    padding: 8px;
+    background: transparent;
+    font-size: 1.4142em;
+    text-decoration: none;
+    display: inline-block;
+}
+header nav ul li a:hover {
+    background: #fff;
+    color: #000;
+}
+
+header nav ul li.active-trail a {
+    color: #aaa;
+    background: #fff;
+}
+header .menu-toggle {
+    display: none; //disable hamburger menu
+}
+
+/* HAMBURGER MENU */
+@media only screen and (max-width: 480px){
+    header nav {
+        display: block;
+        top: 40px;
+        left: 0;
+        background: #fff;
+        z-index: 1000;
+        width: 100%;
+        position: absolute;
+        padding: 0;
+    }
+    header nav ul {
+        display: none;
+        border-bottom: 1px solid #ddd!important;
+    }
+    header nav li {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0!important;
+    }
+    header nav li a {
+        font-size: 1.14em;
+        border-top: 1px solid #ddd;
+        display: block;
+        font-weight: normal;
+        display: block!important;
+    }
+    header .menu-toggle {
+        display: block; // enable hamburger menu
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        z-index: 2;
+        pointer: cursor;
+    }
+    header .menu-toggle button {
+        display: block;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        outline: none; //remove chrome-safari default focus
+    }
+    header .menu-toggle button .text {
+        display: none;
+    }
+    header .menu-toggle button:after {
+        font-family: 'SPruit-icons';
+        content: '\e900';
+        display: block;
+        float: right;
+        //border: 1px solid $color1;
+        background: #fff;
+        color: $color1;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        line-height: .94;
+        height: 32px;
+        width: 37px;
+    }
+}

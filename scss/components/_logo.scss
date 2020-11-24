@@ -1,0 +1,30 @@
+/* LOGO */
+header .site-logo {
+    image, svg {
+        display: inline-block;
+        height: auto; // adjusts to width
+        width: 52px; // prevents centering for IE
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 3;
+    }
+    svg {
+        fill: $color1;
+    }
+}
+@media screen and (min-width: 576px) {
+    header .site-logo {
+        image, svg {
+            width: 80px; // prevents centering for IE
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header .site-logo {
+        image, svg {
+            width: 112px; // prevents centering for IE
+        }
+    }
+}

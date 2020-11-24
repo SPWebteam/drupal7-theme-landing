@@ -1,9 +1,10 @@
-/* COMPONENTS */
+// COMPONENTS
 //@import 'afdsearch'; disabled for now
 @import 'accordion';
 @import 'background';
 @import 'badge';
 @import 'banner';
+@import 'bedankt';
 @import 'bijeenkomst';
 @import 'blockquote';
 @import 'button';
@@ -16,6 +17,7 @@
 @import 'form';
 @import 'footer';
 @import 'gradient';
+@import 'layout';
 @import 'leaflet';
 @import 'link';
 @import 'logo';
@@ -23,10 +25,10 @@
 @import 'messages';
 @import 'meta';
 @import 'modal';
+@import 'mollie';
 @import 'navigation';
 @import 'node'; // drupal
 @import 'pager';
-//@import 'persoon'; // old?
 @import 'personen';
 @import 'search';
 @import 'searchtoggle';
@@ -37,6 +39,7 @@
 @import 'stickyfooter';
 @import 'system-menu';
 @import 'title';
+@import 'user';
 @import 'webform';
 @import 'youtube';
 @import 'zie-ook';

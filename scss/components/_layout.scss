@@ -1,14 +1,7 @@
-*, ::after, ::before {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-    box-sizing: border-box;
-}
-/* GRID */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+// LAYOUT
+
+
+// OLD CSS GRID
 [class*="col-"] {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -40,17 +33,7 @@
 .row {
     margin-left: -16px;
     margin-right: -16px;
-    // flex
-    /*
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    */
-}
+ }
 .row::after {
     content: "";
     display: table;
@@ -93,14 +76,6 @@
         max-width: 100%;
     }
 }
-/*
-@media screen and (min-width: 2280px){
-    .container {
-        width: 50%; //replaces static width for large screen formats
-        max-width: 100%;
-    }
-}
-*/
 
 
 /* MEDIA XS */

@@ -1,7 +1,11 @@
-/* BASE STYLING */
+// BASE
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    box-sizing: border-box;
+}
 
 
-/* SET ROOT FONTSIZE FOR EACH MEDIA */
 html {
     font-size: 16px; //set as root size
     line-height: 1;
@@ -18,18 +22,51 @@ html {
         font-size: 24px;
     }
 }
+body {
+    font-family: $font-body;
+}
 
-/* FONTSIZE BASED ON ROOT */
+
 h1,h2,h3,h4,h5,h6 {
     margin: 0 0 1rem 0;
     line-height: 1;
+    font-family: $font-primary;
+    font-weight: 400;
+    text-transform: uppercase;
+
 }
+h1 {font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-top: 8px;
+}   
+h3 {
+    font-size: 1.17rem;
+    margin-top: 14px;
+}   
+h4 {
+    font-size: 1rem;
+    margin-top: 16px;
+}   
+h5 {
+    font-size: 0.83rem;
+    margin-top: 19px;
+}   
+h6 {
+    font-size: 0.67rem;
+    margin-top: 22px;
+} 
+
 h1 a:hover,
 h2 a:hover {
     text-decoration: none;
     color: #000;
 }
+
+
 p {
+    font-family: $font-body;
     margin: 0 0 1rem 0;
     font-size: 1rem; //16px
     line-height: 1.5rem; //24px
@@ -39,41 +76,23 @@ p {
       font-family: $font-strong;
     }
 }
-ul {
-   line-height: 1.5rem;  
-}
 @media screen and (min-width: 768px){
     p {
         font-size: 1.125rem; // 18px
         line-height: 1.62rem; // 26px 
     }
+}
+
+
+
+ul {
+   line-height: 1.5rem;  
+}
+@media screen and (min-width: 768px){
     ul {
         line-height: 1.62rem;
     }
 }
-h1 {
-    font-size: 2rem; //36px
-}
-h2 {
-    font-size: 1.5rem; //27px
-    margin-top: 8px;
-}   
-h3 {
-    font-size: 1.17rem; //21px
-    margin-top: 14px;
-}   
-h4 {
-    font-size: 1rem; //18px
-    margin-top: 16px;
-}   
-h5 {
-    font-size: 0.83rem; //15px
-    margin-top: 19px;
-}   
-h6 {
-    font-size: 0.67rem; //12px
-    margin-top: 22px;
-} 
 
 img {
     max-width: 100%;
@@ -81,5 +100,5 @@ img {
 }
 
 :focus {
-    outline: 2px solid #0276BA;
+    outline: 2px solid #0276BA; //important
 }

@@ -1,0 +1,14 @@
+// SP MOLLIE (old)
+.page-donatie .primary-content .content-header .title {
+    max-width: 720px;
+}
+@media screen and (max-width: 600px){
+    .page-donatie .primary-content{
+        padding-top: 3rem;
+    }
+}
+#sp-mollie-form {
+  max-width: 720px;
+  padding: 0 1rem;
+  margin: 0 auto 3rem auto;
+}

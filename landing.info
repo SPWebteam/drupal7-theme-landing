@@ -18,9 +18,7 @@ scripts[] = js/myfonts.js
 scripts[] = js/webform_validate.js
 
 ; Regions
-regions[highlight] = Highlighted content
 regions[content]   = Primary content
-regions[secondary] = Secondary content
 regions[footer]    = Footer content
 
 ; Panels support

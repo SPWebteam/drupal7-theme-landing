@@ -1,99 +1,93 @@
-/* HEADER */
+// HEADER
 
-/* SITE HEADER */
-
-#site-header {
-    position: relative; // so that navigation aligns absolute on parent
-    display: table;
-    width: 100%;
+// SITE HEADER
+.site-header {
     background: #fff; 
     border-top: 5px solid $color1;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
 }
-
-header .site-branding {
-    display: table-cell;
+.site-branding {
     padding: 8px;
     width: 120px;
     text-align: left;
     vertical-align: middle;
 }
-
 @media screen and (min-width: 576px){
-    header .site-logo {
+    .site-logo {
         img,svg {
            height: 35px;
            width: auto;
         }
     }
-    header .site-branding {
+    .site-branding {
         padding: 16px;
     }
-    header nav ul li a,
-    header nav ul li a:link,
-    header nav ul li a:visited {
+    .site-navigation ul li a,
+    .site-navigation nav ul li a:link,
+    .site-navigation nav ul li a:visited {
         padding: 16px;
     }
 }
-
-header .site-name {
+.site-name {
     margin: 0;
     padding: 0;
     font-size: 1.4142em;
-}
-
-header .site-name a {
+    a {
     text-decoration: none;
     color: #222;
+    }
 }
 
-/* SITE NAVIGATION */
 
-header nav {
+// NAVIGATION
+.site-navigation {
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
     padding: 0;
 }
-header nav .title {
+.site-navigation .title {
     display: none;
 }
-header nav ul {
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center!important;
+.site-navigation ul {
+    margin: 0;
     padding: 0;
 }
-header nav ul li {
+.site-navigation ul li {
     text-transform: uppercase;
     font-family: $font-primary;
     font-weight: normal;
     font-style: normal;
     display: inline-block;
 }
-header nav ul li a,
-header nav ul li a:link,
-header nav ul li a:visited {
+.site-navigation a,
+.site-navigation a:link,
+.site-navigation a:visited {
     color: $color1;
     padding: 8px;
-    background: transparent;
-    font-size: 1.4142em;
     text-decoration: none;
     display: inline-block;
 }
-header nav ul li a:hover {
+.site-navigation a:hover {
     background: #fff;
     color: #000;
 }
-
-header nav ul li.active-trail a {
+.site-navigation li.active-trail a {
     color: #aaa;
     background: #fff;
 }
-header .menu-toggle {
-    display: none; //disable hamburger menu
+@media screen and (min-width: 576px){
+    .site-navigation a,
+    .site-navigation a:link,
+    .site-navigation a:visited {
+        padding: 16px;
+    }
 }
 
-/* HAMBURGER MENU */
+
+// HAMBURGER MENU
+.menu-toggle {
+    display: none; //disable hamburger menu
+}
 @media only screen and (max-width: 480px){
     header nav {
         display: block;

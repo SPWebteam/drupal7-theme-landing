@@ -94,10 +94,36 @@ ul {
     }
 }
 
+
 img {
     max-width: 100%;
     height: auto;
 }
+
+
+hr {
+    // normalize
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    // style
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+@media (min-width: 768px){
+    hr {
+        margin: 3rem 0rem;
+    }
+}
+@media (min-width: 1200px){
+    hr {
+        margin: 5rem 0rem;
+    }
+}
+
+
 
 :focus {
     outline: 2px solid #0276BA; //important

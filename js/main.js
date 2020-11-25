@@ -1,14 +1,4 @@
 (function($) {
-    Drupal.behaviors.SiteHeaderSearchToggle = {
-        attach: function(context, settings) {
-            $('.site-search').hide();
-            $('.search-toggle a', context).click(function(event) {
-                event.preventDefault();
-                $('.site-search').slideToggle(320);
-                $('body').toggleClass('site-search-on');
-            });
-        }
-    };
 
     function fitItems(target, screen, width) {
         space = Math.floor(screen / width);
@@ -18,39 +8,6 @@
         }
         return items;
     }
-    /* currently not used
-    Drupal.behaviors.OwlCarousel = {
-        attach: function(context, settings) {
-            $(".overview .view-content").owlCarousel({
-                loop: true,
-                center: true,
-                width: 260,
-                autoHeight: false,
-                dotsEach: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: fitItems(".overview article", 600, 280)
-                    },
-                    860: {
-                        items: fitItems(".overview article", 860, 280)
-                    },
-                    1120: {
-                        items: fitItems(".overview article", 1120, 280)
-                    },
-                    1480: {
-                        items: fitItems(".overview article", 1480, 280)
-                    },
-                    2560: {
-                        items: fitItems(".overview article", 2560, 280)
-                    }
-                }
-            });
-        }
-    };
-    */
     Drupal.behaviors.SiteHeaderMenuToggle = {
         attach: function(context, settings) {
             $('.menu-toggle button', context).click(function(event) {
@@ -90,27 +47,6 @@
                     $(".webformslider").addClass("open-instant");
                 }
             }
-            // SIMPLE BROWSER STATISTICS FOR SPLIT WEBFORM
-            // enable and adjust to wishes
-            // make sure to add matching fields in webform to store the information
-            /*
-            $('.webformslider-open-left').click(function() {
-                document.getElementsByName("submitted[track]")[0].value = "left";
-                var breed = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-                var hoog = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-                document.getElementsByName("submitted[breed]")[0].value = breed;
-                document.getElementsByName("submitted[hoog]")[0].value = hoog;
-
-            });
-            $('.webformslider-open-right').click(function() {
-                document.getElementsByName("submitted[track]")[0].value = "right";
-                var breed = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-                var hoog = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-                document.getElementsByName("submitted[breed]")[0].value = breed;
-                document.getElementsByName("submitted[hoog]")[0].value = hoog;
-
-            });
-            */
         }
     };
     Drupal.behaviors.WebformSliderClose = {
@@ -170,27 +106,6 @@
             });
         }
     };
-    /*
-    Drupal.behaviors.removeInvalidCharsTextarea = {
-        // QUICKFIX: Remove invalid chars (such as emoji) from text & textarea on change until UTF8mb4 support
-        attach: function(context, settings) {
-            $('input[type=text], textarea').change(function(e) {
-                // SET RANGE (using javascript UTF-16 code units)
-                var ranges = [
-                  '[\ue000-\uf8ff]',
-                  '[\u2011-\u26ff]',
-                  '\ud83c[\udf00-\udfff]', // U+1F300 to U+1F3FF
-                  '\ud83d[\udc00-\udfff]', // U+1F400 to U+1F64F
-                  '\ud83d[\ude80-\udeff]', // U+1F680 to U+1F6FF
-                  '\ud83e[\udd10-\uddff]'
-                ];             
-                // REMOVE INVALID CHARS
-                textCleaned = $(this).val().replace(new RegExp(ranges.join('|'), 'g'), ' ');
-                $(this).val(textCleaned);
-            });
-        }
-    };
-    */
     Drupal.behaviors.accordion = {
         // Add a simple JS accordion (see w3)
         attach: function(context, settings) {

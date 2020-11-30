@@ -28,8 +28,9 @@ $font-body: 'HelveticaNeueLT-Light','Helvetica Neue',Helvetica,'Roboto Sans','Se
 $font-icons: 'FontAwesome';
 $sp-icons: 'SPruit-icons';
 
-// DEFAULT BOX-SHADOW
-$box-shadow: 0 0 7px 0 #e6e6e6;
+// DEFAULT SHADOW
+$box-shadow: 0 0 7px 0 #000;
+$text-shadow: 2px 2px 14px #000;
 
 // SOCIAL MEDIA
 $facebook: #3b5998;

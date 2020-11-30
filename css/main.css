@@ -1937,12 +1937,19 @@ nav.top-nav a .text {
     display: grid;
     align-items: end;
     margin-left: 1rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 14px #000;
+    padding-bottom: 10vh; }
+    .paragraphs-item-banner-fullframe .content .field-name-field-inhoud a.btn, .paragraphs-item-banner-fullframe .content .field-name-field-inhoud a.btn-invert {
+      text-shadow: none;
+      border: none;
+      box-shadow: 0 0 7px 0 #000; }
     .paragraphs-item-banner-fullframe .content .field-name-field-inhoud h1 {
-      font-size: 3rem;
-      color: #fff; }
+      font-size: 3rem; }
     .paragraphs-item-banner-fullframe .content .field-name-field-inhoud p {
-      color: #fff; }
+      font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+      font-size: 1.5rem; }
 
 .paragraphs-item-tekst-met-afbeelding .field-name-field-afbeelding {
   text-align: center; }

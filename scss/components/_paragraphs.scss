@@ -26,12 +26,20 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 		align-items: end;
 		margin-left: 1rem;
 		margin-right: 1rem;
+		color: #fff;
+		text-shadow: $text-shadow;
+		padding-bottom: 10vh;
+		a.btn {
+			text-shadow: none;
+			border: none;
+			box-shadow: $box-shadow;
+		}
 		h1 {
 			font-size: 3rem;
-			color: #fff;
 		}
 		p {
-			color: #fff;
+			font-family: $font-middle;
+			font-size: 1.5rem;
 		}
 	}
 }

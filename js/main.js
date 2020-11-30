@@ -12,7 +12,7 @@
         attach: function(context, settings) {
             $('.menu-toggle button', context).click(function(event) {
                 event.preventDefault();
-                $('.primary-menu').slideToggle(420);
+                $('.primary-menu').slideToggle(250);
             });
         }
     };

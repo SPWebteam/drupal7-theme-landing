@@ -57,7 +57,6 @@ h6 {
     font-size: 0.67rem;
     margin-top: 22px;
 } 
-
 h1 a:hover,
 h2 a:hover {
     text-decoration: none;
@@ -74,23 +73,6 @@ p {
     strong {
       font-weight: normal;
       font-family: $font-strong;
-    }
-}
-@media screen and (min-width: 768px){
-    p {
-        font-size: 1.125rem; // 18px
-        line-height: 1.62rem; // 26px 
-    }
-}
-
-
-
-ul {
-   line-height: 1.5rem;  
-}
-@media screen and (min-width: 768px){
-    ul {
-        line-height: 1.62rem;
     }
 }
 

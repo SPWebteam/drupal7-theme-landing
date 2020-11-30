@@ -30,10 +30,7 @@
   <?php endif; ?>
 
   </head>
-  <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-    <nav class="skip-link invisible">
-      <a href="#primary-content"><?php print t('Skip to content'); ?></a>
-    </nav>
+  <body class="layout-body <?php print $classes; ?>" <?php print $attributes;?>>
     <!--[if lt IE 9]>
       <p class="browser-upgrade">Je gebruikt <strong>een hele oude</strong> browser. Op <a href="http://browsehappy.com/">browsehappy.com</a> vind je veilige en moderne browsers.</p>
     <![endif]-->

@@ -1,5 +1,13 @@
 // LAYOUT
+.layout-body {
+	display: grid;
+	height: 100%;
+	width: 100%;
+}
 .layout-page {
 	display: grid;
-	grid-template-rows: 150px 1fr 150px;
+	grid-template-rows: 70px 1fr 150px;
+}
+.layout-site-header {
+	grid-template-columns: 120px 1fr 120px;
 }

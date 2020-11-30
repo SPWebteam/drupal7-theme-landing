@@ -1,0 +1,53 @@
+// PARAGRAPHS
+$fullscreen_height: calc(100vh - 70px); //70px header
+
+// BANNER FULLFRAME
+.paragraphs-item-banner-fullframe .content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: $fullscreen_height;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	align-content: center;
+	justify-content: center;
+	.field-name-field-afbeelding {
+		grid-area: 1 / 1 / 2 / 2;
+		img {
+			display: grid;
+			min-width: 360px;
+			width: 100%;
+			height: $fullscreen_height;
+			object-fit: cover;
+		}
+	}
+	.field-name-field-inhoud {
+		grid-area: 1 / 1 / 2 / 2;
+		display: grid;
+		align-items: end;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		h1 {
+			font-size: 3rem;
+			color: #fff;
+		}
+		p {
+			color: #fff;
+		}
+	}
+}
+
+
+// TEKST MET AFBEELDING
+.paragraphs-item-tekst-met-afbeelding {	
+	.field-name-field-afbeelding{
+		text-align: center;
+	}
+	.field-name-field-inhoud{
+		background: #fff;
+		.field-inhoud{
+			max-width: 1080px;
+			margin: 0 auto;
+			padding: 1rem;
+		}
+	}
+}

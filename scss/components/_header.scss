@@ -5,29 +5,6 @@
     background: #fff; 
     border-top: 5px solid $color1;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
-}
-.site-branding {
-    padding: 8px;
-    width: 120px;
-    text-align: left;
-    vertical-align: middle;
-}
-@media screen and (min-width: 576px){
-    .site-logo {
-        img,svg {
-           height: 35px;
-           width: auto;
-        }
-    }
-    .site-branding {
-        padding: 16px;
-    }
-    .site-navigation ul li a,
-    .site-navigation nav ul li a:link,
-    .site-navigation nav ul li a:visited {
-        padding: 16px;
-    }
 }
 .site-name {
     margin: 0;
@@ -40,114 +17,114 @@
 }
 
 
-// NAVIGATION
-.site-navigation {
-    text-align: center;
-    padding: 0;
-}
-.site-navigation .title {
-    display: none;
-}
-.site-navigation ul {
-    margin: 0;
-    padding: 0;
-}
-.site-navigation ul li {
-    text-transform: uppercase;
-    font-family: $font-primary;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-}
-.site-navigation a,
-.site-navigation a:link,
-.site-navigation a:visited {
-    color: $color1;
-    padding: 8px;
-    text-decoration: none;
-    display: inline-block;
-}
-.site-navigation a:hover {
-    background: #fff;
-    color: #000;
-}
-.site-navigation li.active-trail a {
-    color: #aaa;
-    background: #fff;
-}
-@media screen and (min-width: 576px){
-    .site-navigation a,
-    .site-navigation a:link,
-    .site-navigation a:visited {
-        padding: 16px;
+// LOGO
+.site-logo {
+    img, svg {
+        fill: $color1;
+        width: auto;
+        height: 62px; // 70 - 8
+        padding: 4px;
     }
 }
 
 
-// HAMBURGER MENU
+// NAVIGATION
+.site-navigation ul.primary-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    li {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        a {
+            text-transform: uppercase;
+            font-family: $font-primary;
+            padding: 0.5rem;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+    li.active-trail a {
+        color: #aaa;
+        background: #fff;
+    }
+}
+
+
+// HAMBURGER MENU (old)
 .menu-toggle {
     display: none; //disable hamburger menu
 }
 @media only screen and (max-width: 480px){
-    header nav {
+    .site-navigation {
         display: block;
-        top: 40px;
+        top: 70px;
         left: 0;
         background: #fff;
         z-index: 1000;
         width: 100%;
         position: absolute;
         padding: 0;
+        ul {
+            display: none;
+            height: 64px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #ddd!important;
+            li {
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0!important;
+            }
+            a {
+                font-size: 1.14em;
+                border-top: 1px solid #ddd;
+                display: block;
+                font-weight: normal;
+                display: block!important;
+            }
+        }
     }
-    header nav ul {
-        display: none;
-        border-bottom: 1px solid #ddd!important;
-    }
-    header nav li {
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0!important;
-    }
-    header nav li a {
-        font-size: 1.14em;
-        border-top: 1px solid #ddd;
-        display: block;
-        font-weight: normal;
-        display: block!important;
-    }
-    header .menu-toggle {
+    .menu-toggle {
         display: block; // enable hamburger menu
         position: absolute;
-        top: 4px;
-        right: 4px;
+        top: 20px;
+        right: 14px;
         z-index: 2;
-        pointer: cursor;
-    }
-    header .menu-toggle button {
-        display: block;
-        background: none;
-        border: none;
-        margin: 0;
-        padding: 0;
-        outline: none; //remove chrome-safari default focus
-    }
-    header .menu-toggle button .text {
-        display: none;
-    }
-    header .menu-toggle button:after {
-        font-family: 'SPruit-icons';
-        content: '\e900';
-        display: block;
-        float: right;
-        //border: 1px solid $color1;
-        background: #fff;
-        color: $color1;
-        font-size: 30px;
-        padding: 0;
-        margin: 0;
-        line-height: .94;
-        height: 32px;
-        width: 37px;
+        cursor: pointer;
+        button {
+            display: block;
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+            outline: none; //remove chrome-safari default focus
+            .text {
+                display: none;
+            }
+            &:after {
+                font-family: 'SPruit-icons';
+                content: '\e900';
+                display: block;
+                float: right;
+                background: #fff;
+                color: $color1;
+                font-size: 30px;
+                padding: 0;
+                margin: 0;
+                line-height: .94;
+                height: 32px;
+                width: 37px;
+            }
+        }
     }
 }

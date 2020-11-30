@@ -1,10 +1,11 @@
 .messages {
-	max-width: $content-width;
-	margin: auto auto 1rem auto;
 	padding: 1rem;
 	&.error {
 	  background: #f2dede; 
 	  color: #a94442;
 	  border: 1px solid #ebccd1;
 	}
+}
+.messages.status {
+	background: #00fda2;
 }

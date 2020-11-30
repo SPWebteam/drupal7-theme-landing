@@ -21,7 +21,7 @@ function landing_css_alter(&$css) {
 function landing_preprocess_page(&$variables) {
 
 /* Adding theme path to JS, for MyFonts */
-  drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' .base_path().drupal_get_path('theme', 'spruit_sass'). '" });', 'inline');
+  drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' .base_path().drupal_get_path('theme', 'landing'). '" });', 'inline');
 
   /**
    * Templates for content type pages

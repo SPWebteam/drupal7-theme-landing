@@ -1,11 +1,13 @@
 // COMPONENTS
 //@import 'afdsearch'; disabled for now
 @import 'accordion';
+@import 'action-links';
 @import 'badge';
 @import 'banner';
 @import 'bedankt';
 @import 'bijeenkomst';
 @import 'blockquote';
+@import 'breadcrumbs';
 @import 'button';
 @import 'cookie-bar';
 @import 'doe-mee';
@@ -19,7 +21,7 @@
 @import 'layout';
 @import 'leaflet';
 @import 'link';
-@import 'logo';
+@import 'menu';
 //@import 'memberform'; old?
 @import 'messages';
 @import 'meta';
@@ -27,12 +29,14 @@
 @import 'mollie';
 @import 'navigation';
 @import 'node'; // drupal
+@import 'paragraphs';
 @import 'pager';
 @import 'personen';
+@import 'primary-content';
 @import 'social-share';
 @import 'sp-event';
 @import 'stickyfooter';
-@import 'system-menu';
+@import 'tabs';
 @import 'title';
 @import 'user';
 @import 'webform';

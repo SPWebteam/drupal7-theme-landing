@@ -1,6 +1,4 @@
-ABOUT SPruit SASS
+ABOUT SP LANDING
 -----------
 
-SPruit SASS is a base theme for @SPnl
-
-The purpose is to launch websites and applications quickly, and cause as low as possible maintenance overhead.
+A Drupal 7 theme with specific focus for landingpages

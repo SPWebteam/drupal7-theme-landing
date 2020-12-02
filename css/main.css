@@ -1394,6 +1394,14 @@ blockquote:after {
         line-height: .94;
         height: 32px;
         width: 37px; } }
+.field-label {
+  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  line-height: 1.5; }
+
+.field-label-inline .field-label,
+.field-label-inline .field {
+  display: inline-block; }
+
 /* BASIC FORM ELEMENTS */
 form {
   max-width: 1140px;
@@ -1693,6 +1701,44 @@ footer .footer-menu a {
   background: -webkit-linear-gradient(left, #232526, #232526);
   background: linear-gradient(to right, #232526, #232526); }
 
+.node-kandidaat {
+  background: #fff; }
+  .node-kandidaat .positie-en-rol {
+    font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 30px minmax(auto, 180px);
+    margin-bottom: 1rem; }
+    .node-kandidaat .positie-en-rol .positie {
+      text-align: center;
+      background: #EC1B23;
+      color: #fff;
+      padding: 0.5rem; }
+    .node-kandidaat .positie-en-rol .rol {
+      background: #ddd;
+      color: #757575;
+      padding: 0.5rem; }
+  .node-kandidaat .persoon {
+    display: inline-grid;
+    max-width: 520px;
+    grid-template-columns: 1.5fr 2.5fr; }
+    .node-kandidaat .persoon .info {
+      padding: 1rem;
+      background: #f1f1f1;
+      font-size: 0.8rem; }
+      .node-kandidaat .persoon .info .field-name-field-volg-mij {
+        margin-top: 1rem; }
+  .node-kandidaat .field-banner {
+    margin-bottom: 1rem; }
+    .node-kandidaat .field-banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      max-height: 580px; }
+  .node-kandidaat .field-intro p {
+    font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+
 .layout-body {
   display: grid;
   height: 100%;
@@ -1709,6 +1755,11 @@ footer .footer-menu a {
   top: 0;
   left: 0;
   right: 0; }
+
+.layout-content-container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1rem; }
 
 /* LEAFLET */
 .leaflet-control-container .leaflet-top {
@@ -1971,7 +2022,8 @@ nav.top-nav a .text {
         display: inline-block; }
 
 .paragraphs-item-tekst {
-  padding: 100px 1rem; }
+  padding: 100px 1rem;
+  background: #fff; }
   .paragraphs-item-tekst .field-name-field-inhoud .field-inhoud {
     max-width: 820px;
     margin: 0 auto;

@@ -7,16 +7,12 @@
 .layout-page {
 	display: grid;
 	grid-template-rows: 70px 1fr 150px;
-	padding-top: 70px; // for fixed header
 }
 .layout-site-header {
 	grid-template-columns: 120px 1fr 120px;
-	position: fixed;
+	position: sticky;
 	z-index: 1;
 	top:0;
 	left:0;
 	right:0;
-}
-.admin-menu .layout-site-header {
-	top: 30px;
 }

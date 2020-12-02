@@ -550,6 +550,9 @@ ul.inline li {
   list-style-type: none;
   padding: 0 0.5em; }
 
+#admin-menu {
+  height: 20px !important; }
+
 /* BADGE */
 .badge {
   display: inline-block;
@@ -1697,19 +1700,15 @@ footer .footer-menu a {
 
 .layout-page {
   display: grid;
-  grid-template-rows: 70px 1fr 150px;
-  padding-top: 70px; }
+  grid-template-rows: 70px 1fr 150px; }
 
 .layout-site-header {
   grid-template-columns: 120px 1fr 120px;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   top: 0;
   left: 0;
   right: 0; }
-
-.admin-menu .layout-site-header {
-  top: 30px; }
 
 /* LEAFLET */
 .leaflet-control-container .leaflet-top {

@@ -1702,9 +1702,8 @@ footer .footer-menu a {
   background: linear-gradient(to right, #232526, #232526); }
 
 .node-kandidaat {
-  background: #fff; }
-  .node-kandidaat article {
-    padding-bottom: 6rem; }
+  background: #fff;
+  padding-bottom: 6rem; }
   .node-kandidaat .field-banner {
     margin-bottom: 1rem; }
     .node-kandidaat .field-banner img {

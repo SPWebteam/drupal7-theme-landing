@@ -24,6 +24,13 @@ regions[footer]    = Footer content
 ; Panels support
 plugins[panels][layouts] = layouts
 
+; Breakpoints
+breakpoints[qhd] = (min-width: 2560px)
+breakpoints[hd] = (min-width: 1920px) and (max-width: 2559px)
+breakpoints[laptop] = (min-width: 1280px) and (max-width: 1919px)
+breakpoints[tablet] = (min-width: 960px) and (max-width: 1279px)
+breakpoints[mobile] = (min-width: 0px) and (max-width: 959px)
+
 ; Unset these css
 settings[unset_styles][] = modules/system/system.menus.css
 settings[unset_styles][] = modules/system/system.messages.css

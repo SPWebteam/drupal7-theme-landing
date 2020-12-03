@@ -4,6 +4,21 @@
 	article {
 		padding-bottom: 6rem;
 	}
+	.field-banner {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 50% 50%;
+			max-height: 580px;
+		}
+		margin-bottom: 1rem;
+	}
+	@media screen and (min-width: 1920px){
+		.field-banner img {
+			max-height: 33vw;
+		}
+	}
 	.positie-en-rol {
 		font-family: $font-middle;
 		font-size: 0.8rem;
@@ -21,6 +36,9 @@
 			color: #757575;
 			padding: 0.5rem;
 		}
+	}
+	.field-intro p {
+		font-family: $font-strong;
 	}
 	.persoon {
 		display: inline-grid;
@@ -40,18 +58,5 @@
 				margin-top: 1rem;
 			}
 		}
-	}
-	.field-banner {
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: 50% 50%;
-			max-height: 580px;
-		}
-		margin-bottom: 1rem;
-	}
-	.field-intro p {
-		font-family: $font-strong;
 	}
 }

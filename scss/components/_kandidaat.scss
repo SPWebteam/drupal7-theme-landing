@@ -1,11 +1,14 @@
 // KANDIDAAT
 .node-kandidaat {
 	background: #fff;
+	article {
+		padding-bottom: 6rem;
+	}
 	.positie-en-rol {
 		font-family: $font-middle;
 		font-size: 0.8rem;
-		display: grid;
-		grid-template-columns: 30px minmax(auto, 180px);
+		display: inline-grid;
+		grid-template-columns: auto auto;
 		margin-bottom: 1rem;
 		.positie {
 			text-align: center;
@@ -22,13 +25,17 @@
 	.persoon {
 		display: inline-grid;
 		max-width: 520px;
-		grid-template-columns: 1.5fr 2.5fr;
-		.portret {
+		grid-template-columns: 1.5fr 3fr;
+		.portret img {
+			display: block; //remove whitespace
 		}
 		.info {
 			padding: 1rem;
 			background: #f1f1f1;
 			font-size: 0.8rem;
+			.naam {
+				font-size: 1.25rem;
+			}
 			.field-name-field-volg-mij {
 				margin-top: 1rem;
 			}

@@ -22,12 +22,18 @@
         </h1>
       </header>
       <?php print render($content['field_intro']); ?>
+    </div>
+    <div>
+      <?php print render($content['field_paragraphs']); ?>
+    </div>
+    <div class="layout-content-container">
       <div class="persoon">
         <div class="portret">
           <?php print render($content['field_afbeelding']); ?>
         </div>
         <div class="info">
-          <?php
+          <div class="naam"><?php print $title; ?></div>
+          <?php         
           print render($content['field_geboortejaar']);
           print render($content['field_woonplaats']);
           print render($content['field_volg_mij']);
@@ -35,10 +41,6 @@
         </div>
       </div>
     </div>
-    <div>
-      <?php print render($content['field_paragraphs']); ?>
-    </div>
   </section>
-
   <?php print render($content['links']); ?>
 </article>

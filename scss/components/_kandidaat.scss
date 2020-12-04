@@ -41,7 +41,7 @@
 	.persoon {
 		display: inline-grid;
 		max-width: 520px;
-		grid-template-columns: 1.5fr 3fr;
+		grid-template-columns: minmax(100px, 1.5fr) minmax(auto, 3fr);
 		.portret img {
 			display: block; //remove whitespace
 		}
@@ -51,9 +51,10 @@
 			font-size: 0.8rem;
 			.naam {
 				font-size: 1.25rem;
+				margin-bottom: 0.5rem;
 			}
-			.field-name-field-volg-mij {
-				margin-top: 1rem;
+			.inline div{
+				display:inline-block;
 			}
 		}
 	}

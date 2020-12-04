@@ -1735,7 +1735,7 @@ footer .footer-menu a {
   .node-kandidaat .persoon {
     display: inline-grid;
     max-width: 520px;
-    grid-template-columns: 1.5fr 3fr; }
+    grid-template-columns: minmax(100px, 1.5fr) minmax(auto, 3fr); }
     .node-kandidaat .persoon .portret img {
       display: block; }
     .node-kandidaat .persoon .info {
@@ -1743,9 +1743,10 @@ footer .footer-menu a {
       background: #f1f1f1;
       font-size: 0.8rem; }
       .node-kandidaat .persoon .info .naam {
-        font-size: 1.25rem; }
-      .node-kandidaat .persoon .info .field-name-field-volg-mij {
-        margin-top: 1rem; }
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem; }
+      .node-kandidaat .persoon .info .inline div {
+        display: inline-block; }
 
 .layout-body {
   display: grid;

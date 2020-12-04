@@ -33,11 +33,8 @@
         </div>
         <div class="info">
           <div class="naam"><?php print $title; ?></div>
-          <?php         
-          print render($content['field_geboortejaar']);
-          print render($content['field_woonplaats']);
-          print render($content['field_volg_mij']);
-          ?>
+          <?php print render($content['field_huidige_rol']); ?>
+          <div class="inline"><?php print render($content['field_woonplaats']); ?>-<?php print render($content['field_provincie']); ?>-<?php print render($content['field_leeftijd']); ?> jaar</div>
         </div>
       </div>
     </div>

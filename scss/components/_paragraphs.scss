@@ -45,7 +45,7 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 }
 
 
-// TEKST MET AFBEELDING
+// BLOK: TEKST MET AFBEELDING
 .paragraphs-item-tekst-met-afbeelding {
 	display: grid;
 	justify-content: center;
@@ -72,7 +72,7 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 }
 
 
-// TEKST
+// BLOK: TEKST
 .paragraphs-item-tekst {
 	padding: 100px 1rem;
 	background: #fff;
@@ -110,5 +110,41 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 				}
 			}
 		}
+	}
+}
+
+
+// INOUD: 1 KOLOM
+.paragraphs-item-inhoud-1-kolom {
+	.content {
+		max-width: 820px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+}
+
+
+// INHOUD: 2 KOLLOMEN
+.paragraphs-item-inhoud-2-kolom {
+	.content {
+		max-width: 820px;
+		margin: 0 auto;
+		padding: 0 1rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-column-gap: 1rem;
+	}
+}
+
+
+//INHOUD: 3 KOLLOMEN
+.paragraphs-item-inhoud-3-kolom {
+	.content {
+		max-width: 820px;
+		margin: 0 auto;
+		padding: 0 1rem;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-column-gap: 1rem;
 	}
 }

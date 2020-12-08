@@ -1694,6 +1694,7 @@ footer .footer-menu a {
   .node-kandidaat .field-intro p {
     font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
   .node-kandidaat .persoon {
+    margin-top: 2rem;
     display: inline-grid;
     max-width: 520px;
     grid-template-columns: minmax(100px, 1.5fr) minmax(auto, 3fr); }

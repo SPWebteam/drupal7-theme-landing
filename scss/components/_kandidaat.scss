@@ -39,6 +39,7 @@
 		font-family: $font-strong;
 	}
 	.persoon {
+		margin-top: 2rem;
 		display: inline-grid;
 		max-width: 520px;
 		grid-template-columns: minmax(100px, 1.5fr) minmax(auto, 3fr);

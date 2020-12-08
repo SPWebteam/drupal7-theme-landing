@@ -2028,17 +2028,21 @@ nav.top-nav a .text {
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: auto auto;
   grid-column-gap: 1rem; }
 
+@media screen and (min-width: 480px) {
+  .paragraphs-item-inhoud-3-kolom .content {
+    grid-template-columns: 1fr 1fr; } }
 .paragraphs-item-inhoud-3-kolom .content {
   max-width: 820px;
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: auto auto auto;
   grid-column-gap: 1rem; }
 
+@media screen and (min-width: 640px) {
+  .paragraphs-item-inhoud-3-kolom .content {
+    grid-template-columns: 1fr 1fr 1fr; } }
 /* PAGER */
 ul.pager {
   text-align: center; }
@@ -2242,10 +2246,12 @@ ul.share li a {
   h1.title,
   h1.pane-title {
     font-size: 3rem; } }
-/* USER LOGIN */
-.page-user .primary-content {
-  max-width: 640px;
-  margin: 0 auto; }
+.page-user .primary-content > .content {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1rem;
+  margin-top: 1rem; }
 
 .links {
   display: none; }

@@ -2257,24 +2257,47 @@ ul.share li a {
 .view-kandidaten .view-content {
   display: grid;
   justify-content: center;
+  text-align: center;
   grid-template-columns: minmax(auto, 960px);
   grid-row-gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem; }
 .view-kandidaten .views-row .field-content {
   display: inline-grid;
-  grid-template-columns: auto 350px 1fr; }
+  grid-template-columns: auto 350px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "positie portret info"; }
   .view-kandidaten .views-row .field-content .positie {
+    grid-area: positie;
     align-self: start;
     background: #EC1B23;
     color: #fff;
     font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.25rem 0.5rem; }
+  .view-kandidaten .views-row .field-content .portret {
+    grid-area: portret; }
+    .view-kandidaten .views-row .field-content .portret img {
+      display: block; }
   .view-kandidaten .views-row .field-content .info {
+    grid-area: info;
     background: #fff;
-    padding: 2rem; }
+    padding: 2rem;
+    text-align: left; }
 
+@media screen and (max-width: 960px) {
+  .view-kandidaten .views-row .field-content {
+    grid-template-columns: auto 200px minmax(auto, 400px); }
+    .view-kandidaten .views-row .field-content .intro {
+      display: none; } }
+@media screen and (max-width: 620px) {
+  .view-kandidaten .views-row .field-content {
+    grid-template-columns: auto;
+    grid-template-areas: "positie" "portret" "info"; }
+    .view-kandidaten .views-row .field-content .positie {
+      position: absolute; }
+    .view-kandidaten .views-row .field-content .info {
+      padding: 1rem 1rem 2rem 1rem; } }
 .links {
   display: none; }
 

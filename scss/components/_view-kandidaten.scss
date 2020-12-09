@@ -3,6 +3,7 @@
 	.view-content {
 		display: grid;
 		justify-content: center;
+		text-align: center; //quickfix
 		grid-template-columns: minmax(auto, 960px);
 		grid-row-gap: 2rem;
 		margin-top: 2rem;
@@ -12,17 +13,60 @@
 		.field-content {
 			display: inline-grid;
 			grid-template-columns: auto 350px 1fr;
+			grid-template-rows: auto;
+			grid-template-areas:
+				"positie portret info";
 			.positie {
+				grid-area: positie;
 				align-self: start;
 				background: $color1;
 				color: #fff;
 				font-family: $font-middle;
-				font-size: 1.5rem;
+				font-size: 2rem;
 				padding: 0.25rem 0.5rem;
 			}
+			.portret {
+				grid-area: portret;
+				img {
+					display: block; //prevent whitespace
+				}
+			}
 			.info {
+				grid-area: info;
 				background: #fff;
 				padding: 2rem;
+				text-align: left;
+			}
+		}
+	}
+}
+@media screen and (max-width: 960px){
+	.view-kandidaten{
+		.views-row {
+			.field-content {
+				grid-template-columns: auto 200px minmax(auto, 400px);
+				.intro {
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 620px){
+	.view-kandidaten{
+		.views-row {
+			.field-content {
+				grid-template-columns: auto;
+				grid-template-areas:
+				"positie"
+				"portret"
+				"info";
+				.positie {
+					position: absolute;
+				}
+				.info {
+					padding: 1rem 1rem 2rem 1rem;
+				}
 			}
 		}
 	}

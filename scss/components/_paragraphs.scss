@@ -135,7 +135,7 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 	}
 }
 @media screen and (min-width: 480px) {
-	.paragraphs-item-inhoud-3-kolom {
+	.paragraphs-item-inhoud-2-kolom {
 		.content {
 			grid-template-columns: 1fr 1fr;
 		}

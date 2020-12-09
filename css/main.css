@@ -1854,17 +1854,11 @@ ul.primary li a:hover {
 .messages.status {
   background: #00fda2; }
 
-/* META */
-.meta {
-  background: #f1f1f1;
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 15px;
-  display: inline-block; }
-
-.meta p {
-  font-size: 1rem;
-  margin: 0; }
+.meta-wrapper {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  line-height: 1.4; }
 
 /* MODAL */
 #modal {
@@ -2252,6 +2246,27 @@ ul.share li a {
   background: #fff;
   padding: 1rem;
   margin-top: 1rem; }
+
+.view-kandidaten .view-content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 960px);
+  grid-row-gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+.view-kandidaten .views-row .field-content {
+  display: inline-grid;
+  grid-template-columns: auto 350px 1fr; }
+  .view-kandidaten .views-row .field-content .positie {
+    align-self: start;
+    background: #EC1B23;
+    color: #fff;
+    font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem; }
+  .view-kandidaten .views-row .field-content .info {
+    background: #fff;
+    padding: 2rem; }
 
 .links {
   display: none; }

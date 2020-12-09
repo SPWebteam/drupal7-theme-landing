@@ -1,0 +1,29 @@
+// VIEW KANDIDATEN
+.view-kandidaten {
+	.view-content {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: minmax(auto, 960px);
+		grid-row-gap: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	.views-row {
+		.field-content {
+			display: inline-grid;
+			grid-template-columns: auto 350px 1fr;
+			.positie {
+				align-self: start;
+				background: $color1;
+				color: #fff;
+				font-family: $font-middle;
+				font-size: 1.5rem;
+				padding: 0.25rem 0.5rem;
+			}
+			.info {
+				background: #fff;
+				padding: 2rem;
+			}
+		}
+	}
+}

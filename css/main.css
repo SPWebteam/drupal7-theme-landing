@@ -1932,6 +1932,13 @@ nav.top-nav a .text {
 .node-unpublished {
   background: #fff4f6; }
 
+.pane-titel-met-tekst {
+  background: #fff;
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: minmax(auto, 960px);
+  justify-content: center; }
+
 .paragraphs-item-banner-fullframe .content {
   display: grid;
   grid-template-columns: 1fr;

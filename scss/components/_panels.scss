@@ -1,0 +1,9 @@
+// PANELS
+
+.pane-titel-met-tekst {
+	background: #fff;
+	padding: 3rem 1rem;
+	display: grid;
+	grid-template-columns: minmax(auto,960px);
+	justify-content: center;
+}

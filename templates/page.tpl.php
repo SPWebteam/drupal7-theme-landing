@@ -50,7 +50,12 @@
       <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
 
     <a id="primary-content"></a>
-    <div class="content"><?php print render($page['content']); ?></div>
+    <div class="content">
+      <?php
+        print render($page['content']);
+        print $breadcrumb;
+      ?>
+    </div>
   </div>
 
 

@@ -1,4 +1,8 @@
 // BREADCRUMBS
-.breadcrumb {
-  //padding-bottom: 0.5em;
+.breadcrumb { //same styling as meta.scss
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	margin-bottom: 1rem;
 }

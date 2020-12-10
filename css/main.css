@@ -709,6 +709,13 @@ ul.inline li {
 @media screen and (min-width: 2280px) {
   .node-type-bijeenkomst .field {
     max-width: 50%; } }
+.breadcrumb {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin-bottom: 1rem; }
+
 /* BUTTONS */
 .btn, .btn-invert, a.btn-invert, a.btn, a.btn-invert {
   font-family: "HelveticaInseratLTPro", sans-serif;

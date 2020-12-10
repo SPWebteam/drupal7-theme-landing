@@ -8,6 +8,7 @@
   <?php print render($content['field_banner']); ?>
   <section class="article-content"<?php print $content_attributes; ?>>
     <div class="layout-content-container">
+      <?php print theme('breadcrumb', array('breadcrumb'=>drupal_get_breadcrumb())); ?>
       <div class="positie-en-rol">
         <div class="positie">
           <?php print render($content['field_positie']); ?>

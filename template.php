@@ -32,7 +32,7 @@ function landing_preprocess_page(&$variables) {
   }
     
   //$variables['logo_url'] = 'https://www.sp.nl/?landing=0';
-  $variables['logo_url'] = url('<front>';
+  $variables['logo_url'] = url('<front>');
   if (user_is_logged_in()) {
     $variables['logo_url'] =  url('<front>');
   }

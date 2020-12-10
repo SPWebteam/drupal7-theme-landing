@@ -31,7 +31,8 @@ function landing_preprocess_page(&$variables) {
     $variables['theme_hook_suggestions'][]='page__'.$variables['node']->type;
   }
     
-  $variables['logo_url'] = 'https://www.sp.nl/?landing=0';
+  //$variables['logo_url'] = 'https://www.sp.nl/?landing=0';
+  $variables['logo_url'] = url('<front>';
   if (user_is_logged_in()) {
     $variables['logo_url'] =  url('<front>');
   }

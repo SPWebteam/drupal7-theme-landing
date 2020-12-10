@@ -1699,7 +1699,7 @@ footer .footer-menu a {
     margin-top: 2rem;
     display: inline-grid;
     max-width: 520px;
-    grid-template-columns: minmax(100px, 1.5fr) minmax(auto, 3fr); }
+    grid-template-columns: minmax(136px, 1.5fr) minmax(auto, 3fr); }
     .node-kandidaat .persoon .portret img {
       display: block; }
     .node-kandidaat .persoon .info {
@@ -1711,6 +1711,50 @@ footer .footer-menu a {
         margin-bottom: 0.5rem; }
       .node-kandidaat .persoon .info .inline div {
         display: inline-block; }
+    .node-kandidaat .persoon .social {
+      display: inline-grid;
+      grid-template-columns: auto auto auto auto;
+      font-family: "SPruit-icons";
+      margin-top: 0.5rem; }
+      .node-kandidaat .persoon .social a.facebook,
+      .node-kandidaat .persoon .social a.twitter,
+      .node-kandidaat .persoon .social a.instagram,
+      .node-kandidaat .persoon .social a.linkedin {
+        font-size: 0;
+        margin-right: .25rem; }
+      .node-kandidaat .persoon .social a.facebook:after,
+      .node-kandidaat .persoon .social a.twitter:after,
+      .node-kandidaat .persoon .social a.linkedin:after {
+        background: #000;
+        padding: .25rem;
+        background: #EC1B23;
+        color: #fff;
+        font-size: 1.5rem;
+        display: inline-block; }
+      .node-kandidaat .persoon .social a.instagram:after {
+        background: #000;
+        padding: .5rem;
+        background: #EC1B23;
+        color: #fff;
+        font-size: 1rem;
+        display: inline-block; }
+      .node-kandidaat .persoon .social a.facebook:hover::after,
+      .node-kandidaat .persoon .social a.twitter:hover::after,
+      .node-kandidaat .persoon .social a.instagram:hover::after,
+      .node-kandidaat .persoon .social a.linkedin:hover::after {
+        background: #000; }
+      .node-kandidaat .persoon .social a.facebook:after {
+        content: 'f'; }
+      .node-kandidaat .persoon .social a.twitter:after {
+        content: 't'; }
+      .node-kandidaat .persoon .social a.instagram:after {
+        content: 'i'; }
+      .node-kandidaat .persoon .social a.linkedin:after {
+        content: 'l'; }
+  @media screen and (max-width: 440px) {
+    .node-kandidaat .persoon {
+      margin-left: -1rem;
+      margin-right: -1rem; } }
 
 .layout-body {
   display: grid;
@@ -2300,6 +2344,47 @@ ul.share li a {
       position: absolute; }
     .view-kandidaten .views-row .field-content .info {
       padding: 1rem 1rem 2rem 1rem; } }
+.view-kandidaten .social {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  font-family: "SPruit-icons";
+  margin-top: 0.5rem; }
+  .view-kandidaten .social a.facebook,
+  .view-kandidaten .social a.twitter,
+  .view-kandidaten .social a.instagram,
+  .view-kandidaten .social a.linkedin {
+    font-size: 0;
+    margin-right: .25rem; }
+  .view-kandidaten .social a.facebook:after,
+  .view-kandidaten .social a.twitter:after,
+  .view-kandidaten .social a.linkedin:after {
+    background: #000;
+    padding: .25rem;
+    background: #EC1B23;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline-block; }
+  .view-kandidaten .social a.instagram:after {
+    background: #000;
+    padding: .5rem;
+    background: #EC1B23;
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block; }
+  .view-kandidaten .social a.facebook:hover::after,
+  .view-kandidaten .social a.twitter:hover::after,
+  .view-kandidaten .social a.instagram:hover::after,
+  .view-kandidaten .social a.linkedin:hover::after {
+    background: #000; }
+  .view-kandidaten .social a.facebook:after {
+    content: 'f'; }
+  .view-kandidaten .social a.twitter:after {
+    content: 't'; }
+  .view-kandidaten .social a.instagram:after {
+    content: 'i'; }
+  .view-kandidaten .social a.linkedin:after {
+    content: 'l'; }
+
 .links {
   display: none; }
 

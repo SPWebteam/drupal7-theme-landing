@@ -28,7 +28,15 @@
         <div class="info">
           <div class="naam"><?php print $title; ?></div>
           <?php print render($content['field_huidige_rol']); ?>
-          <div class="inline"><?php print render($content['field_woonplaats']); ?>-<?php print render($content['field_provincie']); ?>-<?php print render($content['field_leeftijd']); ?> jaar</div>
+          <div class="inline">            <?php print render($content['field_woonplaats']); ?>-<?php print render($content['field_provincie']); ?>-<?php print render($content['field_leeftijd']); ?> jaar</div>
+          <div class="social">
+            <?php
+              print render($content['field_facebook']);
+              print render($content['field_twitter']);
+              print render($content['field_instagram']);
+              print render($content['field_linkedin']);
+            ?>
+          </div>
         </div>
       </div>
     </div>

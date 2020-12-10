@@ -36,7 +36,7 @@
 		margin-top: 2rem;
 		display: inline-grid;
 		max-width: 520px;
-		grid-template-columns: minmax(100px, 1.5fr) minmax(auto, 3fr);
+		grid-template-columns: minmax(136px, 1.5fr) minmax(auto, 3fr);
 		.portret img {
 			display: block; //remove whitespace
 		}
@@ -51,6 +51,62 @@
 			.inline div{
 				display:inline-block;
 			}
+		}
+		.social {
+			display: inline-grid;
+			grid-template-columns: auto auto auto auto;
+			font-family: $sp-icons;
+			margin-top: 0.5rem;
+			a.facebook,
+			a.twitter,
+			a.instagram,
+			a.linkedin {
+				font-size: 0;
+				margin-right: .25rem;
+			}
+			a.facebook:after,
+			a.twitter:after,
+			a.linkedin:after {
+				background: #000;
+				padding: .25rem;
+				background: $color1;
+				color: #fff;
+				font-size: 1.5rem;
+				display: inline-block;
+			}
+			a.instagram:after {
+				background: #000;
+				padding: .5rem;
+				background: $color1;
+				color: #fff;
+				font-size: 1rem;  //quickfix icon size
+				display: inline-block;
+			}			
+			a.facebook:hover::after,
+			a.twitter:hover::after,
+			a.instagram:hover::after,
+			a.linkedin:hover::after {
+				background: #000;
+			}
+			a.facebook:after {
+				content: 'f';
+			}
+			a.twitter:after {
+				content: 't';
+			}
+			a.instagram:after {
+				content: 'i';
+			}
+			a.linkedin:after {
+				content: 'l';
+			}
+		}
+	}
+	//quickfix smaller sizes
+	@media screen and (max-width: 440px){
+		.persoon {
+			margin-left: -1rem;
+			margin-right: -1rem;
 		}
 	}
 }

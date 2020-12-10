@@ -17,22 +17,16 @@
 			max-height: 33vw;
 		}
 	}
-	.positie-en-rol {
-		font-family: $font-middle;
-		font-size: 0.8rem;
+	.title {
 		display: inline-grid;
 		grid-template-columns: auto auto;
-		margin-bottom: 1rem;
-		.positie {
-			text-align: center;
+		align-items: center;
+		margin-top: 1rem;
+		.field-positie {
 			background: $color1;
 			color: #fff;
-			padding: 0.5rem;
-		}
-		.rol {
-			background: #ddd;
-			color: #757575;
-			padding: 0.5rem;
+			padding: 0.25rem;
+			margin-right: 0.5rem;
 		}
 	}
 	.field-intro p {

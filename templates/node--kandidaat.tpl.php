@@ -9,16 +9,9 @@
   <section class="article-content"<?php print $content_attributes; ?>>
     <div class="layout-content-container">
       <?php print theme('breadcrumb', array('breadcrumb'=>drupal_get_breadcrumb())); ?>
-      <div class="positie-en-rol">
-        <div class="positie">
-          <?php print render($content['field_positie']); ?>
-        </div>
-        <div class="rol">
-          <?php print render($content['field_rol']); ?>
-        </div>
-      </div>
       <header>
         <h1 class="title" <?php print $title_attributes; ?>>
+          <?php print render($content['field_positie']); ?>
           <?php print $title; ?>
         </h1>
       </header>

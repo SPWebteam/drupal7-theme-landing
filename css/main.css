@@ -1683,21 +1683,16 @@ footer .footer-menu a {
   @media screen and (min-width: 1920px) {
     .node-kandidaat .field-banner img {
       max-height: 33vw; } }
-  .node-kandidaat .positie-en-rol {
-    font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-    font-size: 0.8rem;
+  .node-kandidaat .title {
     display: inline-grid;
     grid-template-columns: auto auto;
-    margin-bottom: 1rem; }
-    .node-kandidaat .positie-en-rol .positie {
-      text-align: center;
+    align-items: center;
+    margin-top: 1rem; }
+    .node-kandidaat .title .field-positie {
       background: #EC1B23;
       color: #fff;
-      padding: 0.5rem; }
-    .node-kandidaat .positie-en-rol .rol {
-      background: #ddd;
-      color: #757575;
-      padding: 0.5rem; }
+      padding: 0.25rem;
+      margin-right: 0.5rem; }
   .node-kandidaat .field-intro p {
     font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
   .node-kandidaat .persoon {

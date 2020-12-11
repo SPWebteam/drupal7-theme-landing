@@ -1,4 +1,6 @@
 // COMPONENTS
+@import 'layout'; //load first
+
 //@import 'afdsearch'; disabled for now
 @import 'accordion';
 @import 'action-links';
@@ -20,8 +22,6 @@
 @import 'form';
 @import 'footer';
 @import 'gradient';
-@import 'kandidaat';
-@import 'layout';
 @import 'leaflet';
 @import 'link';
 @import 'menu';
@@ -32,6 +32,7 @@
 @import 'mollie';
 @import 'navigation';
 @import 'node'; // drupal
+@import 'node-kandidaat';
 @import 'panels';
 @import 'paragraphs';
 @import 'pager';

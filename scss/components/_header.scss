@@ -107,8 +107,8 @@
                 display: none;
             }
             &:after {
-                font-family: 'SPruit-icons';
-                content: '\e900';
+                font-family: $sp-icons;
+                content: 'h';
                 display: block;
                 float: right;
                 background: #fff;

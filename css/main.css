@@ -1350,8 +1350,8 @@ ul.inline li {
       .menu-toggle button .text {
         display: none; }
       .menu-toggle button:after {
-        font-family: 'SPruit-icons';
-        content: '\e900';
+        font-family: "SPruit-icons";
+        content: 'h';
         display: block;
         float: right;
         background: #fff;

@@ -4,7 +4,7 @@
 		display: grid;
 		justify-content: center;
 		text-align: center; //quickfix
-		grid-template-columns: minmax(auto, 960px);
+		grid-template-columns: minmax(auto, 1082px);
 		grid-row-gap: 2rem;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
@@ -12,23 +12,34 @@
 	.views-row {
 		.field-content {
 			display: inline-grid;
-			grid-template-columns: auto 350px 1fr;
+			grid-template-columns: 350px 1fr;
 			grid-template-rows: auto;
 			grid-template-areas:
-				"positie portret info";
+				"portret info";
 			.positie {
-				grid-area: positie;
+				grid-area: portret;
 				align-self: start;
+				justify-self: start;
 				background: $color1;
 				color: #fff;
 				font-family: $font-middle;
 				font-size: 2rem;
 				padding: 0.25rem 0.5rem;
+				z-index: 1;
 			}
 			.portret {
 				grid-area: portret;
+				overflow: hidden;
 				img {
 					display: block; //prevent whitespace
+					transition: all ease 1s;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: 50% 50%;
+					&:hover {
+						transform: scale(1.05);
+					}
 				}
 			}
 			.info {
@@ -38,76 +49,48 @@
 				text-align: left;
 			}
 		}
-	}
-}
-@media screen and (max-width: 960px){
-	.view-kandidaten{
-		.views-row {
+		@media screen and (max-width: 699px){
 			.field-content {
-				grid-template-columns: auto 200px minmax(auto, 400px);
+				grid-template-columns: 200px minmax(auto, 400px);
 				.intro {
 					display: none;
 				}
+				.info {
+					padding: 0.5rem 1rem;
+				}
 			}
 		}
-	}
-}
-@media screen and (max-width: 620px){
-	.view-kandidaten{
-		.views-row {
+		@media screen and (max-width: 420px){
 			.field-content {
-				grid-template-columns: auto;
-				grid-template-areas:
-				"positie"
-				"portret"
-				"info";
-				.positie {
-					position: absolute;
-				}
+				grid-template-columns: 150px minmax(auto, 400px);
 				.info {
-					padding: 1rem 1rem 2rem 1rem;
+					padding: 0 0.5rem 0.5rem 0.5rem;
 				}
 			}
 		}
 	}
 }
 
-// COPY FROM kandidaat.scss
+// Similar as kandidaat.scss
 .view-kandidaten .social {
-	display: inline-grid;
-	grid-template-columns: auto auto auto auto;
+	display: flex;
 	font-family: $sp-icons;
 	margin-top: 0.5rem;
-	a.facebook,
-	a.twitter,
-	a.instagram,
-	a.linkedin {
+	a {
 		font-size: 0;
 		margin-right: .25rem;
-	}
-	a.facebook:after,
-	a.twitter:after,
-	a.linkedin:after {
-		background: #000;
-		padding: .25rem;
-		background: $color1;
-		color: #fff;
-		font-size: 1.5rem;
-		display: inline-block;
-	}
-	a.instagram:after {
-		background: #000;
-		padding: .5rem;
-		background: $color1;
-		color: #fff;
-		font-size: 1rem;  //quickfix icon size
-		display: inline-block;
-	}			
-	a.facebook:hover::after,
-	a.twitter:hover::after,
-	a.instagram:hover::after,
-	a.linkedin:hover::after {
-		background: #000;
+		&:after {
+			background: #000;
+			padding: .25rem;
+			background: $color1;
+			color: #fff;
+			font-size: 1.5rem;
+			display: inline-block;
+			transition: all ease .2s;
+		}
+		&:hover::after {
+			background: #000;
+		}
 	}
 	a.facebook:after {
 		content: 'f';
@@ -117,8 +100,77 @@
 	}
 	a.instagram:after {
 		content: 'i';
+		font-size: 1rem;//quickfix icon size
+		padding: .5rem;
 	}
 	a.linkedin:after {
 		content: 'l';
+	}
+}
+
+// VIEW KANDIDATEN OVERIGE
+.view-kandidaten-overige {
+	//this could be better ;(
+	@media screen and (min-width: 700px){
+		.view-content {
+			grid-template-columns: 350px 350px;
+			display: grid;
+			justify-content: center;
+			grid-gap: 1rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+	@media screen and (min-width: 1082px){
+		.view-content {
+			grid-template-columns: 350px 350px 350px;
+		}
+	}
+	@media screen and (min-width: 1448px){
+		.view-content {
+			grid-template-columns: 350px 350px 350px 350px;
+		}
+	}
+	@media screen and (min-width: 1920px){
+		.view-content {
+			grid-template-columns: 350px 350px 350px 350px 350px;
+		}
+	}
+	@media screen and (min-width: 700px){
+		.views-row {
+			background: #fff;
+			display: grid;
+			.views-field-nothing{
+				display: grid;
+				.field-content {
+					display: grid;
+					grid-template-columns: 350px;
+					grid-template-rows: 350px 1fr;
+					grid-template-areas:
+						"portret"
+						"info";
+					.positie {
+						grid-area: portret;
+						align-self: start;
+						justify-self: start;
+						background: $color1;
+						color: #fff;
+						font-family: $font-middle;
+						font-size: 2rem;
+						padding: 0.25rem 0.5rem;
+					}
+					.portret {
+						grid-area: portret;
+						img {
+							display: block; //prevent whitespace
+						}
+					}
+					.info {
+						grid-area: info;
+						padding: 2rem;
+					}
+				}
+			}
+		}
 	}
 }

@@ -1,10 +1,13 @@
 // NODE KANDIDAAT
-.node-kandidaat {
+.node-type-kandidaat .primary-content {
 	background: #fff;
+}
+//end shame
+
+.node-kandidaat {
 	padding-bottom: 6rem;
 	.field-banner {
 		background: #f1f1f1;
-		margin-bottom: 1rem;
 		.field-item {
 			max-width: 1920px;
 			margin: 0 auto;
@@ -18,16 +21,10 @@
 			}
 		}
 	}
-	@media screen and (min-width: 1920px){
-		.field-banner img {
-			max-height: 33vw;
-		}
-	}
 	.title {
 		display: inline-grid;
 		grid-template-columns: auto auto;
 		align-items: center;
-		margin-top: 1rem;
 		.field-positie {
 			background: $color1;
 			color: #fff;
@@ -35,9 +32,11 @@
 			margin-right: 0.5rem;
 		}
 	}
-	.field-intro p {
+	.field-inhoud p:first-child {
 		font-family: $font-strong;
 	}
+
+	// PERSOON BLOK
 	.persoon {
 		margin-top: 2rem;
 		display: inline-grid;

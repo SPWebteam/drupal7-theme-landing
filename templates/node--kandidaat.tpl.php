@@ -15,7 +15,7 @@
           <?php print $title; ?>
         </h1>
       </header>
-      <?php print render($content['field_intro']); ?>
+      <?php print render($content['field_inhoud']); ?>
     </div>
     <div>
       <?php print render($content['field_paragraphs']); ?>
@@ -28,7 +28,7 @@
         <div class="info">
           <div class="naam"><?php print $title; ?></div>
           <?php print render($content['field_huidige_rol']); ?>
-          <div class="inline">            <?php print render($content['field_woonplaats']); ?>-<?php print render($content['field_provincie']); ?>-<?php print render($content['field_leeftijd']); ?> jaar</div>
+          <div class="inline">            <?php print render($content['field_woonplaats']); ?>-<?php print render($content['field_provincie']); ?><br><?php print render($content['field_geboortejaar']); ?></div>
           <div class="social">
             <?php
               print render($content['field_facebook']);

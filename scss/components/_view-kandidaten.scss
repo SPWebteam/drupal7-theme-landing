@@ -6,8 +6,8 @@
 		text-align: center; //quickfix
 		grid-template-columns: minmax(auto, 1082px);
 		grid-row-gap: 2rem;
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		padding: 2rem 0;
+		background: #f1f1f1;
 	}
 	.views-row {
 		.field-content {
@@ -114,11 +114,7 @@
 	@media screen and (min-width: 700px){
 		.view-content {
 			grid-template-columns: 350px 350px;
-			display: grid;
-			justify-content: center;
 			grid-gap: 1rem;
-			margin-top: 2rem;
-			margin-bottom: 2rem;
 		}
 	}
 	@media screen and (min-width: 1082px){

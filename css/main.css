@@ -2069,14 +2069,16 @@ nav.top-nav a .text {
 .paragraphs-item-inhoud-1-kolom .content {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  background: #fff; }
 
 .paragraphs-item-inhoud-2-kolom .content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
-  grid-column-gap: 1rem; }
+  grid-column-gap: 1rem;
+  background: #fff; }
 
 @media screen and (min-width: 480px) {
   .paragraphs-item-inhoud-2-kolom .content {
@@ -2086,7 +2088,8 @@ nav.top-nav a .text {
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
-  grid-column-gap: 1rem; }
+  grid-column-gap: 1rem;
+  background: #fff; }
 
 @media screen and (min-width: 640px) {
   .paragraphs-item-inhoud-3-kolom .content {
@@ -2145,7 +2148,6 @@ ul.pager {
     float: left;
     width: 50%; } }
 .primary-content {
-  background: #f1f1f1;
   position: relative; }
 
 /* SOCIAL SHARE RIGHT SIDE */
@@ -2293,7 +2295,8 @@ ul.share li a {
 @media screen and (min-width: 992px) {
   h1.title,
   h1.pane-title {
-    font-size: 3rem; } }
+    font-size: 3rem;
+    margin-top: 3rem; } }
 .page-user .primary-content > .content {
   max-width: 960px;
   margin: 0 auto;
@@ -2307,8 +2310,8 @@ ul.share li a {
   text-align: center;
   grid-template-columns: minmax(auto, 1082px);
   grid-row-gap: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  padding: 2rem 0;
+  background: #f1f1f1; }
 .view-kandidaten .views-row .field-content {
   display: inline-grid;
   grid-template-columns: 350px 1fr;
@@ -2385,11 +2388,7 @@ ul.share li a {
 @media screen and (min-width: 700px) {
   .view-kandidaten-overige .view-content {
     grid-template-columns: 350px 350px;
-    display: grid;
-    justify-content: center;
-    grid-gap: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem; } }
+    grid-gap: 1rem; } }
 @media screen and (min-width: 1082px) {
   .view-kandidaten-overige .view-content {
     grid-template-columns: 350px 350px 350px; } }

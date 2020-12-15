@@ -120,6 +120,7 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 		max-width: $content-width;
 		margin: 0 auto;
 		padding: 0 1rem;
+		background: #fff;
 	}
 }
 
@@ -132,6 +133,7 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 		padding: 0 1rem;
 		display: grid;
 		grid-column-gap: 1rem;
+		background: #fff;
 	}
 }
 @media screen and (min-width: 480px) {
@@ -151,6 +153,7 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 		padding: 0 1rem;
 		display: grid;
 		grid-column-gap: 1rem;
+		background: #fff;
 	}
 }
 @media screen and (min-width: 640px) {

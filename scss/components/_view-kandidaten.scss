@@ -1,5 +1,18 @@
 // VIEW KANDIDATEN
 .view-kandidaten {
+	.view-header {
+		background: #f1f1f1;
+		padding: 1rem 0;
+		.content {
+			max-width: 1082px;
+			margin: 0 auto;
+			padding-top: 2rem;
+			h2 {
+				margin: 0;
+			}
+
+		}
+	}
 	.view-content {
 		display: grid;
 		justify-content: center;
@@ -67,6 +80,14 @@
 					padding: 0 0.5rem 0.5rem 0.5rem;
 				}
 			}
+		}
+	}
+	.view-footer {
+		background: #f1f1f1;
+		padding-bottom: 2rem;
+		.content {
+			max-width: 1082px;
+			margin: 0 auto;
 		}
 	}
 }

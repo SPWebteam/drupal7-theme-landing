@@ -2022,8 +2022,8 @@ nav.top-nav a .text {
   background: #f1f1f1; }
   .paragraphs-item-tekst-met-afbeelding .content {
     display: grid;
-    grid-template-columns: 400px 1fr;
-    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    max-width: 1082px;
     margin: 2rem 0;
     background: #fff; }
     .paragraphs-item-tekst-met-afbeelding .content .afbeelding img {
@@ -2324,6 +2324,15 @@ h2 {
   padding: 1rem;
   margin-top: 1rem; }
 
+.view-kandidaten .view-header {
+  background: #f1f1f1;
+  padding: 1rem 0; }
+  .view-kandidaten .view-header .content {
+    max-width: 1082px;
+    margin: 0 auto;
+    padding-top: 2rem; }
+    .view-kandidaten .view-header .content h2 {
+      margin: 0; }
 .view-kandidaten .view-content {
   display: grid;
   justify-content: center;
@@ -2376,6 +2385,12 @@ h2 {
     grid-template-columns: 150px minmax(auto, 400px); }
     .view-kandidaten .views-row .field-content .info {
       padding: 0 0.5rem 0.5rem 0.5rem; } }
+.view-kandidaten .view-footer {
+  background: #f1f1f1;
+  padding-bottom: 2rem; }
+  .view-kandidaten .view-footer .content {
+    max-width: 1082px;
+    margin: 0 auto; }
 
 .view-kandidaten .social {
   display: flex;

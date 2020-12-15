@@ -1,9 +1,4 @@
 <?php
-
-/**
- * @file
- * Default theme implementation to display a single Drupal page.
- */
 ?>
 <div class="layout-page page-wrapper">
 
@@ -35,27 +30,11 @@
 
 
   <div class="layout-primary-content primary-content">
-    <?php if ($title): ?>
-    <header class="content-header">
-      <?php print render($title_prefix); ?>
-      <h1 class="title"><?php print $title; ?></h1>
-      <?php print render($title_suffix); ?>
-    </header>
-    <?php endif; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-
-      <?php print $messages; ?>
-
-      <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-
-    <a id="primary-content"></a>
-    <div class="content">
-      <?php
-        print render($page['content']);
-        print $breadcrumb;
-      ?>
-    </div>
+    <?php print $messages; ?>
+    <div class="content"><?php print render($page['content']); ?></div>
+    <?php print render($tabs); ?>
+    <?php print render($page['help']); ?>
+    <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
   </div>
 
 

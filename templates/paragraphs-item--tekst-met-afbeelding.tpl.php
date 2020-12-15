@@ -28,10 +28,10 @@
 ?>
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
-    <div class="left">
+    <div class="afbeelding">
     	<?php print render($content['field_afbeelding']); ?>
     </div>
-    <div class="right">
+    <div class="inhoud">
     	<?php if ($content['field_titel']): ?>
     	<h2><?php print render($content['field_titel']); ?></h2>
     <?php endif; ?>

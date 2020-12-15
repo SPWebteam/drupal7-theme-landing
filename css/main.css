@@ -2149,6 +2149,13 @@ ul.pager {
     width: 50%; } }
 .primary-content {
   position: relative; }
+  .primary-content li {
+    font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem; }
+    .primary-content li::marker {
+      font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+      color: #EC1B23; }
 
 /* SOCIAL SHARE RIGHT SIDE */
 .primary-content .content .social-share ul {

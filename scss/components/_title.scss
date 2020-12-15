@@ -1,8 +1,12 @@
 // PAGE TITLE (old)
+h1.title,
+h1.pane-title {
+    color: $color1;
+}
 @media screen and (min-width: 992px) {
     h1.title,
     h1.pane-title {
         font-size: 3rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
 }

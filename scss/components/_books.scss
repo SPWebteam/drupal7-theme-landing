@@ -1,0 +1,27 @@
+// BOOKS
+
+
+// BOOK BLOCK
+.book-block-menu {
+	max-width: $content-width;
+	margin: 0 auto;
+	> ul {
+		padding: 1rem;
+		margin-left: 1rem;
+	}
+	ul {
+		background: #f1f1f1;
+		padding-left: 1rem;
+		li {
+			a {
+				font-family: $font-strong;
+			}
+
+		}
+	}
+}
+@media screen and (min-width: 600px) {
+	.book-block-menu > ul {
+		float: right;
+	}
+}

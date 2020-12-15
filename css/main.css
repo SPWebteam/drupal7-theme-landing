@@ -736,7 +736,9 @@ ul.inline li {
   letter-spacing: 1px;
   font-size: 0.8rem;
   line-height: 1.4;
-  padding: 2rem 0 1rem 0; }
+  padding: 2rem 0 1rem 0;
+  max-width: calc(960px - 2rem);
+  margin: 0 auto; }
 
 /* BUTTONS */
 .btn, .btn-invert, a.btn-invert, a.btn, a.btn-invert {
@@ -853,6 +855,21 @@ ul.inline li {
 .btn.whatsapp:hover, .whatsapp.btn-invert:hover {
   background: #00cd69; }
 
+.book-block-menu {
+  max-width: 960px;
+  margin: 0 auto; }
+  .book-block-menu > ul {
+    padding: 1rem;
+    margin-left: 1rem; }
+  .book-block-menu ul {
+    background: #f1f1f1;
+    padding-left: 1rem; }
+    .book-block-menu ul li a {
+      font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+
+@media screen and (min-width: 600px) {
+  .book-block-menu > ul {
+    float: right; } }
 /* ========================================================================== *\
    Cookie Bar (EU Cookie Compliance Module)
 \* ========================================================================== */
@@ -2048,6 +2065,11 @@ nav.top-nav a .text {
     margin: 0 auto;
     padding: 1rem; }
 
+.paragraphs-item-inhoud-breadcrumbs .content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
 .paragraphs-item-inhoud-korte-quote .content {
   max-width: 720px;
   margin: 0 auto;
@@ -2069,16 +2091,14 @@ nav.top-nav a .text {
 .paragraphs-item-inhoud-1-kolom .content {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1rem;
-  background: #fff; }
+  padding: 0 1rem; }
 
 .paragraphs-item-inhoud-2-kolom .content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
-  grid-column-gap: 1rem;
-  background: #fff; }
+  grid-column-gap: 1rem; }
 
 @media screen and (min-width: 480px) {
   .paragraphs-item-inhoud-2-kolom .content {
@@ -2088,8 +2108,7 @@ nav.top-nav a .text {
   margin: 0 auto;
   padding: 0 1rem;
   display: grid;
-  grid-column-gap: 1rem;
-  background: #fff; }
+  grid-column-gap: 1rem; }
 
 @media screen and (min-width: 640px) {
   .paragraphs-item-inhoud-3-kolom .content {
@@ -2152,7 +2171,8 @@ ul.pager {
   .primary-content li {
     font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.5rem;
+    margin-bottom: 1rem; }
     .primary-content li::marker {
       font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
       color: #EC1B23; }
@@ -2299,11 +2319,15 @@ ul.share li a {
 .tabs {
   margin: auto; }
 
+h1.title,
+h1.pane-title {
+  color: #EC1B23; }
+
 @media screen and (min-width: 992px) {
   h1.title,
   h1.pane-title {
     font-size: 3rem;
-    margin-top: 3rem; } }
+    margin-top: 1rem; } }
 .page-user .primary-content > .content {
   max-width: 960px;
   margin: 0 auto;

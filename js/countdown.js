@@ -35,10 +35,10 @@
       var countdown = document.getElementById(countdown_id);
 
       // get spans where our clock numbers are held
-      var days_span = countdown.querySelector('.days');
-      var hours_span = countdown.querySelector('.hours');
-      var minutes_span = countdown.querySelector('.minutes');
-      var seconds_span = countdown.querySelector('.seconds');
+      //var days_span = countdown.querySelector('.days');
+      //var hours_span = countdown.querySelector('.hours');
+      //var minutes_span = countdown.querySelector('.minutes');
+      //var seconds_span = countdown.querySelector('.seconds');
        
       // update the tag countdown_id every 1 second only if status is determend first
       if (countdown_status = "first" || "second" || "final"){

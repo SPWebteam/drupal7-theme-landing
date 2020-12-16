@@ -81,25 +81,25 @@
           // format countdown string + set tag value
           if (countdown_status == "first") {
             countdown.innerHTML = "17 Maart<br>Tweede Kamerverkiezingen<br>" + days_string + hours + ":" + minutes + ":" + seconds + " uur";
-            days_span.innerHTML = days;
-            hours_span.innerHTML = hours;
-            minutes_span.innerHTML = minutes;
-            seconds_span.innerHTML = seconds;
+            //days_span.innerHTML = days;
+            //hours_span.innerHTML = hours;
+            //minutes_span.innerHTML = minutes;
+            //seconds_span.innerHTML = seconds;
 
           }
           if (countdown_status == "second") {
             countdown.innerHTML = "Stem SP!<br>" + hours + ":" + minutes + ":" + seconds + " uur";
-            days_span.innerHTML = days;
-            hours_span.innerHTML = hours;
-            minutes_span.innerHTML = minutes;
-            seconds_span.innerHTML = seconds;
+            //days_span.innerHTML = days;
+            //hours_span.innerHTML = hours;
+            //minutes_span.innerHTML = minutes;
+            //seconds_span.innerHTML = seconds;
           }
           if (countdown_status == "final") {
             countdown.innerHTML = "SP stemmers bedankt!";
-            days_span.innerHTML = "0"; // else NaN error
-            hours_span.innerHTML = "0"
-            minutes_span.innerHTML = "0"
-            seconds_span.innerHTML = "0"
+            //days_span.innerHTML = "0"; // else NaN error
+            //hours_span.innerHTML = "0"
+            //minutes_span.innerHTML = "0"
+            //seconds_span.innerHTML = "0"
           }
        
         }, 1000);

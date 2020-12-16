@@ -199,9 +199,6 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 	.content {
 		background: #fff;
 		max-width: 1400px;
-		display: grid;
-		grid-template-columns: 1fr minmax(auto, 460px);
-		grid-column-gap: 1rem;
 		.field-inhoud {
 			padding: 0 1rem;
 		}
@@ -210,6 +207,9 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 @media screen and (min-width: $content-width) {
 	.paragraphs-item-formulier-met-tekst {
 		.content {
+			display: grid;
+			grid-template-columns: 1fr minmax(auto, 460px);
+			grid-column-gap: 1rem;
 			padding: 2rem 3rem;
 			.field-type-entityreference {
 				padding-left: 1rem;

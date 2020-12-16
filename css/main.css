@@ -2117,15 +2117,15 @@ nav.top-nav a .text {
   padding: 3rem 0; }
   .paragraphs-item-formulier-met-tekst .content {
     background: #fff;
-    max-width: 1400px;
-    display: grid;
-    grid-template-columns: 1fr minmax(auto, 460px);
-    grid-column-gap: 1rem; }
+    max-width: 1400px; }
     .paragraphs-item-formulier-met-tekst .content .field-inhoud {
       padding: 0 1rem; }
 
 @media screen and (min-width: 960px) {
   .paragraphs-item-formulier-met-tekst .content {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 460px);
+    grid-column-gap: 1rem;
     padding: 2rem 3rem; }
     .paragraphs-item-formulier-met-tekst .content .field-type-entityreference {
       padding-left: 1rem;

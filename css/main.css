@@ -491,7 +491,7 @@ hr {
 
 .layout-page {
   display: grid;
-  grid-template-rows: 70px 1fr 150px; }
+  grid-template-rows: 70px 1fr 136px; }
 
 .layout-site-header {
   grid-template-columns: 120px 1fr 120px;

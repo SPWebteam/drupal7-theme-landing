@@ -40,52 +40,29 @@ if ($node->type == 'doe_mee'){
 }
 
 ?>
-<style>
-/* quickfix */
-header.content-header {
-	display: none!important;
-}
-.page {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    display: flex;
-    overflow: auto;
-}
-</style>
 
 <?php print $progressbar; ?>
 
-<div class="container">
-	<div class="row">
-		<div class="offset-md-2 col-md-8 text-center">
-			<div class="webform-confirmation">
-			  	<?php if ($confirmation_message): ?>
-			    	<?php print $confirmation_message ?>
-			  	<?php elseif ($node->type == 'doe_mee'): ?>
-				  	<h1 class="title"><?php print $node->field_bedankt_title['und'][0]['value'];?></h1>
-				    <p><?php print $node->field_bedankt_body['und'][0]['value'];?></p>
-				    <h2>Help mee door deze actie te delen</h2>
-				    <ul class="share">
-					  <li><a target="_blank" class="btn small facebook" href="<?php print $facebook; ?>">Facebook</a></li>
-					  <li><a target="_blank" class="btn small twitter" href="<?php print $twitter; ?>">Twitter</a></li>
-					  <li><a target="_blank" class="btn small linkedin" href="<?php print $linkedin; ?>">Linkedin</a></li>
-					  <li><a class="btn small email" href="mailto: ?&subject=<?php print $node_title ?>&body=<?php print $email_body; ?>">E-mail</a></li>
-					</ul>
-				<?php else: ?>
-					<h1 class="title">Bedankt!</h1>
-				    <p>Bedankt voor je steun voor onze actie. We nemen snel contact met je op.</p>
-			  	<?php endif; ?>
-			</div>
-			<div class="webform-privacy-statement text-center">
-				<p>Je gegevens worden opgeslagen door de SP en enkel gebruikt voor deze actie, tenzij je zelf op het formulier iets anders hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a href="mailto:privacy@sp.nl">privacy@sp.nl</a></p>
-			</div>
-		</div>
-	</div>
+<div class="webform-confirmation">
+  	<?php if ($confirmation_message): ?>
+    	<?php print $confirmation_message ?>
+  	<?php elseif ($node->type == 'doe_mee'): ?>
+	  	<h1 class="title"><?php print $node->field_bedankt_title['und'][0]['value'];?></h1>
+	    <p><?php print $node->field_bedankt_body['und'][0]['value'];?></p>
+	    <h2>Help mee door deze actie te delen</h2>
+	    <ul class="share">
+		  <li><a target="_blank" class="btn small facebook" href="<?php print $facebook; ?>">Facebook</a></li>
+		  <li><a target="_blank" class="btn small twitter" href="<?php print $twitter; ?>">Twitter</a></li>
+		  <li><a target="_blank" class="btn small linkedin" href="<?php print $linkedin; ?>">Linkedin</a></li>
+		  <li><a class="btn small email" href="mailto: ?&subject=<?php print $node_title ?>&body=<?php print $email_body; ?>">E-mail</a></li>
+		</ul>
+	<?php else: ?>
+		<h1 class="title">Bedankt!</h1>
+	    <p>Bedankt voor je steun voor onze actie. We nemen snel contact met je op.</p>
+  	<?php endif; ?>
+</div>
+<div class="webform-privacy-statement text-center">
+	<p>Je gegevens worden opgeslagen door de SP en enkel gebruikt voor deze actie, tenzij je zelf op het formulier iets anders hebt aangegeven. Als je vragen hebt over hoe we omgaan met je gegevens, lees ons <a href="https://www.sp.nl/privacy">privacy statement</a> of neem contact op met <a href="mailto:privacy@sp.nl">privacy@sp.nl</a></p>
 </div>
 
 <div class="links">

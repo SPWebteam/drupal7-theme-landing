@@ -1,0 +1,14 @@
+// WEBFORM CONFIRMATION
+.page-node-done .primary-content {
+	display: grid;
+	background: #f1f1f1;
+	justify-content: center;
+	align-content: center;
+	> .content {
+		max-width: $content-width;
+		padding: 1rem;
+		background: #fff;
+		text-align: center;
+	}
+
+}

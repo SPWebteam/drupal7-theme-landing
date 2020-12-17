@@ -1978,6 +1978,10 @@ nav.top-nav a .text {
   margin: 0 auto;
   padding: 0 1rem; }
 
+.extra-padding {
+  background: #f1f1f1;
+  padding: 3rem 0; }
+
 .pane-titel-met-tekst {
   background: #fff;
   padding: 3rem 1rem;

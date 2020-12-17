@@ -2030,23 +2030,23 @@ nav.top-nav a .text {
   display: grid;
   justify-content: center;
   background: #f1f1f1; }
-  .paragraphs-item-tekst-met-afbeelding .content {
+  .paragraphs-item-tekst-met-afbeelding > .content {
     display: grid;
     grid-template-columns: 350px 1fr;
     max-width: 1082px;
     margin: 1rem 0;
     background: #fff; }
-    .paragraphs-item-tekst-met-afbeelding .content .afbeelding img {
+    .paragraphs-item-tekst-met-afbeelding > .content .afbeelding img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: 50% 50%; }
-    .paragraphs-item-tekst-met-afbeelding .content .inhoud {
+    .paragraphs-item-tekst-met-afbeelding > .content .inhoud {
       padding: 1rem; }
-    .paragraphs-item-tekst-met-afbeelding .content .field-link {
+    .paragraphs-item-tekst-met-afbeelding > .content .field-link {
       text-align: right; }
-      .paragraphs-item-tekst-met-afbeelding .content .field-link .field-item {
+      .paragraphs-item-tekst-met-afbeelding > .content .field-link .field-item {
         display: inline-block; }
   @media screen and (max-width: 800px) {
     .paragraphs-item-tekst-met-afbeelding .content {
@@ -2062,35 +2062,35 @@ nav.top-nav a .text {
     margin: 0 auto;
     padding: 1rem; }
 
-.paragraphs-item-inhoud-breadcrumbs .content {
+.paragraphs-item-inhoud-breadcrumbs > .content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem; }
 
-.paragraphs-item-inhoud-korte-quote .content {
+.paragraphs-item-inhoud-korte-quote > .content {
   max-width: 720px;
   margin: 0 auto;
   padding: 1rem; }
-  .paragraphs-item-inhoud-korte-quote .content blockquote {
+  .paragraphs-item-inhoud-korte-quote > .content blockquote {
     margin: 0; }
-    .paragraphs-item-inhoud-korte-quote .content blockquote p {
+    .paragraphs-item-inhoud-korte-quote > .content blockquote p {
       border-top: 1px solid #f1f1f1;
       border-bottom: 1px solid #f1f1f1;
       padding: 1rem 0;
       margin-bottom: 0;
       font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
       font-size: 1.5rem; }
-      .paragraphs-item-inhoud-korte-quote .content blockquote p:before {
+      .paragraphs-item-inhoud-korte-quote > .content blockquote p:before {
         content: "\201C"; }
-      .paragraphs-item-inhoud-korte-quote .content blockquote p:after {
+      .paragraphs-item-inhoud-korte-quote > .content blockquote p:after {
         content: "\201D"; }
 
-.paragraphs-item-inhoud-1-kolom .content {
+.paragraphs-item-inhoud-1-kolom > .content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem; }
 
-.paragraphs-item-inhoud-2-kolom .content {
+.paragraphs-item-inhoud-2-kolom > .content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -2098,9 +2098,9 @@ nav.top-nav a .text {
   grid-column-gap: 1rem; }
 
 @media screen and (min-width: 480px) {
-  .paragraphs-item-inhoud-2-kolom .content {
+  .paragraphs-item-inhoud-2-kolom > .content {
     grid-template-columns: 1fr 1fr; } }
-.paragraphs-item-inhoud-3-kolom .content {
+.paragraphs-item-inhoud-3-kolom > .content {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -2108,26 +2108,26 @@ nav.top-nav a .text {
   grid-column-gap: 1rem; }
 
 @media screen and (min-width: 640px) {
-  .paragraphs-item-inhoud-3-kolom .content {
+  .paragraphs-item-inhoud-3-kolom > .content {
     grid-template-columns: 1fr 1fr 1fr; } }
-.paragraphs-item-formulier-met-tekst {
+.paragraphs-item-blok-formulier-met-tekst {
   background: #f1f1f1;
   display: grid;
   justify-content: center;
   padding: 3rem 0; }
-  .paragraphs-item-formulier-met-tekst .content {
+  .paragraphs-item-blok-formulier-met-tekst > .content {
     background: #fff;
     max-width: 1400px; }
-    .paragraphs-item-formulier-met-tekst .content .field-inhoud {
+    .paragraphs-item-blok-formulier-met-tekst > .content .field-inhoud {
       padding: 0 1rem; }
 
 @media screen and (min-width: 960px) {
-  .paragraphs-item-formulier-met-tekst .content {
+  .paragraphs-item-blok-formulier-met-tekst > .content {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 460px);
     grid-column-gap: 1rem;
     padding: 2rem 3rem; }
-    .paragraphs-item-formulier-met-tekst .content .field-type-entityreference {
+    .paragraphs-item-blok-formulier-met-tekst > .content .field-type-entityreference {
       padding-left: 1rem;
       border-left: 3px dashed #ddd; } }
 /* PAGER */

@@ -426,11 +426,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  color: #EC1B23; }
 
 h2 {
   font-size: 1.5rem;
-  margin-top: 8px; }
+  margin-top: 8px;
+  color: #EC1B23; }
 
 h3 {
   font-size: 1.17rem;
@@ -1725,7 +1727,7 @@ footer .footer-menu a {
   color: #000; }
 
 .leaflet-tagged-marker i {
-  font-family: "FontAwesome";
+  font-family: "SPruit-icons";
   color: #fff; }
 
 /* LINKS */
@@ -2341,9 +2343,7 @@ ul.share li a {
   margin: auto; }
 
 h1.title,
-h1.pane-title,
-h1,
-h2 {
+h1.pane-title {
   color: #EC1B23;
   padding-top: 1rem; }
 

@@ -1327,7 +1327,7 @@ ul.inline li {
 .menu-toggle {
   display: none; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1060px) {
   .site-navigation {
     top: 70px;
     left: 0;

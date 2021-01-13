@@ -416,7 +416,8 @@ html {
   height: 100%; }
 
 body {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
+  font-family: "Inter", sans-serif;
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0;
@@ -456,7 +457,7 @@ h2 a:hover {
   color: #000; }
 
 p {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0 0 1rem 0;
   font-size: 1rem;
   line-height: 1.5; }
@@ -1387,6 +1388,11 @@ ul.inline li {
 .field-label-inline .field {
   display: inline-block; }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 1000;
+  src: local(""), url("../fonts/inter/Inter-VariableFont_slnt,wght.ttf") format("truetype-variations"), url("../fonts/inter/static/Inter-Regular.ttf") format("truetype"); }
 /* BASIC FORM ELEMENTS */
 form {
   max-width: 960px;
@@ -1703,7 +1709,7 @@ footer .footer-menu a {
   fill-opacity: 0.2; }
 
 .leaflet-container {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: .8rem;
   line-height: 1.5; }
   .leaflet-container p {
@@ -2166,7 +2172,7 @@ ul.pager {
   background: #fff; }
 
 #personen-wrapper h3 {
-  font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-family: "Inter", sans-serif;
   text-transform: none; }
 
 #personen-wrapper .persoon {
@@ -2192,7 +2198,7 @@ ul.pager {
 .primary-content {
   position: relative; }
   .primary-content li {
-    font-family: "HelveticaNeueLT-Light", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem; }

@@ -19,6 +19,7 @@ scripts[] = js/webform_validate.js
 scripts[] = js/countdown.js
 
 ; Regions
+regions[header] = Header content
 regions[content]   = Primary content
 regions[footer]    = Footer content
 

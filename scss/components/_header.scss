@@ -30,7 +30,7 @@
 
 
 // NAVIGATION
-.site-navigation .primary-menu {
+#block-system-main-menu .menu {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -62,15 +62,18 @@
     display: none; //disable hamburger menu
 }
 @media only screen and (max-width: 1060px){
-    .site-navigation {
+    .admin-menu #block-system-main-menu {
+        top: 89px;
+    }
+    #block-system-main-menu {
         top: 70px;
         left: 0;
         background: #fff;
         z-index: 2;
         width: 100%;
         position: fixed;
-        .primary-menu {
-            display: none;
+        display: none;
+        .menu {
             flex-direction: column;
             border-bottom: 1px solid #ddd!important;
             li {

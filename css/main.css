@@ -911,6 +911,11 @@ ul.inline li {
     box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
     border-color: #EC1B23; }
 
+.leftside .site-logo {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .node-type-doe-mee .content-header {
   display: none; }
 .node-type-doe-mee .site-branding {
@@ -1303,24 +1308,24 @@ ul.inline li {
   height: 62px;
   padding: 4px; }
 
-.site-navigation .primary-menu {
+#block-system-main-menu .menu {
   margin: 0;
   padding: 0;
   text-align: center; }
-  .site-navigation .primary-menu li {
+  #block-system-main-menu .menu li {
     margin: 0;
     padding: 0;
     display: inline-block; }
-    .site-navigation .primary-menu li a {
+    #block-system-main-menu .menu li a {
       text-transform: uppercase;
       font-family: "HelveticaInseratLTPro", sans-serif;
       padding: 20px;
       font-size: 20px;
       display: inline-block; }
-      .site-navigation .primary-menu li a:hover {
+      #block-system-main-menu .menu li a:hover {
         text-decoration: none;
         color: #000; }
-  .site-navigation .primary-menu li.active-trail a {
+  #block-system-main-menu .menu li.active-trail a {
     color: #aaa;
     background: #fff; }
 
@@ -1328,23 +1333,26 @@ ul.inline li {
   display: none; }
 
 @media only screen and (max-width: 1060px) {
-  .site-navigation {
+  .admin-menu #block-system-main-menu {
+    top: 89px; }
+
+  #block-system-main-menu {
     top: 70px;
     left: 0;
     background: #fff;
     z-index: 2;
     width: 100%;
-    position: fixed; }
-    .site-navigation .primary-menu {
-      display: none;
+    position: fixed;
+    display: none; }
+    #block-system-main-menu .menu {
       flex-direction: column;
       border-bottom: 1px solid #ddd !important; }
-      .site-navigation .primary-menu li {
+      #block-system-main-menu .menu li {
         display: block;
         text-align: left;
         width: 100%;
         margin: 0 !important; }
-      .site-navigation .primary-menu a {
+      #block-system-main-menu .menu a {
         font-size: 1.14em;
         border-top: 1px solid #ddd;
         display: block;

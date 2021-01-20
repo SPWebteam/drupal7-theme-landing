@@ -7,7 +7,7 @@
   padding: 1rem;
   a {
     background: $color1;
-    color: $color2;
+    color: #fff;
     display: inline-block;
     padding: .5rem;
     &:hover {
@@ -15,7 +15,6 @@
       text-decoration: none;
     }
   }
-
 }
 
 // LINKS

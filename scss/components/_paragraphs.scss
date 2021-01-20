@@ -218,3 +218,68 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 		}
 	}
 }
+
+
+// TK2021 POSTER
+.paragraphs-item-tk2021-poster {
+	background: $color1;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	overflow: hidden;
+	color: #fff;
+	> .content {
+		h1 {
+			margin-bottom: 0;
+		}
+		.field-name-field-titel-linebreak {
+			color: #fff;
+			font-size: 3rem;
+			margin-top: -2rem;
+		}
+		.stem-sp {
+			color: $color2;
+			color: #21235fc7;
+		}
+	}
+}
+.paragraphs-item-tk2021-poster:before {
+    font-family: $sp-icons;
+    content: 'T';
+    line-height: 1;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 8rem;
+    margin-top: -4rem;
+}
+.paragraphs-item-tk2021-poster:after {
+    font-family: $sp-icons;
+    content: 'T';
+    line-height: 1;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 8rem;
+    height: 4rem;
+}
+@media screen and (min-width: 600px){
+	.paragraphs-item-tk2021-poster {
+		> .content {
+			.field-name-field-titel-linebreak {
+				font-size: 6rem;
+				margin-top: -4rem;
+			}
+		}
+	}
+	.paragraphs-item-tk2021-poster:before {
+	    font-size: 16rem;
+	    margin-top: -8rem;
+	}
+	.paragraphs-item-tk2021-poster:after {
+	    font-size: 16rem;
+	    height: 8rem;
+	}	
+}

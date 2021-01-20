@@ -19,6 +19,13 @@
 }
 
 
+// TEXT LINE BREAK
+.linebreak:after{
+    content: "\a"; //newline character
+    white-space: pre; //read every whitespace
+}
+
+
 // VERTICAL ALIGN
 .align-baseline {
     vertical-align: baseline;

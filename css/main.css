@@ -428,12 +428,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2rem;
-  color: #EC1B23; }
+  color: #ED1C24; }
 
 h2 {
   font-size: 1.5rem;
   margin-top: 8px;
-  color: #EC1B23; }
+  color: #ED1C24; }
 
 h3 {
   font-size: 1.17rem;
@@ -553,8 +553,8 @@ button.accordion.active:before {
   list-style: none;
   padding: 1rem; }
   .action-links a {
-    background: #EC1B23;
-    color: #FFFFFF;
+    background: #ED1C24;
+    color: #fff;
     display: inline-block;
     padding: .5rem; }
     .action-links a:hover {
@@ -589,7 +589,7 @@ ul.inline li {
 
 .badge-primary {
   color: #fff;
-  background: #EC1B23; }
+  background: #ED1C24; }
 
 .badge-secondary {
   color: #fff;
@@ -750,7 +750,7 @@ ul.inline li {
   font-size: 1.25rem;
   text-transform: uppercase;
   text-decoration: none;
-  background: #EC1B23;
+  background: #ED1C24;
   padding: 16px 32px;
   color: #fff;
   border: 1px solid #fff;
@@ -770,12 +770,12 @@ ul.inline li {
 
 .btn-invert, a.btn-invert {
   background: #fff;
-  color: #EC1B23;
-  border: 1px solid #EC1B23; }
+  color: #ED1C24;
+  border: 1px solid #ED1C24; }
 
 .btn-text, a.btn-text {
   background: none;
-  color: #EC1B23;
+  color: #ED1C24;
   border: 1px solid #ffffff00; }
 
 .btn-text.tiny
@@ -824,10 +824,10 @@ ul.inline li {
   background: #006a9c; }
 
 .btn.email, .email.btn-invert, .email.btn-text {
-  background: #EC1B23; }
+  background: #ED1C24; }
 
 .btn.email:hover, .email.btn-invert:hover, .email.btn-text:hover {
-  background: #db121a; }
+  background: #de1219; }
 
 .btn.whatsapp, .whatsapp.btn-invert, .whatsapp.btn-text {
   background: #00e676; }
@@ -904,12 +904,12 @@ ul.inline li {
 
 .node-type-doe-mee .btn, .node-type-doe-mee .btn-invert, .node-type-doe-mee .btn-text {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  border-color: #EC1B23; }
+  border-color: #ED1C24; }
   .node-type-doe-mee .btn:hover, .node-type-doe-mee .btn-invert:hover, .node-type-doe-mee .btn-text:hover {
-    background: #EC1B23;
+    background: #ED1C24;
     transform: scale(1.05);
     box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
-    border-color: #EC1B23; }
+    border-color: #ED1C24; }
 
 .leftside .site-logo {
   position: absolute;
@@ -960,7 +960,7 @@ ul.inline li {
   line-height: 1.2;
   font-weight: normal;
   text-shadow: 2px 2px 14px #000;
-  color: #FFFFFF;
+  color: #fff;
   word-wrap: break-word; }
 .node-type-doe-mee .subtitle {
   display: block;
@@ -975,7 +975,7 @@ ul.inline li {
   -ms-flex-align: stretch;
   align-items: stretch;
   font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: normal;
@@ -1006,7 +1006,7 @@ ul.inline li {
   bottom: 0px;
   display: block;
   height: 100vh;
-  border-top: 5px solid #EC1B23; }
+  border-top: 5px solid #ED1C24; }
 
 .leftside {
   position: fixed;
@@ -1125,7 +1125,7 @@ ul.inline li {
   -ms-transform: translate(-100%, 0px);
   transform: translate(-100%, 0px);
   transition: transform 600ms 0ms;
-  border-top: 5px solid #EC1B23;
+  border-top: 5px solid #ED1C24;
   padding-bottom: 4rem; }
 
 .webformslider.open {
@@ -1147,7 +1147,7 @@ ul.inline li {
   text-decoration: none; }
 
 .webformslider-close.close:hover {
-  color: #EC1B23; }
+  color: #ED1C24; }
 
 .webformslider form {
   max-width: 640px;
@@ -1290,7 +1290,7 @@ ul.inline li {
     padding: 0; } }
 .site-header {
   background: #fff;
-  border-top: 5px solid #EC1B23;
+  border-top: 5px solid #ED1C24;
   display: grid;
   border-bottom: 1px solid #ddd; }
 
@@ -1303,7 +1303,7 @@ ul.inline li {
     color: #222; }
 
 .site-logo img, .site-logo svg {
-  fill: #EC1B23;
+  fill: #ED1C24;
   width: auto;
   height: 62px;
   padding: 4px; }
@@ -1381,7 +1381,7 @@ ul.inline li {
         display: block;
         float: right;
         background: #fff;
-        color: #EC1B23;
+        color: #ED1C24;
         font-size: 30px;
         padding: 0;
         margin: 0;
@@ -1463,7 +1463,7 @@ span.field-prefix + input {
   width: calc(100% - 2rem) !important; }
 
 .form-required {
-  color: #EC1B23; }
+  color: #ED1C24; }
 
 .form-item .description {
   font-size: 0.85em;
@@ -1522,12 +1522,12 @@ span.field-prefix + input {
 .form-type-radio input:checked + label:before,
 .form-type-checkbox input:checked + label:before {
   content: 'v';
-  color: #EC1B23 !important;
+  color: #ED1C24 !important;
   background: #fff; }
 
 .form-type-radio input:checked + label,
 .form-type-checkbox input:checked + label {
-  color: #EC1B23; }
+  color: #ED1C24; }
 
 .no-touch .form-type-radio:hover input + label:before,
 .no-touch .form-type-checkbox:hover input + label:before {
@@ -1555,10 +1555,10 @@ input.webform-previous,
 input.button-primary {
   font-family: "HelveticaInseratLTPro", sans-serif;
   text-transform: uppercase;
-  background: #EC1B23;
+  background: #ED1C24;
   padding: 16px 32px;
   color: #fff;
-  border: 1px solid #EC1B23;
+  border: 1px solid #ED1C24;
   transition: all 0.2s ease;
   cursor: pointer;
   min-width: 153px;
@@ -1566,7 +1566,7 @@ input.button-primary {
 
 input.webform-previous {
   background: #fff;
-  color: #EC1B23; }
+  color: #ED1C24; }
 
 input.webform-previous:hover,
 input.button-primary:hover {
@@ -1601,8 +1601,8 @@ input.button-primary:hover {
   display: block;
   cursor: pointer; }
   .block-select .form-item label:hover {
-    border-color: #EC1B23;
-    color: #EC1B23; }
+    border-color: #ED1C24;
+    color: #ED1C24; }
 .block-select .form-item input {
   display: none; }
 .block-select .form-item input:checked + label {
@@ -1645,7 +1645,7 @@ footer li a {
   color: #000;
   display: inline-block; }
 footer li a:hover {
-  color: #EC1B23;
+  color: #ED1C24;
   text-decoration: none; }
 footer .container {
   background: #fff;
@@ -1656,7 +1656,7 @@ footer .container {
     line-height: 1;
     display: block;
     height: 48px;
-    color: #EC1B23;
+    color: #ED1C24;
     overflow: hidden;
     width: 100%;
     text-align: center;
@@ -1677,7 +1677,7 @@ footer .footer-menu a {
     line-height: 1;
     display: block;
     height: 48px;
-    color: #EC1B23;
+    color: #ED1C24;
     overflow: hidden;
     width: 100%;
     text-align: center;
@@ -1733,7 +1733,7 @@ footer .footer-menu a {
 
 .leaflet-container .leaflet-popup-content h1 a,
 .leaflet-container .leaflet-popup-content h2 a {
-  color: #EC1B23;
+  color: #ED1C24;
   text-decoration: none; }
 
 .leaflet-container .leaflet-popup-content h1 a:hover,
@@ -1746,7 +1746,7 @@ footer .footer-menu a {
 
 /* LINKS */
 a {
-  color: #EC1B23;
+  color: #ED1C24;
   text-decoration: none;
   transition: color 0.2s ease; }
 
@@ -1850,7 +1850,7 @@ ul.primary li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 32px);
-  border-top: 8px solid #EC1B23;
+  border-top: 8px solid #ED1C24;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   box-shadow: 16px 16px 16px #101010; }
@@ -1879,7 +1879,7 @@ nav.top-nav {
 
 nav.top-nav a {
   width: 4em;
-  background: #EC1B23;
+  background: #ED1C24;
   color: #fff;
   float: right;
   text-decoration: none;
@@ -1922,7 +1922,7 @@ nav.top-nav a .text {
     grid-template-columns: auto auto;
     align-items: center; }
     .node-kandidaat .title .field-positie {
-      background: #EC1B23;
+      background: #ED1C24;
       color: #fff;
       padding: 0.25rem;
       margin-right: 0.5rem; }
@@ -1960,14 +1960,14 @@ nav.top-nav a .text {
       .node-kandidaat .persoon .social a.linkedin:after {
         background: #000;
         padding: .25rem;
-        background: #EC1B23;
+        background: #ED1C24;
         color: #fff;
         font-size: 1.5rem;
         display: inline-block; }
       .node-kandidaat .persoon .social a.instagram:after {
         background: #000;
         padding: .5rem;
-        background: #EC1B23;
+        background: #ED1C24;
         color: #fff;
         font-size: 1rem;
         display: inline-block; }
@@ -2150,6 +2150,57 @@ nav.top-nav a .text {
     .paragraphs-item-blok-formulier-met-tekst > .content .field-type-entityreference {
       padding-left: 1rem;
       border-left: 3px dashed #ddd; } }
+.paragraphs-item-tk2021-poster {
+  background: #ED1C24;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: #fff; }
+  .paragraphs-item-tk2021-poster > .content h1 {
+    margin-bottom: 0; }
+  .paragraphs-item-tk2021-poster > .content .field-name-field-titel-linebreak {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: -2rem; }
+  .paragraphs-item-tk2021-poster > .content .stem-sp {
+    color: #2E3192;
+    color: #21235fc7; }
+
+.paragraphs-item-tk2021-poster:before {
+  font-family: "SPruit-icons";
+  content: 'T';
+  line-height: 1;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 8rem;
+  margin-top: -4rem; }
+
+.paragraphs-item-tk2021-poster:after {
+  font-family: "SPruit-icons";
+  content: 'T';
+  line-height: 1;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  font-size: 8rem;
+  height: 4rem; }
+
+@media screen and (min-width: 600px) {
+  .paragraphs-item-tk2021-poster > .content .field-name-field-titel-linebreak {
+    font-size: 6rem;
+    margin-top: -4rem; }
+
+  .paragraphs-item-tk2021-poster:before {
+    font-size: 16rem;
+    margin-top: -8rem; }
+
+  .paragraphs-item-tk2021-poster:after {
+    font-size: 16rem;
+    height: 8rem; } }
 /* PAGER */
 ul.pager {
   text-align: center; }
@@ -2158,7 +2209,7 @@ ul.pager {
 
 /* PERSONEN */
 #personen-wrapper h2 {
-  color: #EC1B23;
+  color: #ED1C24;
   border-top: 1px solid #f1f1f1;
   padding-top: 32px;
   margin-top: 64px;
@@ -2212,7 +2263,7 @@ ul.pager {
     margin-bottom: 1rem; }
     .primary-content li::marker {
       font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
-      color: #EC1B23; }
+      color: #ED1C24; }
 
 /* SOCIAL SHARE RIGHT SIDE */
 .primary-content .content .social-share ul {
@@ -2246,13 +2297,13 @@ ul.pager {
   text-decoration: none; }
 
 .social-share li a:hover {
-  color: #EC1B23;
+  color: #ED1C24;
   border-bottom: none; }
 
 .social-share li span {
   font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
   text-align: center;
-  background: #EC1B23;
+  background: #ED1C24;
   line-height: 42px;
   color: white;
   z-index: -500;
@@ -2334,7 +2385,7 @@ ul.share li a {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #EC1B23;
+  background: #ED1C24;
   padding: 8px;
   text-align: center;
   z-index: 10;
@@ -2358,7 +2409,7 @@ ul.share li a {
 
 h1.title,
 h1.pane-title {
-  color: #EC1B23;
+  color: #ED1C24;
   padding-top: 1rem; }
 
 @media screen and (min-width: 992px) {
@@ -2398,7 +2449,7 @@ h1.pane-title {
     grid-area: portret;
     align-self: start;
     justify-self: start;
-    background: #EC1B23;
+    background: #ED1C24;
     color: #fff;
     font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
     font-size: 2rem;
@@ -2450,7 +2501,7 @@ h1.pane-title {
     .view-kandidaten .social a:after {
       background: #000;
       padding: .25rem;
-      background: #EC1B23;
+      background: #ED1C24;
       color: #fff;
       font-size: 1.5rem;
       display: inline-block;
@@ -2496,7 +2547,7 @@ h1.pane-title {
           grid-area: portret;
           align-self: start;
           justify-self: start;
-          background: #EC1B23;
+          background: #ED1C24;
           color: #fff;
           font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
           font-size: 2rem;
@@ -2639,7 +2690,7 @@ h1.pane-title {
   color: #000;
   transition: all 0.2s ease; }
   .zie-ook a:hover h2 {
-    color: #EC1B23; }
+    color: #ED1C24; }
 
 /* UTILS */
 /* BOX-SHADOW */
@@ -2856,6 +2907,10 @@ h1.pane-title {
 
 .text-muted {
   color: #999 !important; }
+
+.linebreak:after {
+  content: "\a";
+  white-space: pre; }
 
 .align-baseline {
   vertical-align: baseline; }

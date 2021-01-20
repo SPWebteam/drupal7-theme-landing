@@ -14,6 +14,7 @@
                 event.preventDefault();
                 //$('.primary-menu').slideToggle(250);
                 $('#block-system-main-menu').slideToggle(250);
+                console.log("Clicked");
             });
         }
     };

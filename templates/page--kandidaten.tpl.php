@@ -20,11 +20,10 @@
         </h1>
     <?php endif; ?>
     </div>
+    <?php print render($page['header']); ?>
     <?php if ($main_menu): ?>      
-      <nav class="site-navigation">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('menu primary-menu')), 'heading' => '')); ?>
-      </nav>
       <div class="menu-toggle"><button><span class="text">Menu</span></button></div>
+    <?php endif; ?>oggle"><button><span class="text">Menu</span></button></div>
     <?php endif; ?>
   </header>
 

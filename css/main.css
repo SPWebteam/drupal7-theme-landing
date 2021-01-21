@@ -1867,7 +1867,8 @@ ul.primary li a:hover {
   position: relative;
   right: -1rem;
   padding: 0.5rem;
-  display: inline-block; }
+  display: inline-block;
+  font-size: 2rem; }
   .modal-close:hover {
     color: #000;
     text-decoration: none; }
@@ -2080,7 +2081,7 @@ nav.top-nav a .text {
       object-fit: cover;
       object-position: 50% 50%; }
     .paragraphs-item-tekst-met-afbeelding > .content .inhoud {
-      padding: 1rem; }
+      padding: 2rem; }
     .paragraphs-item-tekst-met-afbeelding > .content .field-link {
       text-align: right; }
       .paragraphs-item-tekst-met-afbeelding > .content .field-link .field-item {

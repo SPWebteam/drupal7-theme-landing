@@ -18,6 +18,14 @@
             });
         }
     };
+    Drupal.behaviors.OpenModal = {
+        attach: function(context, settings) {
+            $('.modal-open', context).click(function(event) {
+                event.preventDefault();
+                $('#modal').fadeIn();
+            });
+        }
+    };
     Drupal.behaviors.CloseModal = {
         attach: function(context, settings) {
             $('.modal-close', context).click(function(event) {

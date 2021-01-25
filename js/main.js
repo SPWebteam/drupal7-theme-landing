@@ -8,16 +8,20 @@
         }
         return items;
     }
+
+    // MENU TOGGLE
     Drupal.behaviors.SiteHeaderMenuToggle = {
         attach: function(context, settings) {
             $('.menu-toggle button', context).click(function(event) {
                 event.preventDefault();
                 //$('.primary-menu').slideToggle(250);
                 $('#block-system-main-menu').slideToggle(250);
-                console.log("Clicked");
             });
         }
     };
+
+
+    // MODAL
     Drupal.behaviors.OpenModal = {
         attach: function(context, settings) {
             $('.modal-open', context).click(function(event) {
@@ -34,6 +38,30 @@
             });
         }
     };
+
+
+    // SOCIAL FOOTER
+    Drupal.behaviors.SocialFollow = {
+        attach: function(context, settings) {
+            $('#follow', context).click(function(event) {
+                event.preventDefault();
+                $('#social-follow').slideToggle(100);
+                $('#follow').toggleClass("active");
+            });
+        }
+    };
+    Drupal.behaviors.SocialShare = {
+        attach: function(context, settings) {
+            $('#share', context).click(function(event) {
+                event.preventDefault();
+                $('#social-share').slideToggle(100);
+                $('#share').toggleClass("active");
+            });
+        }
+    };
+
+
+    // DISABLE PAGEBACK
     Drupal.behaviors.PageBack = {
         attach: function(context, settings) {
             $('a.back').click(function() {
@@ -44,6 +72,9 @@
             });
         }
     };
+
+
+    // DOEMEE FORM
     Drupal.behaviors.WebformSliderOpen = {
         attach: function(context, settings) {
             // Open slide on click
@@ -75,6 +106,8 @@
             }
         }
     };
+
+
     Drupal.behaviors.smoothScroll = {
         attach: function(context, settings) {
             $(".scroll-to").click(function(event) {
@@ -85,6 +118,8 @@
             });
         }
     };
+
+
     Drupal.behaviors.scrollToError = {
         attach: function(context, settings) {
             // on pageload scroll to first .error class
@@ -95,6 +130,8 @@
             }
         }
     };
+
+
     Drupal.behaviors.trimEmailField = {
         // Remove spaces in email on change
         // The jquery clientside validation plugin doesn't allow trailing spaces for email input and responds with 'invalid email'.
@@ -106,6 +143,8 @@
             });
         }
     };
+
+
     Drupal.behaviors.hideCookieBar = {
         // QUICKFIX: Hides cookiebar if user adds input before accepting cookies
         // This prevents user losing input after accepting terms
@@ -116,6 +155,8 @@
             });
         }
     };
+
+
     Drupal.behaviors.accordion = {
         // Add a simple JS accordion (see w3)
         attach: function(context, settings) {

@@ -35,9 +35,13 @@
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
   </div>
 
-
   <footer class="layout-site-footer site-footer" id="site-footer">
     <?php print render($page['footer']); ?>
+    <div class="social-bar">
+      <div class="social-volgen">bla bla volg ons</div>
+      <div class="social-delen">bla bla volg ons</div>
+      <div><p><button>Volgen</button><button>Delen</button></p></div>
+    </div>
   </footer>
 
 

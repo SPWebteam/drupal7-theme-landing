@@ -37,5 +37,29 @@
     <?php print $page_top; ?>
     <?php print $page; ?>
     <?php print $page_bottom; ?>
+    <div class="social-footer">
+      <div class="social-bar">
+        <div id="social-follow">
+          <h2>Volg de SP</h2>
+          <ul>
+            <li><a target="_blank" href="https://www.facebook.com/SocialistischePartij">Facebook</a></li>
+            <li><a target="_blank" href="https://twitter.com/SPnl">Twitter</li>
+            <li><a target="_blank" href="https://www.instagram.com/SocialistischePartij">Instagram</a></li>
+            <li><a target="_blank" href="https://doemee.sp.nl">Doe mee</a></li>
+            <li><a target="_blank" href="https://wordlid.sp.nl/?ref=spnl-verkiezingen-page">Word lid</a></li>
+          </ul>
+        </div>
+        <div id="social-share">
+          <h2>Deze pagina delen</h2>
+          <ul>
+            <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php print $current_url;?>">Facebook</a></li>
+            <li><a target="_blank" href="https://twitter.com/intent/tweet?text=<?php print $current_url;?>">Twitter</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print $current_url;?>&title=<?php print urlencode($current_title);?>&summary=&source=">LinkedIn</a></li>
+            <li><a target="_blank" href="mailto:?subject=<?php print htmlentities($current_title);?>&body=<?php print $current_url;?>">Email</a></li>
+          </ul>
+        </div>
+        <div><button class="btn-text small" id="follow">Volg de SP</button> <button class="btn-text small" id="share">Pagina delen</button></div>
+      </div>
+    </div>
   </body>
 </html>

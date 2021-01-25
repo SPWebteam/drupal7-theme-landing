@@ -15,10 +15,24 @@ function landing_css_alter(&$css) {
   }
 }
 
+
+/**
+ * Implements template_preprocess_html().
+ */
+function landing_preprocess_html(&$variables) {
+  /**
+  * Used for social share links
+  */
+  $variables['current_url'] = url(current_path(), array('absolute' => TRUE));
+  $variables['current_title'] = drupal_get_title();
+}
+
+
 /**
  * Implements template_preprocess_page().
  */
 function landing_preprocess_page(&$variables) {
+
 
 /* Adding theme path to JS, for MyFonts */
   drupal_add_js('jQuery.extend(Drupal.settings, { "pathToTheme": "' .base_path().drupal_get_path('theme', 'landing'). '" });', 'inline');

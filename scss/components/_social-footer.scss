@@ -1,0 +1,28 @@
+.social-footer {
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	border-top: 1px solid #ddd;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	z-index: 1;
+	padding: 1rem;
+	.social-bar {
+		max-width: 640px;
+		ul {
+			list-style: none;
+			padding-left: 1rem;
+			li a {
+				padding: 0.25rem 0;
+
+			}
+		}
+	}
+	#social-follow,
+	#social-share {
+		display: none; // toggles with main.js on buttons
+	}
+}

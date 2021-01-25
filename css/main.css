@@ -805,35 +805,36 @@ ul.inline li {
   font-size: 2rem;
   letter-spacing: .2px; }
 
-.btn.facebook, .facebook.btn-invert, .facebook.btn-text {
-  background: #3b5998; }
+.btn-social {
+  font-size: 0; }
+  .btn-social:before {
+    font-family: "SPruit-icons";
+    font-size: 2rem;
+    text-transform: none;
+    padding: 0.5rem;
+    border: 1px solid #ED1C24; }
+  .btn-social:hover::before {
+    background: #ED1C24;
+    color: #fff;
+    text-decoration: none; }
 
-.btn.facebook:hover, .facebook.btn-invert:hover, .facebook.btn-text:hover {
-  background: #344e86; }
+.btn-social.facebook:before {
+  content: 'f'; }
 
-.btn.twitter, .twitter.btn-invert, .twitter.btn-text {
-  background: #55acee; }
+.btn-social.twitter:before {
+  content: 't'; }
 
-.btn.twitter:hover, .twitter.btn-invert:hover, .twitter.btn-text:hover {
-  background: #3ea1ec; }
+.btn-social.instagram:before {
+  content: 'i'; }
 
-.btn.linkedin, .linkedin.btn-invert, .linkedin.btn-text {
-  background: #007bb5; }
+.btn-social.whatsapp:before {
+  content: 'w'; }
 
-.btn.linkedin:hover, .linkedin.btn-invert:hover, .linkedin.btn-text:hover {
-  background: #006a9c; }
+.btn-social.linkedin:before {
+  content: 'l'; }
 
-.btn.email, .email.btn-invert, .email.btn-text {
-  background: #ED1C24; }
-
-.btn.email:hover, .email.btn-invert:hover, .email.btn-text:hover {
-  background: #de1219; }
-
-.btn.whatsapp, .whatsapp.btn-invert, .whatsapp.btn-text {
-  background: #00e676; }
-
-.btn.whatsapp:hover, .whatsapp.btn-invert:hover, .whatsapp.btn-text:hover {
-  background: #00cd69; }
+.btn-social.email:before {
+  content: 'm'; }
 
 .book-block-menu {
   max-width: 960px;

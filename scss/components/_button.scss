@@ -62,34 +62,48 @@
 
 
 // SOCIAL BUTTONS
-.btn.facebook {
-    background: $facebook;
+.btn-social {
+    font-size: 0;
+    &:before {
+        font-family: $sp-icons;
+        font-size: 2rem;
+        text-transform: none;
+        padding: 0.5rem;
+        border: 1px solid $color1;
+    }
+    &:hover::before {
+        background: $color1;
+        color: #fff;
+        text-decoration: none;
+    }
 }
-.btn.facebook:hover {
-    background: darken($facebook, 5%);
+.btn-social.facebook {
+    &:before {
+        content: 'f';
+    }
 }
-.btn.twitter {
-    background: $twitter;
+.btn-social.twitter {
+    &:before {
+        content: 't';
+    }
 }
-.btn.twitter:hover {
-    background: darken($twitter, 5%);
+.btn-social.instagram {
+    &:before {
+        content: 'i';
+    }
 }
-.btn.linkedin {
-    background: $linkedin;
+.btn-social.whatsapp {
+    &:before {
+        content: 'w';
+    }
 }
-.btn.linkedin:hover {
-    background: darken($linkedin, 5%);
+.btn-social.linkedin {
+    &:before {
+        content: 'l';
+    }
 }
-.btn.email {
-    background: $email;
-}
-.btn.email:hover {
-    background: darken($email, 5%);
-}
-
-.btn.whatsapp {
-    background: $whatsapp;
-}
-.btn.whatsapp:hover {
-    background: darken($whatsapp, 5%);
+.btn-social.email {
+    &:before {
+        content: 'm';
+    }
 }

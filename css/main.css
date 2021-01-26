@@ -2302,10 +2302,24 @@ ul.pager {
       list-style: none;
       padding-left: 1rem; }
       .social-footer .social-bar ul li a {
-        padding: 0.25rem 0; }
+        padding: 0.25rem 0;
+        display: block;
+        color: #000; }
   .social-footer #social-follow,
   .social-footer #social-share {
     display: none; }
+  .social-footer #follow,
+  .social-footer #share {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 4px; }
+    .social-footer #follow:hover,
+    .social-footer #share:hover {
+      color: #000;
+      border: 2px solid #ddd; }
+  .social-footer #follow.active,
+  .social-footer #share.active {
+    border: 2px solid #ddd; }
 
 /* SOCIAL SHARE RIGHT SIDE */
 .primary-content .content .social-share ul {

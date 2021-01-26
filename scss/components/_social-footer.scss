@@ -17,6 +17,8 @@
 			padding-left: 1rem;
 			li a {
 				padding: 0.25rem 0;
+				display: block;
+				color: #000;
 
 			}
 		}
@@ -25,4 +27,21 @@
 	#social-share {
 		display: none; // toggles with main.js on buttons
 	}
+
+	// needs work
+	#follow,
+	#share {
+		background: none;
+		border: 2px solid #fff;
+		border-radius: 4px;
+		&:hover {
+			color: #000;
+			border: 2px solid #ddd;
+		}
+	}
+	#follow.active,
+	#share.active {
+		border: 2px solid #ddd;
+	}
+
 }

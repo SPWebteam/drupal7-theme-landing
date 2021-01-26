@@ -15,7 +15,7 @@
             $('.menu-toggle button', context).click(function(event) {
                 event.preventDefault();
                 //$('.primary-menu').slideToggle(250);
-                $('#block-system-main-menu').slideToggle(250);
+                $('#block-system-main-menu').slideToggle(100);
             });
         }
     };

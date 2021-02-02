@@ -1865,8 +1865,9 @@ ul.primary li a:hover {
   font-family: Arial, sans-serif;
   color: #ED1C24;
   font-weight: 800;
-  position: relative;
-  right: -1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
   padding: 0.5rem;
   display: inline-block;
   font-size: 2rem; }
@@ -2317,6 +2318,9 @@ ul.pager {
     .social-footer #share:hover {
       color: #000;
       border: 2px solid #ddd; }
+    .social-footer #follow:focus,
+    .social-footer #share:focus {
+      outline: none; }
   .social-footer #follow.active,
   .social-footer #share.active {
     border: 2px solid #ddd; }

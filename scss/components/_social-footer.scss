@@ -38,6 +38,9 @@
 			color: #000;
 			border: 2px solid #ddd;
 		}
+		&:focus {
+			outline: none; //quickfix
+		}
 	}
 	#follow.active,
 	#share.active {

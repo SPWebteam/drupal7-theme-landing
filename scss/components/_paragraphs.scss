@@ -92,14 +92,19 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 
 // BLOK: TEKST
 .paragraphs-item-tekst {
-	padding: 100px 1rem;
+	padding: 2rem 1rem;
 	background: #fff;
 	.field-name-field-inhoud{
 		//background: #fff;
 		.field-inhoud{
 			max-width: $content-width;
 			margin: 0 auto;
-			padding: 1rem;
+			padding: 2rem 1rem;
+		}
+		@media screen and (min-width: $content-width){
+			.field-inhoud {
+				padding: 100px 1rem;
+			}
 		}
 	}
 }

@@ -2095,12 +2095,15 @@ nav.top-nav a .text {
         padding-bottom: 2rem; } }
 
 .paragraphs-item-tekst {
-  padding: 100px 1rem;
+  padding: 2rem 1rem;
   background: #fff; }
   .paragraphs-item-tekst .field-name-field-inhoud .field-inhoud {
     max-width: 960px;
     margin: 0 auto;
-    padding: 1rem; }
+    padding: 2rem 1rem; }
+  @media screen and (min-width: 960px) {
+    .paragraphs-item-tekst .field-name-field-inhoud .field-inhoud {
+      padding: 100px 1rem; } }
 
 .paragraphs-item-inhoud-breadcrumbs > .content {
   max-width: 960px;

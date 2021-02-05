@@ -758,7 +758,8 @@ ul.inline li {
   display: inline-block;
   text-align: center;
   cursor: pointer;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  margin-bottom: 0.125rem; }
 
 .btn:hover, .btn-invert:hover, .btn-text:hover, a.btn:hover, a.btn-invert:hover, a.btn-text:hover,
 .btn-invert:hover, a.btn-invert:hover,
@@ -2076,6 +2077,11 @@ nav.top-nav a .text {
     max-width: 1082px;
     margin: 1rem 0;
     background: #fff; }
+    .paragraphs-item-tekst-met-afbeelding > .content .afbeelding,
+    .paragraphs-item-tekst-met-afbeelding > .content .afbeelding .field,
+    .paragraphs-item-tekst-met-afbeelding > .content .afbeelding .field-item {
+      display: grid;
+      align-content: stretch; }
     .paragraphs-item-tekst-met-afbeelding > .content .afbeelding img {
       display: block;
       width: 100%;
@@ -2084,15 +2090,35 @@ nav.top-nav a .text {
       object-position: 50% 50%; }
     .paragraphs-item-tekst-met-afbeelding > .content .inhoud {
       padding: 2rem; }
-    .paragraphs-item-tekst-met-afbeelding > .content .field-link {
-      text-align: right; }
-      .paragraphs-item-tekst-met-afbeelding > .content .field-link .field-item {
-        display: inline-block; }
+    .paragraphs-item-tekst-met-afbeelding > .content .field-link .btn.standpunt, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-invert, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-text {
+      border: 1px solid #fff;
+      color: #333;
+      padding: 7px 2px;
+      font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+      text-transform: none; }
+      .paragraphs-item-tekst-met-afbeelding > .content .field-link .btn.standpunt:before, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-invert:before, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-text:before {
+        content: 'T';
+        font-family: "SPruit-icons";
+        margin-right: 0.25rem;
+        color: #ED1C24; }
+      .paragraphs-item-tekst-met-afbeelding > .content .field-link .btn.standpunt:hover, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-invert:hover, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-text:hover {
+        color: #fff; }
+    .paragraphs-item-tekst-met-afbeelding > .content .field-link .field-item {
+      display: block; }
   @media screen and (max-width: 800px) {
     .paragraphs-item-tekst-met-afbeelding .content {
       grid-template-columns: minmax(auto, 600px); }
+      .paragraphs-item-tekst-met-afbeelding .content .field-link {
+        text-align: center; }
+        .paragraphs-item-tekst-met-afbeelding .content .field-link .btn.standpunt, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-invert, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-text {
+          font-size: 1rem; }
       .paragraphs-item-tekst-met-afbeelding .content .inhoud {
         padding-bottom: 2rem; } }
+  @media screen and (min-width: 801px) {
+    .paragraphs-item-tekst-met-afbeelding .content .field-link {
+      text-align: right; }
+      .paragraphs-item-tekst-met-afbeelding .content .field-link .field-item {
+        display: inline-block; } }
 
 .paragraphs-item-tekst {
   padding: 2rem 1rem;

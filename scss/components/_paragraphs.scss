@@ -62,6 +62,13 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 		max-width: 1082px;
 		margin: 1rem 0;
 		background: #fff;
+		// stretch all the parents so img will cover
+		.afbeelding,
+		.afbeelding .field,
+		.afbeelding .field-item {
+			display: grid;
+			align-content: stretch;
+		}
 		.afbeelding img {
 			display: block; //removes whitespace
 			width: 100%;
@@ -73,17 +80,50 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 			padding: 2rem;
 		}
 		.field-link {
-			text-align: right;
+			//quickfix
+			.btn.standpunt {
+				border: 1px solid #fff;
+				color: #333;
+				padding: 7px 2px;
+				font-family: $font-middle;
+				text-transform: none;
+				&:before {
+					content: 'T';
+					font-family: $sp-icons;
+					margin-right: 0.25rem;
+					color: $color1;
+				}
+				&:hover {
+					color: #fff;
+				}
+			}
+			//end quickfix
 			.field-item {
-				display: inline-block;
+				display: block;
 			}
 		}
 	}
 	@media screen and (max-width: 800px){
 		.content {
 			grid-template-columns: minmax(auto, 600px);
+			.field-link {
+				text-align: center;
+				.btn.standpunt {
+					font-size: 1rem;
+				}
+			}
 			.inhoud {
 				padding-bottom: 2rem;
+			}
+		}
+	}
+	@media screen and (min-width: 801px){
+		.content {
+			.field-link {
+				text-align: right;
+				.field-item {
+					display: inline-block;
+				}
 			}
 		}
 	}

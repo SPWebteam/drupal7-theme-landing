@@ -52,6 +52,7 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 
 
 // BLOK: TEKST MET AFBEELDING
+/*
 .paragraphs-item-tekst-met-afbeelding {
 	display: grid;
 	justify-content: center;
@@ -127,7 +128,69 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 			}
 		}
 	}
+}*/
+.paragraphs-item-tekst-met-afbeelding {
+	background: #f1f1f1;
+	padding-bottom: 2rem;
+	> .content {
+		margin: 1rem 0;
+		background: #fff;
+		.inhoud {
+			padding: 2rem;
+		}
+		.field-link {
+			//quickfix
+			.btn.standpunt {
+				border: 1px solid #fff;
+				color: #333;
+				padding: 7px 2px;
+				font-family: $font-middle;
+				text-transform: none;
+				&:before {
+					content: 'T';
+					font-family: $sp-icons;
+					margin-right: 0.25rem;
+					color: $color1;
+				}
+				&:hover {
+					color: #fff;
+				}
+			}
+			//end quickfix
+			.field-item {
+				display: block;
+			}
+		}
+	}
+	@media screen and (max-width: 800px){
+		.content {
+			//grid-template-columns: minmax(auto, 600px);
+			.field-link {
+				text-align: center;
+				.btn.standpunt {
+					font-size: 1rem;
+				}
+			}
+			.inhoud {
+				padding-bottom: 2rem;
+			}
+		}
+	}
+	@media screen and (min-width: 801px){
+		.content {
+			max-width: 1000px;
+			margin: 0 auto;
+			.field-link {
+				text-align: center;
+				.field-item {
+					display: inline-block;
+				}
+			}
+		}
+	}
 }
+
+
 
 
 // BLOK: TEKST

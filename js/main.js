@@ -38,6 +38,16 @@
             });
         }
     };
+    // QUICKFIX MODAL
+    Drupal.behaviors.ErrorModal = {
+        attach: function(context, settings) {
+            if($('.webform-client-form-1818').find('input.error').length !== 0){
+                $('#modal').fadeIn();
+                $(".messages").prependTo("form"); 
+            }
+        }
+    };
+
 
 
     // SOCIAL FOOTER

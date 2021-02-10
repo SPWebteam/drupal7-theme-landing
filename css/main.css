@@ -812,8 +812,7 @@ ul.inline li {
     font-family: "SPruit-icons";
     font-size: 2rem;
     text-transform: none;
-    padding: 0.5rem;
-    border: 1px solid #ED1C24; }
+    padding: 0.5rem; }
   .btn-social:hover::before {
     background: #ED1C24;
     color: #fff;
@@ -829,7 +828,7 @@ ul.inline li {
   content: 'i'; }
 
 .btn-social.whatsapp:before {
-  content: 'w'; }
+  content: 'W'; }
 
 .btn-social.linkedin:before {
   content: 'l'; }
@@ -2167,17 +2166,26 @@ nav.top-nav a .text {
         color: #fff; }
     .paragraphs-item-tekst-met-afbeelding > .content .field-link .field-item {
       display: block; }
-  @media screen and (max-width: 800px) {
-    .paragraphs-item-tekst-met-afbeelding .content .field-link {
-      text-align: center; }
-      .paragraphs-item-tekst-met-afbeelding .content .field-link .btn.standpunt, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-invert, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-text {
-        font-size: 1rem; }
-    .paragraphs-item-tekst-met-afbeelding .content .inhoud {
-      padding-bottom: 2rem; } }
-  @media screen and (min-width: 801px) {
+  @media screen and (max-width: 999px) {
+    .paragraphs-item-tekst-met-afbeelding .content {
+      max-width: 600px;
+      margin: 0 auto; }
+      .paragraphs-item-tekst-met-afbeelding .content .field-link {
+        text-align: center; }
+        .paragraphs-item-tekst-met-afbeelding .content .field-link .btn.standpunt, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-invert, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-text {
+          font-size: 1rem; }
+      .paragraphs-item-tekst-met-afbeelding .content .afbeelding {
+        display: none; }
+      .paragraphs-item-tekst-met-afbeelding .content .inhoud {
+        padding-bottom: 2rem; } }
+  @media screen and (min-width: 1000px) {
     .paragraphs-item-tekst-met-afbeelding .content {
       max-width: 1000px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: flex; }
+      .paragraphs-item-tekst-met-afbeelding .content .afbeelding,
+      .paragraphs-item-tekst-met-afbeelding .content .inhoud {
+        max-width: 50%; }
       .paragraphs-item-tekst-met-afbeelding .content .field-link {
         text-align: center; }
         .paragraphs-item-tekst-met-afbeelding .content .field-link .field-item {
@@ -2397,10 +2405,15 @@ ul.pager {
       .social-footer .social-bar ul li a {
         padding: 0.25rem 0;
         display: block;
-        color: #000; }
+        color: #000;
+        text-decoration: none; }
   .social-footer #social-follow,
   .social-footer #social-share {
     display: none; }
+  .social-footer #social-share ul {
+    padding-left: 0; }
+    .social-footer #social-share ul li {
+      display: inline-block; }
   .social-footer #follow,
   .social-footer #share {
     background: none;

@@ -19,13 +19,21 @@
 				padding: 0.25rem 0;
 				display: block;
 				color: #000;
-
+				text-decoration: none;
 			}
 		}
 	}
 	#social-follow,
 	#social-share {
 		display: none; // toggles with main.js on buttons
+	}
+	#social-share {
+		ul {
+			padding-left: 0;
+			li {
+				display: inline-block;
+			}
+		}
 	}
 
 	// needs work

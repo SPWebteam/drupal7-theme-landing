@@ -70,7 +70,7 @@
         font-size: 2rem;
         text-transform: none;
         padding: 0.5rem;
-        border: 1px solid $color1;
+        //border: 1px solid $color1;
     }
     &:hover::before {
         background: $color1;
@@ -95,7 +95,7 @@
 }
 .btn-social.whatsapp {
     &:before {
-        content: 'w';
+        content: 'W';
     }
 }
 .btn-social.linkedin {

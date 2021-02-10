@@ -52,11 +52,11 @@
         <div id="social-share">
           <h2>Deze pagina delen</h2>
           <ul>
-            <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php print $current_url;?>">Facebook</a></li>
-            <li><a target="_blank" href="https://twitter.com/intent/tweet?text=<?php print $current_url;?>">Twitter</a></li>
-            <li><a target="_blank" href="https://wa.me/?text=<?php print urlencode($current_url);?>%20<?php print urlencode($current_title);?>">Whatsapp</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print $current_url;?>&title=<?php print urlencode($current_title);?>&summary=&source=">LinkedIn</a></li>
-            <li><a target="_blank" href="mailto:?subject=<?php print htmlentities($current_title);?>&body=<?php print $current_url;?>">Email</a></li>
+            <li><a class="btn-social facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php print $current_url;?>">Facebook</a></li>
+            <li><a class="btn-social twitter" target="_blank" href="https://twitter.com/intent/tweet?text=<?php print $current_url;?>">Twitter</a></li>
+            <li><a class="btn-social whatsapp" target="_blank" href="https://wa.me/?text=<?php print urlencode($current_url);?>%20<?php print urlencode($current_title);?>">Whatsapp</a></li>
+            <li><a class="btn-social linkedin" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php print $current_url;?>&title=<?php print urlencode($current_title);?>&summary=&source=">LinkedIn</a></li>
+            <li><a class="btn-social email" target="_blank" href="mailto:?subject=<?php print htmlentities($current_title);?>&body=<?php print $current_url;?>">Email</a></li>
           </ul>
         </div>
         <div><button class="btn-invert small" id="follow">Volg de SP</button> <button class="btn-invert small" id="share">Pagina delen</button></div>

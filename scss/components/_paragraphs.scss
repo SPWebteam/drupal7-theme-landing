@@ -162,24 +162,33 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 			}
 		}
 	}
-	@media screen and (max-width: 800px){
+	@media screen and (max-width: 999px){
 		.content {
-			//grid-template-columns: minmax(auto, 600px);
+			max-width: 600px;
+			margin: 0 auto;
 			.field-link {
 				text-align: center;
 				.btn.standpunt {
 					font-size: 1rem;
 				}
 			}
+			.afbeelding {
+				display: none;
+			}
 			.inhoud {
 				padding-bottom: 2rem;
 			}
 		}
 	}
-	@media screen and (min-width: 801px){
+	@media screen and (min-width: 1000px){
 		.content {
 			max-width: 1000px;
 			margin: 0 auto;
+			display: flex;
+			.afbeelding,
+			.inhoud {
+				max-width: 50%
+			}
 			.field-link {
 				text-align: center;
 				.field-item {

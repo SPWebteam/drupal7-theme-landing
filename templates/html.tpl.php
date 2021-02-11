@@ -45,8 +45,8 @@
             <li><a target="_blank" href="https://www.facebook.com/SocialistischePartij">Facebook</a></li>
             <li><a target="_blank" href="https://twitter.com/SPnl">Twitter</a></li>
             <li><a target="_blank" href="https://www.instagram.com/SocialistischePartij">Instagram</a></li>
-            <li><a target="_blank" href="https://doemee.sp.nl">Doe mee</a></li>
-            <li><a target="_blank" href="https://wordlid.sp.nl/?ref=spnl-verkiezingen-page">Word lid</a></li>
+            <li><a target="_blank" href="https://doemee.sp.nl?ref=tk2021">Doe mee</a></li>
+            <li><a target="_blank" href="https://wordlid.sp.nl?ref=tk2021">Word lid</a></li>
           </ul>
         </div>
         <div id="social-share">

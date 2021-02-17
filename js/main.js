@@ -212,10 +212,9 @@
         }
     };
 
+
     Drupal.behaviors.cdcookie = {
-
         // duplicatie the cookie for cross domain, if possible
-
         attach: function(context, settings) {
               var cookieGet = $.cookie('sp_tc');
               var cookieValue = 2;
@@ -228,6 +227,11 @@
                 $.cookie("sp_tc", cookieValue, {
                    expires : 100, //days
                    path    : '/', 
+
+              if(cookieGet !== undefined) {
+                $.cookie("sp_tc", cookieValue, {
+                   expires : 365, //days
+                   path    : '/',
                    domain  : 'sp.nl ',
                    secure  : true
                 });

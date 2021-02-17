@@ -191,4 +191,28 @@
         }
     };
 
+    Drupal.behaviors.cdcookie = {
+
+        // duplicatie the cookie for cross domain, if possible
+
+        attach: function(context, settings) {
+              var cookieGet = $.cookie('sp_tc');
+              var cookieValue = 2;
+
+              if(cookieGet == 0) {
+                var cookieValue = 0; //
+              }
+
+              if(cookieGet !== undefined) {
+                $.cookie("sp_tc", cookieValue, {
+                   expires : 365, //days
+                   path    : '/',
+                   domain  : 'sp.nl ',
+                   secure  : true
+                });
+              }
+        }
+     };
+
+
 })(jQuery);

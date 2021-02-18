@@ -2187,9 +2187,11 @@ nav.top-nav a .text {
       .paragraphs-item-tekst-met-afbeelding .content .inhoud {
         max-width: 50%; }
       .paragraphs-item-tekst-met-afbeelding .content .field-link {
-        text-align: center; }
-        .paragraphs-item-tekst-met-afbeelding .content .field-link .field-item {
-          display: inline-block; } }
+        text-align: left; }
+        .paragraphs-item-tekst-met-afbeelding .content .field-link .field-item:last-child {
+          text-align: right; }
+        .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt {
+          text-align: left; } }
 
 .paragraphs-item-tekst {
   padding: 2rem 1rem;

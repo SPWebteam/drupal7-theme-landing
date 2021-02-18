@@ -190,9 +190,12 @@ $fullscreen_height: calc(100vh - 70px); //70px header
 				max-width: 50%
 			}
 			.field-link {
-				text-align: center;
-				.field-item {
-					display: inline-block;
+				text-align: left;
+				.field-item:last-child{
+					text-align: right;
+				}
+				.standpunt {
+					text-align: left;
 				}
 			}
 		}

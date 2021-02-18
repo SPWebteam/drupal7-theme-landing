@@ -15,6 +15,7 @@
 		h2 {
 			color: #000;
 			font-size: 1.2rem;
+			display: none;
 		}
 		ul {
 			list-style: none;
@@ -26,8 +27,9 @@
 		display: none; // toggles with main.js on buttons
 	}
 	#social-follow {
+		padding-bottom: 1rem;
 		.btn {
-			min-width:174px;
+			min-width:153px;
 		}
 	}
 	#social-share {
@@ -55,7 +57,7 @@
 	}
 	#follow.active,
 	#share.active {
-		border: 2px solid #ddd;
+		border: 2px solid $color1;
 	}
 
 }

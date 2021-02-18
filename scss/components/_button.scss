@@ -83,27 +83,6 @@
         border: 1px solid #000;
     }
 }
-.btn-social.round {
-    font-size: 0;
-    &:before {
-        display: inline-block;
-        font-family: $sp-icons;
-        font-size: 2rem;
-        text-transform: none;
-        padding: 0.5rem;
-        background: #fff;
-        color: #ddd;
-        border: 3px solid #ddd;
-        margin-bottom: 0.125rem;
-        border-radius: 50%;
-    }
-    &:hover::before {
-        background: #000;
-        color: #fff;
-        text-decoration: none;
-        border: 3px solid #000;
-    }
-}
 .btn-social.facebook {
     &:before {
         content: 'f';
@@ -132,5 +111,81 @@
 .btn-social.email {
     &:before {
         content: 'm';
+    }
+}
+.btn-social.colored {
+    font-size: 0;
+    &:before {
+        display: inline-block;
+        font-family: $sp-icons;
+        font-size: 2rem;
+        text-transform: none;
+        padding: 0.5rem;
+        background: #fff;
+        color: #ddd;
+        margin-bottom: 0.125rem;
+        border:none;
+    }
+    &:hover::before {
+        color: #fff!important;
+        text-decoration: none;
+        border:none;
+    }
+}
+.btn-social.colored.facebook {
+    &:before {
+        color: $facebook;
+    }
+    &:hover::before {
+        background: $facebook;
+    }
+}
+.btn-social.colored.twitter {
+    &:before {
+        color: $twitter;
+    }
+    &:hover::before {
+        background: $twitter;
+    }
+}
+.btn-social.colored.instagram {
+    &:before {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        -webkit-background-clip: text;
+        /* Also define standard property for compatibility */
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:hover::before{
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        -webkit-text-fill-color: #fff;
+    }
+}
+.btn-social.colored.whatsapp {
+    &:before {
+        color: $whatsapp;
+    }
+    &:hover::before {
+        background: $whatsapp;
+    }
+}
+.btn-social.colored.linkedin {
+    &:before {
+        color: $linkedin;
+    }
+    &:hover::before {
+        background: $linkedin;
+    }
+}
+.btn-social.colored.email {
+    &:before {
+        color: $color1;
+    }
+    &:hover::before {
+        background: $color1;
     }
 }

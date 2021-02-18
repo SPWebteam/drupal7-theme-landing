@@ -56,7 +56,8 @@
             $('#follow', context).click(function(event) {
                 event.preventDefault();
                 $('#social-follow').slideToggle(100);
-                $('#follow').toggleClass("active");
+                //$('#follow').toggleClass("active");
+                $('#social-share').hide();
             });
         }
     };
@@ -65,7 +66,8 @@
             $('#share', context).click(function(event) {
                 event.preventDefault();
                 $('#social-share').slideToggle(100);
-                $('#share').toggleClass("active");
+                //$('#share').toggleClass("active");
+                $('#social-follow').hide();
             });
         }
     };

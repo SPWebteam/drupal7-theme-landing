@@ -14,15 +14,11 @@
 		text-align: center;
 		h2 {
 			color: #000;
+			font-size: 1.2rem;
 		}
 		ul {
 			list-style: none;
 			padding-left: 0rem;
-			li a {
-				//padding: 0.25rem 0;
-				//color: #000;
-				//text-decoration: none;
-			}
 		}
 	}
 	#social-follow,
@@ -31,7 +27,7 @@
 	}
 	#social-follow {
 		.btn {
-			width:100%;
+			min-width:174px;
 		}
 	}
 	#social-share {

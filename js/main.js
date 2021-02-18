@@ -223,11 +223,6 @@
                 var cookieValue = 0; //
               }
 
-              if(cookieGet !== undefined) { 
-                $.cookie("sp_tc", cookieValue, {
-                   expires : 100, //days
-                   path    : '/', 
-
               if(cookieGet !== undefined) {
                 $.cookie("sp_tc", cookieValue, {
                    expires : 365, //days

@@ -11,21 +11,28 @@
 	z-index: 1;
 	padding: 1rem;
 	.social-bar {
-		max-width: 640px;
+		text-align: center;
+		h2 {
+			color: #000;
+		}
 		ul {
 			list-style: none;
-			padding-left: 1rem;
+			padding-left: 0rem;
 			li a {
-				padding: 0.25rem 0;
-				display: block;
-				color: #000;
-				text-decoration: none;
+				//padding: 0.25rem 0;
+				//color: #000;
+				//text-decoration: none;
 			}
 		}
 	}
 	#social-follow,
 	#social-share {
 		display: none; // toggles with main.js on buttons
+	}
+	#social-follow {
+		.btn {
+			width:100%;
+		}
 	}
 	#social-share {
 		ul {
@@ -41,7 +48,7 @@
 	#share {
 		background: none;
 		border: 2px solid #fff;
-		border-radius: 4px;
+		min-width: 128px;
 		&:hover {
 			color: #000;
 			border: 2px solid #ddd;

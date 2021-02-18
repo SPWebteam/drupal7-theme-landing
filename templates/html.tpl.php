@@ -42,11 +42,9 @@
         <div id="social-follow">
           <h2>Volg de SP</h2>
           <ul>
-            <li><a target="_blank" href="https://www.facebook.com/SocialistischePartij">Facebook</a></li>
-            <li><a target="_blank" href="https://twitter.com/SPnl">Twitter</a></li>
-            <li><a target="_blank" href="https://www.instagram.com/SocialistischePartij">Instagram</a></li>
-            <li><a target="_blank" href="https://doemee.sp.nl?ref=tk2021">Doe mee</a></li>
-            <li><a target="_blank" href="https://wordlid.sp.nl?ref=tk2021">Word lid</a></li>
+            <li><a class="btn-social facebook" target="_blank" href="https://www.facebook.com/SocialistischePartij">Facebook</a> <a class="btn-social twitter" target="_blank" href="https://twitter.com/SPnl">Twitter</a> <a class="btn-social instagram" target="_blank" href="https://www.instagram.com/SocialistischePartij">Instagram</a></li>
+            <li><a class="btn" target="_blank" href="https://doemee.sp.nl?ref=tk2021">Doe mee</a></li>
+            <li><a class="btn" target="_blank" href="https://wordlid.sp.nl?ref=tk2021">Word lid</a></li>
           </ul>
         </div>
         <div id="social-share">

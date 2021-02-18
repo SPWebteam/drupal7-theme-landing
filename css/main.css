@@ -809,14 +809,20 @@ ul.inline li {
 .btn-social {
   font-size: 0; }
   .btn-social:before {
+    display: inline-block;
     font-family: "SPruit-icons";
     font-size: 2rem;
     text-transform: none;
-    padding: 0.5rem; }
-  .btn-social:hover::before {
+    padding: 0.5rem;
     background: #ED1C24;
     color: #fff;
-    text-decoration: none; }
+    border: 1px solid #fff;
+    margin-bottom: 0.125rem; }
+  .btn-social:hover::before {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #000; }
 
 .btn-social.facebook:before {
   content: 'f'; }
@@ -2381,18 +2387,17 @@ ul.pager {
   z-index: 1;
   padding: 1rem; }
   .social-footer .social-bar {
-    max-width: 640px; }
+    text-align: center; }
+    .social-footer .social-bar h2 {
+      color: #000; }
     .social-footer .social-bar ul {
       list-style: none;
-      padding-left: 1rem; }
-      .social-footer .social-bar ul li a {
-        padding: 0.25rem 0;
-        display: block;
-        color: #000;
-        text-decoration: none; }
+      padding-left: 0rem; }
   .social-footer #social-follow,
   .social-footer #social-share {
     display: none; }
+  .social-footer #social-follow .btn, .social-footer #social-follow .btn-invert, .social-footer #social-follow .btn-text {
+    width: 100%; }
   .social-footer #social-share ul {
     padding-left: 0; }
     .social-footer #social-share ul li {
@@ -2401,7 +2406,7 @@ ul.pager {
   .social-footer #share {
     background: none;
     border: 2px solid #fff;
-    border-radius: 4px; }
+    min-width: 128px; }
     .social-footer #follow:hover,
     .social-footer #share:hover {
       color: #000;

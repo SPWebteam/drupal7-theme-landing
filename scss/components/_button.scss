@@ -66,16 +66,22 @@
 .btn-social {
     font-size: 0;
     &:before {
+        display: inline-block;
         font-family: $sp-icons;
         font-size: 2rem;
         text-transform: none;
         padding: 0.5rem;
         //border: 1px solid $color1;
-    }
-    &:hover::before {
         background: $color1;
         color: #fff;
+        border: 1px solid #fff;
+        margin-bottom: 0.125rem;
+    }
+    &:hover::before {
+        background: #000;
+        color: #fff;
         text-decoration: none;
+        border: 1px solid #000;
     }
 }
 .btn-social.facebook {

@@ -2130,7 +2130,7 @@ nav.top-nav a .text {
 
 .paragraphs-item-tekst-met-afbeelding {
   background: #f1f1f1;
-  padding-bottom: 2rem; }
+  padding: 1.5rem; }
   .paragraphs-item-tekst-met-afbeelding > .content {
     margin: 1rem 0;
     background: #fff; }

@@ -10,7 +10,7 @@
       if(countdown){
 
         // set the date we're counting down to
-        var target_date = new Date("03/17/2021 07:30:00").getTime();  //ONLY USE THIS FORMAT FOR SAFARI SUPPORT! mm/dd/yyyy hh:mm:ss
+        var target_date = new Date("03/15/2021 07:30:00").getTime();  //ONLY USE THIS FORMAT FOR SAFARI SUPPORT! mm/dd/yyyy hh:mm:ss
         var final_date = new Date("03/17/2021 21:00:00").getTime();
 
         // variables for time units

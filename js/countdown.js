@@ -23,13 +23,13 @@
           var status_seconds_left = (target_date - status_current_date) / 1000;
           var status_seconds_left_final = (final_date - status_current_date) / 1000;
           if (status_seconds_left > 0){
-            countdown_status = "first";
+            countdown_status = "before";
           }
           if (status_seconds_left < 0){
-            countdown_status = "second";
+            countdown_status = "during";
           }
           if (status_seconds_left_final < 0){
-            countdown_status = "final";
+            countdown_status = "after";
           }
         }, 100);
 
@@ -40,17 +40,17 @@
         //var seconds_span = countdown.querySelector('.seconds');
          
         // update the tag countdown_id every 1 second only if status is determend first
-        if (countdown_status = "first" || "second" || "final"){
+        if (countdown_status = "before" || "during" || "after"){
           setInterval(function () {
          
             // find the amount of "seconds" between now and target
             var current_date = new Date().getTime();
             
             // set seconds_left based on status
-            if (countdown_status == "first") {
+            if (countdown_status == "before") {
               var seconds_left = (target_date - current_date) / 1000;
             }
-            if (countdown_status == "second") {
+            if (countdown_status == "during") {
               var seconds_left = (final_date - current_date) / 1000;
             }
          
@@ -71,14 +71,21 @@
             if (seconds < 10) {
               seconds = '0' + seconds;
             }
-            if (days <= 0) {
+
+            // set day string
+            if (days < 1) {
               var days_string = "";
-            }else{
+              console.log(days);
+            } else if (days >= 2) {
               var days_string = days + " dagen ";
+              console.log(days);
+            } else {
+              var days_string = days + " dag ";
+              console.log(days);
             }
 
             // format countdown string + set tag value
-            if (countdown_status == "first") {
+            if (countdown_status == "before") {
               countdown.innerHTML = days_string + hours + ":" + minutes + ":" + seconds + " uur";
               //days_span.innerHTML = days;
               //hours_span.innerHTML = hours;
@@ -86,14 +93,14 @@
               //seconds_span.innerHTML = seconds;
 
             }
-            if (countdown_status == "second") {
+            if (countdown_status == "during") {
               countdown.innerHTML = "Stem SP!<br>" + days_string + hours + ":" + minutes + ":" + seconds + " uur";
               //days_span.innerHTML = days;
               //hours_span.innerHTML = hours;
               //minutes_span.innerHTML = minutes;
               //seconds_span.innerHTML = seconds;
             }
-            if (countdown_status == "final") {
+            if (countdown_status == "after") {
               countdown.innerHTML = "SP stemmers bedankt!";
               //days_span.innerHTML = "0"; // else NaN error
               //hours_span.innerHTML = "0"

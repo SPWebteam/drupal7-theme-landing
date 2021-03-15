@@ -5,7 +5,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 .paragraphs-item-banner-fullframe .content {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: minmax(640px, $fullscreen_height);
+	grid-template-rows: minmax(560px, $fullscreen_height);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	align-content: center;
@@ -18,7 +18,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			width: 100%;
 			height: $fullscreen_height;
 			object-fit: cover;
-			min-height: 640px;
+			min-height: 560px;
 		}
 	}
 	.field-name-field-inhoud {

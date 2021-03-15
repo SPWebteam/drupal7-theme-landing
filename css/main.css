@@ -2090,7 +2090,7 @@ nav.top-nav a .text {
 .paragraphs-item-banner-fullframe .content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(640px, calc(100vh - 141px));
+  grid-template-rows: minmax(560px, calc(100vh - 141px));
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-content: center;
@@ -2103,7 +2103,7 @@ nav.top-nav a .text {
       width: 100%;
       height: calc(100vh - 141px);
       object-fit: cover;
-      min-height: 640px; }
+      min-height: 560px; }
   .paragraphs-item-banner-fullframe .content .field-name-field-inhoud {
     grid-area: 1 / 1 / 2 / 2;
     display: grid;

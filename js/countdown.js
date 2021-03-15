@@ -87,7 +87,7 @@
 
             }
             if (countdown_status == "second") {
-              countdown.innerHTML = "Stem SP!<br>" + hours + ":" + minutes + ":" + seconds + " uur";
+              countdown.innerHTML = "Stem SP!<br>" + days_string + hours + ":" + minutes + ":" + seconds + " uur";
               //days_span.innerHTML = days;
               //hours_span.innerHTML = hours;
               //minutes_span.innerHTML = minutes;

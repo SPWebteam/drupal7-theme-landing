@@ -1,0 +1,14 @@
+// PAGE-NODE-WEBFORM-DRAFT-AUTHLINK
+.page-node-webform-draft-authlink {
+	.layout-primary-content {
+		padding: 2rem 1rem;
+		max-width: 960px;
+		margin: 0 auto;
+		.link {
+			word-wrap: break-word;
+		}
+		form {
+			padding: 0 0 2rem 0; //quickfix
+		}
+	}
+}

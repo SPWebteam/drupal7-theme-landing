@@ -21,7 +21,7 @@
 @import 'fields'; // drupal
 //@import 'figure'; disabled for now
 @import 'fonts';
-@import 'form';
+@import 'form'; // drupal form + webform
 @import 'footer';
 @import 'gradient';
 @import 'leaflet';
@@ -35,7 +35,9 @@
 @import 'navigation';
 @import 'node'; // drupal
 @import 'node-kandidaat';
+@import 'node-vragen';
 @import 'node-webform';
+@import 'page-node-webform-draft-authlink';
 @import 'panels';
 @import 'paragraphs';
 @import 'pager';
@@ -48,8 +50,8 @@
 @import 'tabs';
 @import 'title';
 @import 'user';
+@import 'view-inzendingen';
 @import 'view-kandidaten';
-@import 'webform';
 @import 'webform-confirmation';
 @import 'youtube';
 @import 'zie-ook';

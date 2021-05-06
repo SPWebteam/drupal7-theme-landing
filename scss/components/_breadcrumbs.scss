@@ -8,3 +8,8 @@
 	max-width: calc(960px - 2rem);
 	margin: 0 auto;
 }
+@media screen and (max-width: calc(960px - 2rem)){
+	.breadcrumb {
+		padding-left: 1rem;
+	}
+}

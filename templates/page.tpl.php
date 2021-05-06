@@ -51,6 +51,7 @@
           <li><a class="btn" target="_blank" href="https://wordlid.sp.nl?ref=tk2021">Word lid</a></li>
         </ul>
       </div>
+      <?php if ($current_url and $current_title): ?>
       <div id="social-share">
         <h2>Deze pagina delen</h2>
         <ul>
@@ -61,7 +62,13 @@
           <li><a class="btn-social colored email" target="_blank" href="mailto:?subject=<?php print htmlentities($current_title);?>&body=<?php print $current_url;?>">Email</a></li>
         </ul>
       </div>
-      <div><button class="btn-invert small" id="follow">Volg de SP</button> <button class="btn-invert small" id="share">Pagina delen</button></div>
+      <?php endif; ?>
+      <div>
+        <button class="btn-invert small" id="follow">Volg de SP</button>
+        <?php if ($current_url and $current_title): ?>
+        <button class="btn-invert small" id="share">Pagina delen</button>
+        <?php endif; ?>
+      </div>
     </div>
   </div>
 

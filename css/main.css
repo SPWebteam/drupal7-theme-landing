@@ -743,6 +743,9 @@ ul.inline li {
   max-width: calc(960px - 2rem);
   margin: 0 auto; }
 
+@media screen and (max-width: calc(960px - 2rem)) {
+  .breadcrumb {
+    padding-left: 1rem; } }
 /* BUTTONS */
 .btn, .btn-invert, a.btn-invert, .btn-text, a.btn-text, a.btn, a.btn-invert, a.btn-text {
   font-family: "HelveticaInseratLTPro", sans-serif;
@@ -902,8 +905,7 @@ ul.inline li {
   max-width: 960px;
   margin: 0 auto; }
   .book-block-menu > ul {
-    padding: 1rem;
-    margin-left: 1rem; }
+    padding: 1rem; }
   .book-block-menu ul {
     background: #f1f1f1;
     padding-left: 1rem; }
@@ -912,7 +914,8 @@ ul.inline li {
 
 @media screen and (min-width: 600px) {
   .book-block-menu > ul {
-    float: right; } }
+    float: right;
+    padding-left: 1rem; } }
 /* ========================================================================== *\
    Cookie Bar (EU Cookie Compliance Module)
 \* ========================================================================== */
@@ -1512,19 +1515,22 @@ input::placeholder, textarea::placeholder {
 @media screen and (min-width: 768px) {
   .form-item label {
     font-size: 1.125rem; } }
+/*
+// ADDS INLINE PREFIX USING FLOAT
 span.field-prefix {
-  float: left;
-  width: 2rem;
-  height: 2.6rem;
-  background: #ddd;
-  border: 1px solid #ddd;
-  padding: .72rem .5rem .72rem .5rem;
-  text-align: center;
-  font-family: "HelveticaNeueLTStd-Md", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif; }
-
+    float: left;
+    width: 2rem; 
+    height: 2.6rem; //quickfix
+    background: #ddd;
+    border: 1px solid #ddd;
+    padding: .72rem .5rem .72rem .5rem;
+    text-align: center;
+    font-family: $font-strong;
+}
 span.field-prefix + input {
-  width: calc(100% - 2rem) !important; }
-
+    width: calc(100% - 2rem)!important;
+}
+*/
 .form-required {
   color: #ED1C24; }
 
@@ -1627,6 +1633,11 @@ input.button-primary {
   min-width: 153px;
   margin-left: 8px; }
 
+@media only screen and (max-width: 500px) {
+  input.form-submit {
+    width: 100%;
+    margin-bottom: 8px;
+    margin-left: 0; } }
 input.webform-previous {
   background: #fff;
   color: #ED1C24; }
@@ -1636,16 +1647,6 @@ input.button-primary:hover {
   background: #000;
   color: #fff;
   border-color: #000; }
-
-.webform-progressbar-number {
-  display: inline-block;
-  background: #eee;
-  padding: 8px;
-  margin-bottom: 8px;
-  color: #666;
-  font-weight: bold;
-  font-size: .8em;
-  font-family: sans-serif; }
 
 /* Form styling custom classes */
 .horizontal {
@@ -1672,16 +1673,91 @@ input.button-primary:hover {
   background-color: #333;
   color: #fff; }
 
-@media only screen and (max-width: 500px) {
-  .form-submit {
-    width: 100%;
-    margin-bottom: 8px; } }
 .required.error {
   background: #f2dede; }
   .required.error::placeholder {
     color: #d4aeae;
     opacity: 1;
     /* Firefox */ }
+
+.links {
+  display: none; }
+
+.form-managed-file .form-file {
+  margin-bottom: .5rem; }
+
+.webform-component-textarea .grippie {
+  display: none; }
+
+.webform-datepicker .form-select {
+  width: auto; }
+
+.webform-component-checkboxes,
+.webform-component-radios {
+  margin-top: 24px; }
+
+.webform-client-form div.error {
+  background: #f39696;
+  color: inherit;
+  padding: 1rem;
+  line-height: 1;
+  display: block;
+  margin: .5rem 0; }
+  .webform-client-form div.error ul {
+    margin: 0;
+    padding-left: 1rem; }
+.webform-client-form .form-item input.error, .webform-client-form .form-item textarea.error, .webform-client-form .form-item select.error {
+  border: 2px solid #ec1b23; }
+
+.node-webform .field-introduction {
+  max-width: 960px;
+  margin: auto; }
+
+.webform-confirmation {
+  max-width: 960px;
+  margin: auto;
+  margin-top: 1rem; }
+
+.webform-progressbar-outer {
+  position: relative;
+  border: none;
+  width: 100%;
+  height: 2px;
+  margin: 0.35em -1px 3rem;
+  background-color: #888; }
+
+.webform-progressbar-inner {
+  background-color: #40D412;
+  height: 2px; }
+
+.webform-progressbar-page {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: -9px -4px;
+  border: 1px solid #7D7D7D;
+  background-color: white;
+  border-radius: 50%; }
+
+.webform-progressbar-page.current {
+  background-color: #40D412; }
+
+.webform-progressbar-page.completed {
+  background-color: #40D412; }
+
+.webform-progressbar-page .webform-progressbar-page-label {
+  position: relative;
+  top: 24px;
+  margin: 0 -10em; }
+
+.webform-progressbar-number {
+  display: inline-block;
+  background: #eee;
+  padding: 8px;
+  color: #666;
+  font-weight: bold;
+  font-size: .8em;
+  font-family: sans-serif; }
 
 /* FOOTER */
 footer img.site-logo {
@@ -2071,10 +2147,26 @@ nav.top-nav a .text {
       margin-left: -1rem;
       margin-right: -1rem; } }
 
+.node-vragen {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+  .node-vragen form {
+    padding: 0 0 2rem 0; }
+
 .node-webform header {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem; }
+
+.page-node-webform-draft-authlink .layout-primary-content {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto; }
+  .page-node-webform-draft-authlink .layout-primary-content .link {
+    word-wrap: break-word; }
+  .page-node-webform-draft-authlink .layout-primary-content form {
+    padding: 0 0 2rem 0; }
 
 .extra-padding {
   background: #f1f1f1;
@@ -2129,6 +2221,46 @@ nav.top-nav a .text {
       font-size: calc(2rem + 2vw);
       line-height: 1.2; }
 
+.paragraphs-item-banner-volledige-breedte .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-content: center;
+  justify-content: center; }
+  .paragraphs-item-banner-volledige-breedte .content .field-name-field-afbeelding {
+    grid-area: 1 / 1 / 2 / 2; }
+    .paragraphs-item-banner-volledige-breedte .content .field-name-field-afbeelding img {
+      display: grid;
+      width: 100%; }
+  .paragraphs-item-banner-volledige-breedte .content .field-name-field-inhoud {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    align-items: end;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 14px #000;
+    padding-bottom: 1rem; }
+    .paragraphs-item-banner-volledige-breedte .content .field-name-field-inhoud a.btn, .paragraphs-item-banner-volledige-breedte .content .field-name-field-inhoud a.btn-invert, .paragraphs-item-banner-volledige-breedte .content .field-name-field-inhoud a.btn-text {
+      text-shadow: none;
+      border: none;
+      box-shadow: 0 0 7px 0 #000;
+      line-height: 1.2; }
+    .paragraphs-item-banner-volledige-breedte .content .field-name-field-inhoud h1 {
+      font-size: 2rem;
+      font-size: calc(2rem + 2vw);
+      color: #fff;
+      line-height: 1.2; }
+    .paragraphs-item-banner-volledige-breedte .content .field-name-field-inhoud p {
+      font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+      font-size: 1.5rem;
+      font-size: calc(2rem + 2vw);
+      line-height: 1.2; }
+  @media screen and (min-width: 520px) {
+    .paragraphs-item-banner-volledige-breedte .content .field-name-field-inhoud {
+      padding-bottom: 10vh; } }
+
 .paragraphs-item-tekst-met-afbeelding {
   background: #f1f1f1;
   padding: 1.5rem; }
@@ -2137,6 +2269,8 @@ nav.top-nav a .text {
     background: #fff; }
     .paragraphs-item-tekst-met-afbeelding > .content .inhoud {
       padding: 2rem; }
+    .paragraphs-item-tekst-met-afbeelding > .content .field-afbeelding img {
+      display: block; }
     .paragraphs-item-tekst-met-afbeelding > .content .field-link .btn.standpunt, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-invert, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-text {
       border: 1px solid #fff;
       color: #333;
@@ -2217,6 +2351,8 @@ nav.top-nav a .text {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1rem; }
+  .paragraphs-item-inhoud-1-kolom > .content h1.title {
+    margin-top: 2rem; }
 
 .paragraphs-item-inhoud-2-kolom > .content {
   max-width: 960px;
@@ -2637,6 +2773,25 @@ h1.pane-title {
   padding: 1rem;
   margin-top: 1rem; }
 
+.view-inzendingen {
+  margin: 0 auto;
+  padding: 1rem;
+  background: #f1f1f1; }
+  .view-inzendingen .view-header,
+  .view-inzendingen .view-filter {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem; }
+  .view-inzendingen .views-row {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 2rem;
+    background: #fff;
+    border-left: 4px solid #ec1b23;
+    margin-bottom: 2rem; }
+  .view-inzendingen .form-item label {
+    display: block; }
+
 .view-kandidaten .view-header {
   background: #f1f1f1;
   padding-top: 1rem; }
@@ -2773,79 +2928,6 @@ h1.pane-title {
         .view-kandidaten-overige .views-row .views-field-nothing .field-content .info {
           grid-area: info;
           padding: 2rem; } }
-
-.links {
-  display: none; }
-
-/* Webform specific elements */
-.form-managed-file .form-file {
-  margin-bottom: .5rem; }
-
-.webform-component-textarea .grippie {
-  display: none; }
-
-.webform-datepicker .form-select {
-  width: auto; }
-
-.webform-component-checkboxes,
-.webform-component-radios {
-  margin-top: 24px; }
-
-/* Webform inline error module */
-.webform-client-form div.error {
-  background: #f39696;
-  color: inherit;
-  padding: 1rem;
-  line-height: 1;
-  display: block;
-  margin: .5rem 0; }
-  .webform-client-form div.error ul {
-    margin: 0;
-    padding-left: 1rem; }
-.webform-client-form .form-item input.error, .webform-client-form .form-item textarea.error, .webform-client-form .form-item select.error {
-  border: 2px solid #ec1b23; }
-
-/* Styling of individual webform nodes */
-.node-webform .field-introduction {
-  max-width: 960px;
-  margin: auto; }
-
-.webform-confirmation {
-  max-width: 960px;
-  margin: auto;
-  margin-top: 1rem; }
-
-.webform-progressbar-outer {
-  position: relative;
-  border: none;
-  width: 100%;
-  height: 2px;
-  margin: 0.35em -1px 3rem;
-  background-color: #888; }
-
-.webform-progressbar-inner {
-  background-color: #40D412;
-  height: 2px; }
-
-.webform-progressbar-page {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  margin: -9px -4px;
-  border: 1px solid #7D7D7D;
-  background-color: white;
-  border-radius: 50%; }
-
-.webform-progressbar-page.current {
-  background-color: #40D412; }
-
-.webform-progressbar-page.completed {
-  background-color: #40D412; }
-
-.webform-progressbar-page .webform-progressbar-page-label {
-  position: relative;
-  top: 24px;
-  margin: 0 -10em; }
 
 .page-node-done .primary-content {
   display: grid;

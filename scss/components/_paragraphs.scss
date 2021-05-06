@@ -52,6 +52,61 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 }
 
 
+// BANNER VOLLEDIGE BREEDTE
+.paragraphs-item-banner-volledige-breedte .content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	align-content: center;
+	justify-content: center;
+	.field-name-field-afbeelding {
+		grid-area: 1 / 1 / 2 / 2;
+		img {
+			display: grid;
+			//min-width: 360px;
+			width: 100%;
+			//height: $fullscreen_height;
+			//object-fit: cover;
+			//min-height: 500px;
+		}
+	}
+	.field-name-field-inhoud {
+		grid-area: 1 / 1 / 2 / 2;
+		display: grid;
+		align-items: end;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		color: #fff;
+		text-shadow: $text-shadow;
+		padding-bottom: 1rem;
+		a.btn {
+			text-shadow: none;
+			border: none;
+			box-shadow: $box-shadow;
+			line-height: 1.2;
+		}
+		h1 {
+			font-size: 2rem;
+			font-size: calc(2rem + 2vw);
+			color: #fff;
+			line-height: 1.2;
+		}
+		p {
+			font-family: $font-middle;
+			font-size: 1.5rem;
+			font-size: calc(2rem + 2vw);
+			line-height: 1.2;
+		}
+	}
+	@media screen and (min-width: 520px){
+		.field-name-field-inhoud {
+			padding-bottom: 10vh;
+		}
+	}
+}
+
+
 // BLOK: TEKST MET AFBEELDING
 .paragraphs-item-tekst-met-afbeelding {
 	background: #f1f1f1;
@@ -61,6 +116,9 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		background: #fff;
 		.inhoud {
 			padding: 2rem;
+		}
+		.field-afbeelding img {
+			display: block; //removes whitespace
 		}
 		.field-link {
 			//quickfix
@@ -192,6 +250,9 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		max-width: $content-width;
 		margin: 0 auto;
 		padding: 0 1rem;
+		h1.title {
+				margin-top: 2rem;
+		}
 	}
 }
 

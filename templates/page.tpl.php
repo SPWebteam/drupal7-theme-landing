@@ -1,4 +1,10 @@
 <?php
+// needs a fix, $base_url is null
+// $current_url = $base_url . $base_path;
+// if($title){
+//   $current_title = $title;  
+// }
+
 ?>
 <div class="layout-page page-wrapper">
 
@@ -41,14 +47,15 @@
   </footer>
 
 
+  <?php if ($current_url): ?>
   <div class="social-footer">
     <div class="social-bar">
       <div id="social-follow">
         <h2>Volg de SP</h2>
         <ul>
           <li style="margin-bottom:1px;"><a class="btn-social colored facebook" target="_blank" href="https://www.facebook.com/SocialistischePartij">Facebook</a> <a class="btn-social colored twitter" target="_blank" href="https://twitter.com/SPnl">Twitter</a> <a class="btn-social colored instagram" target="_blank" href="https://www.instagram.com/SocialistischePartij">Instagram</a></li>
-          <li><a class="btn" target="_blank" href="https://doemee.sp.nl?ref=tk2021">Doe mee</a></li>
-          <li><a class="btn" target="_blank" href="https://wordlid.sp.nl?ref=tk2021">Word lid</a></li>
+          <li><a class="btn" target="_blank" href="https://doemee.sp.nl?ref=<?php print $current_url;?>">Doe mee</a></li>
+          <li><a class="btn" target="_blank" href="https://wordlid.sp.nl?ref=<?php print $current_url;?>">Word lid</a></li>
         </ul>
       </div>
       <?php if ($current_url and $current_title): ?>
@@ -71,5 +78,5 @@
       </div>
     </div>
   </div>
-
 </div>
+<?php endif; ?>

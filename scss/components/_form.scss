@@ -262,7 +262,11 @@ input.button-primary:hover {
 .webform-component-radios {
     margin-top: 24px;
 }
-
+.webform-component-select {
+    > label {
+        display: block;
+    }
+}
 
 // WEBFORM INLINE ERROR MODULE
 .webform-client-form {
@@ -298,6 +302,9 @@ input.button-primary:hover {
 
 
 // PROGRESSBAR MULTISTEP FORM
+.webform-progressbar {
+    margin-bottom: 1rem;
+}
 .webform-progressbar-outer {
     position: relative;
     border: none;

@@ -5,8 +5,9 @@
 	display: table;
     .counter--target, 
     .counter--count {
-    	font-family: $font-middle;
-    	color: $color3;
+    	color: #000;
+		font-size: 1.25rem;
+		font-weight: 700;
     	text-align: center;
     	display: table-cell;
     	padding: 0;
@@ -14,9 +15,13 @@
     }
     .counter--target {
     	padding-left: 12px;
+		min-width: 100px;
+		text-align: left;
     }
     .counter--count {
     	padding-right: 12px;
+		min-width: 100px;
+		text-align: right;
     }
     .counter--progress-wrapper {
 
@@ -35,8 +40,9 @@
     	background: #eee;
         .progress--progress {
         	height: 16px;
-        	background: $color3;
         	display: block;
+			background: $color3;
+			background: linear-gradient(90deg, rgb(255, 236, 21) 0%, rgb(236, 27, 35) 58%);
         }
     }
 }

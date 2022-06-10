@@ -12,7 +12,7 @@
     </header>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
+  <?php print render($content['pgbar_default']); ?>
   <?php if ($display_submitted): ?>
     <section class="meta meta-submitted">
       <?php print $submitted; ?>

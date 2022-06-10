@@ -14,8 +14,8 @@
 @import 'button';
 @import 'books';
 @import 'cookie-bar';
+@import 'counter';
 @import 'doe-mee';
-@import 'doe-mee--counter';
 @import 'enquete';
 @import 'header';
 @import 'fields'; // drupal
@@ -42,10 +42,11 @@
 @import 'paragraphs';
 @import 'pager';
 @import 'personen';
-@import 'primary-content';
+@import 'pgbar';
+//@import 'primary-content'; old?
 @import 'social-footer';
 @import 'social-share';
-@import 'sp-event';
+//@import 'sp-event'; old?
 @import 'stickyfooter';
 @import 'tabs';
 @import 'title';

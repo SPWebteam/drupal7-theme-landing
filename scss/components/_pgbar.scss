@@ -1,0 +1,29 @@
+// PGBAR
+// a webform 'progress bar' module
+
+
+h1 .pgbar-counter {
+    font-size: 3rem;
+    font-family: inter;
+    font-weight: 800;
+    color: #000;
+}
+.field-type-pgbar {
+    padding: 0 1rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.pgbar-wrapper {
+    margin-bottom: 1rem;
+    max-width: 960px;
+}
+.pgbar-current {
+    height: 16px;
+    background: $color1;
+    background: linear-gradient(90deg, #ffec15 0%, #ec1b23 58%);
+}
+.pgbar-bg {
+    background: #f1f1f1;
+    border: none;
+    border-radius: 16px;
+}

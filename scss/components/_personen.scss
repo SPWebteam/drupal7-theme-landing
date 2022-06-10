@@ -29,8 +29,9 @@
 }
 #personen-wrapper .persoon {
 	width: 100%;
+	max-width: 360px;
 	display: inline-block;
-	margin: 0 0 16px 0;
+	margin: 0 16px 16px 0;
 	background: #f1f1f1;
 }
 #personen-wrapper .afbeelding {
@@ -47,6 +48,5 @@
 @media screen and (min-width: 1600px){
 	#personen-wrapper .persoon {
 		float: left;
-		width: 50%;
 	}
 }

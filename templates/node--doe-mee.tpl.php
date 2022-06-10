@@ -119,7 +119,7 @@ if (!empty($content['field_cta_image_copyright'][0]['#markup'])){
       <?php
         if (!empty($personen)){
           print '<div id="personen-wrapper">';
-            print "<h2>Betrokken SP'ers</h2>";
+            print "<h2>Kandidaten</h2>";
             foreach ($personen as $x=>$persoon){
               $persoon_image_uri = $persoon['taxonomy_term']->field_introductie_afbeelding['und'][0]['uri'];
               $persoon_image_style = 'persoon';

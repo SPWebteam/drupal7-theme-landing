@@ -1,10 +1,13 @@
 <?php
-// needs a fix, $base_url is null
-// $current_url = $base_url . $base_path;
-// if($title){
-//   $current_title = $title;  
+// SECONDARY ACTIONS (see below)
+// $base_url doesn't work ...need a fix
+// if (isset($base_url)){
+//   $current_url = $base_url . $base_path;
+//   $current_title = $title;
+// } else {
+//   $current_url = 'https://geenbaseurl.sp.nl/';
+//   $current_title = $title;
 // }
-
 ?>
 <div class="layout-page page-wrapper">
 
@@ -32,22 +35,19 @@
     <?php endif; ?>
   </header>
 
-
   <div class="layout-primary-content primary-content">
+    <?php print render($tabs); ?>
     <?php print $messages; ?>
     <div class="content"><?php print render($page['content']); ?></div>
-    <?php print render($tabs); ?>
     <?php print render($page['help']); ?>
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
   </div>
-
 
   <footer class="layout-site-footer site-footer" id="site-footer">
     <?php print render($page['footer']); ?>
   </footer>
 
-
-  <?php if ($current_url): ?>
+  <?php if (isset($current_url)): ?>
   <div class="social-footer">
     <div class="social-bar">
       <div id="social-follow">

@@ -297,7 +297,9 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 	background: #f1f1f1;
 	display: grid;
 	justify-content: center;
-	padding: 3rem 0;
+	align-content: center;
+	min-height: 90vh;
+	padding: 3rem 1rem;
 	> .content {
 		background: #fff;
 		max-width: 1400px;
@@ -450,4 +452,8 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			line-height: 1.2;
 		}
 	}
+}
+// ITEM BLOK FORMULIER MET TEKST
+.paragraphs-item-blok-formulier-met-tekst .node-webform header {
+	display: none; //quickfix
 }

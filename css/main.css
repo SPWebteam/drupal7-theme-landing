@@ -2745,12 +2745,22 @@ nav.top-nav a .text {
   display: block;
 }
 
+.paragraphs-item-tekst-met-afbeelding > .content .field-link {
+  display: grid;
+}
+
+.paragraphs-item-tekst-met-afbeelding > .content .field-link .btn.small, .paragraphs-item-tekst-met-afbeelding > .content .field-link .small.btn-invert, .paragraphs-item-tekst-met-afbeelding > .content .field-link .small.btn-text {
+  justify-self: end;
+}
+
 .paragraphs-item-tekst-met-afbeelding > .content .field-link .btn.standpunt, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-invert, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-text {
+  justify-self: start;
   border: 1px solid #fff;
   color: #333;
   padding: 7px 2px;
   font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
   text-transform: none;
+  text-align: left;
 }
 
 .paragraphs-item-tekst-met-afbeelding > .content .field-link .btn.standpunt:before, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-invert:before, .paragraphs-item-tekst-met-afbeelding > .content .field-link .standpunt.btn-text:before {
@@ -2779,9 +2789,6 @@ nav.top-nav a .text {
   .paragraphs-item-tekst-met-afbeelding .content .field-link .btn.standpunt, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-invert, .paragraphs-item-tekst-met-afbeelding .content .field-link .standpunt.btn-text {
     font-size: 1rem;
   }
-  .paragraphs-item-tekst-met-afbeelding .content .afbeelding {
-    display: none;
-  }
   .paragraphs-item-tekst-met-afbeelding .content .inhoud {
     padding-bottom: 2rem;
   }
@@ -2796,9 +2803,6 @@ nav.top-nav a .text {
   .paragraphs-item-tekst-met-afbeelding .content .afbeelding,
   .paragraphs-item-tekst-met-afbeelding .content .inhoud {
     max-width: 50%;
-  }
-  .paragraphs-item-tekst-met-afbeelding .content .field-link {
-    text-align: left;
   }
   .paragraphs-item-tekst-met-afbeelding .content .field-link .field-item:last-child {
     text-align: right;
@@ -3154,7 +3158,7 @@ h1 .pgbar-counter {
 }
 
 .pgbar-bg {
-  background: #f1f1f1;
+  background: #ddd;
   border: none;
   border-radius: 16px;
 }

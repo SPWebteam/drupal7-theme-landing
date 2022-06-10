@@ -121,13 +121,18 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			display: block; //removes whitespace
 		}
 		.field-link {
-			//quickfix
+			display: grid;
+			.btn.small {
+				justify-self: end;
+			}
 			.btn.standpunt {
+				justify-self: start;
 				border: 1px solid #fff;
 				color: #333;
 				padding: 7px 2px;
 				font-family: $font-middle;
 				text-transform: none;
+				text-align: left;
 				&:before {
 					content: 'T';
 					font-family: $sp-icons;
@@ -154,9 +159,6 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 					font-size: 1rem;
 				}
 			}
-			.afbeelding {
-				display: none;
-			}
 			.inhoud {
 				padding-bottom: 2rem;
 			}
@@ -172,7 +174,6 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 				max-width: 50%
 			}
 			.field-link {
-				text-align: left;
 				.field-item:last-child{
 					text-align: right;
 				}

@@ -36,10 +36,10 @@
   </header>
 
   <div class="layout-primary-content primary-content">
+    <?php print render($page['help']); ?>
     <?php print render($tabs); ?>
     <?php print $messages; ?>
     <div class="content"><?php print render($page['content']); ?></div>
-    <?php print render($page['help']); ?>
     <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
   </div>
 

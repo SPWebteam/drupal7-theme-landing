@@ -145,7 +145,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			}
 			//end quickfix
 			.field-item {
-				display: block;
+				display: grid;
 			}
 		}
 	}

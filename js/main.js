@@ -251,7 +251,7 @@
           let top = target.style.top;
           // temporary overwrite current
           target.style.position = "relative";
-          target.style.top = "-70px"; //offset y height of fixed element
+          target.style.top = "-86px"; //offset y height of fixed element
           target.scrollIntoView({
             behavior: "smooth",
             block: "start",

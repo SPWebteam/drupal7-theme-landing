@@ -2950,7 +2950,7 @@ nav.top-nav a .text {
     padding: 1rem 3rem;
   }
   .paragraphs-item-blok-formulier-met-tekst > .content .field-type-entityreference {
-    padding-left: 1rem;
+    padding: 1rem;
     border-left: 3px dashed #ddd;
   }
 }

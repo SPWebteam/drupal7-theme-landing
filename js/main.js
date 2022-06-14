@@ -237,6 +237,34 @@
     },
   };
 
+  // see also: http://www.javascriptkit.com/javatutors/scrolling-html-bookmark-javascript.shtml
+  Drupal.behaviors.anchorScrollIntoView = {
+    attach: function (context, settings) {
+      let anchorlinks = document.querySelectorAll('a[href^="#"]');
+      for (let item of anchorlinks) {
+        // relitere
+        item.addEventListener("click", (e) => {
+          let hashval = item.getAttribute("href");
+          let target = document.querySelector(hashval);
+          // get current position + top
+          let pos = target.style.position;
+          let top = target.style.top;
+          // temporary overwrite current
+          target.style.position = "relative";
+          target.style.top = "-70px"; //offset y height of fixed element
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+          // reset position + top to original
+          target.style.top = top;
+          target.style.position = pos;
+          history.pushState(null, null, hashval);
+          e.preventDefault();
+        });
+      }
+    },
+  };
   //   Drupal.behaviors.counters = {
   //     // start counting
   //     attach: function (context, settings) {

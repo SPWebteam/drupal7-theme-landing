@@ -186,20 +186,24 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 }
 
 
-
-
 // BLOK: TEKST
 .paragraphs-item-tekst {
-	padding: 3rem 1.5rem;
+	padding: 1rem;
 	background: #f1f1f1;
 	> .content{
 		max-width: $content-width;
 		background: #fff;
 		margin: 0 auto;
-		.field-name-field-inhoud{
-			.field-inhoud{
-				padding: 3rem;
-			}
+		.field-inhoud{
+			padding: 1rem;
+		}
+	}
+}
+@media screen and (min-width: 720px){
+	.paragraphs-item-tekst {
+		padding: 3rem 1.5rem;
+		.content .field-inhoud {
+			padding: 3rem;
 		}
 	}
 }
@@ -328,6 +332,9 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			padding: 2rem 3rem;
 			grid-template-areas:
 			  "inhoud form";
+			.field-name-field-inhoud {
+				padding: 1rem 3rem;
+			}
 			.field-type-entityreference {
 				padding-left: 1rem;
 				border-left: 3px dashed #ddd;

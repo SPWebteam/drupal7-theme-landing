@@ -594,6 +594,8 @@ hr {
   border-radius: 4px;
   outline: none;
   transition: 0.4s;
+  font-family: "HelveticaInseratLTPro", sans-serif;
+  font-size: 1rem;
 }
 
 .accordion,
@@ -619,6 +621,7 @@ button.accordion:before {
   display: inline-block;
   transition: .2s ease;
   color: #ec1b23;
+  font-weight: 900;
 }
 
 button.accordion.active:before {

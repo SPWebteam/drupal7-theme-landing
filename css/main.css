@@ -562,6 +562,10 @@ hr {
   width: 100%;
 }
 
+.layout-page {
+  padding-top: 74px;
+}
+
 .layout-site-header {
   grid-template-columns: 120px 1fr 120px;
   position: fixed;
@@ -573,6 +577,10 @@ hr {
 
 .logged-in .layout-site-header {
   top: 20px;
+}
+
+.layout-primary-content {
+  min-height: calc(100vh - 74px - 136px);
 }
 
 .layout-content-container {

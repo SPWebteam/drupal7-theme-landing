@@ -6,10 +6,9 @@ $content-width: 960px;
 	height: 100%;
 	width: 100%;
 }
-// .layout-page {
-// 	display: grid;
-// 	grid-template-rows: 70px 1fr 136px;
-// }
+.layout-page {
+	padding-top: 74px; // extra padding for fixed header
+}
 .layout-site-header {
 	grid-template-columns: 120px 1fr 120px;
 	position: fixed;
@@ -20,6 +19,9 @@ $content-width: 960px;
 }
 .logged-in .layout-site-header {
 	top: 20px;
+}
+.layout-primary-content {
+	min-height: calc(100vh - 74px - 136px); //quickfix floating footer
 }
 .layout-content-container {
 	max-width: $content-width;

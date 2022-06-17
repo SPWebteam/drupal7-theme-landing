@@ -149,7 +149,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			}
 		}
 	}
-	@media screen and (max-width: 999px){
+	@media screen and (max-width: 959px){
 		.content {
 			max-width: 600px;
 			margin: 0 auto;
@@ -164,9 +164,9 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			}
 		}
 	}
-	@media screen and (min-width: 1000px){
+	@media screen and (min-width: 960px){
 		.content {
-			max-width: 1000px;
+			max-width: 960px;
 			margin: 0 auto;
 			display: flex;
 			.afbeelding,

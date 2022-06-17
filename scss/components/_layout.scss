@@ -6,17 +6,20 @@ $content-width: 960px;
 	height: 100%;
 	width: 100%;
 }
-.layout-page {
-	display: grid;
-	grid-template-rows: 70px 1fr 136px;
-}
+// .layout-page {
+// 	display: grid;
+// 	grid-template-rows: 70px 1fr 136px;
+// }
 .layout-site-header {
 	grid-template-columns: 120px 1fr 120px;
-	position: sticky;
+	position: fixed;
 	z-index: 2;
 	top:0;
 	left:0;
 	right:0;
+}
+.logged-in .layout-site-header {
+	top: 20px;
 }
 .layout-content-container {
 	max-width: $content-width;

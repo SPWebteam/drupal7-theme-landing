@@ -1,7 +1,28 @@
 <?php
 ?>
 <div class="layout-page page-wrapper">
-
+  <header class="layout-site-header site-header" id="site-header">
+    <div class="site-branding">
+    <?php if ($logo): ?>
+      <div class="site-logo">
+        <a href="<?php print($logo_url);?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <?php include("inc/logo.tpl.php"); ?>
+        </a>
+      </div>
+      <?php endif; ?>
+      <?php if ($site_name): ?>
+        <h1 class="site-name">
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span>
+            <?php print $site_name; ?></span>
+          </a>
+        </h1>
+    <?php endif; ?>
+    </div>
+    <?php print render($page['header']); ?>
+    <?php if ($main_menu): ?>      
+      <div class="menu-toggle"><button><span class="text">Menu</span></button></div>
+    <?php endif; ?>
+  </header>
 
   <div class="layout-primary-content primary-content">
     <?php print $messages; ?>

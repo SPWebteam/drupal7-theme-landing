@@ -14,12 +14,6 @@
         border-color: $color1;
     }
 }
-// quickfix logo
-.leftside .site-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 //end SHAME
 
@@ -27,15 +21,12 @@
     .content-header {
         display: none;
     }
-    .site-branding {
-        position: absolute;
-        top: 5px;
-        left: 0;
-        z-index: 2;
-    }
-    #site-header {
-        border-top: none;
-    }
+    // .site-branding {
+    //     position: absolute;
+    //     top: 5px;
+    //     left: 0;
+    //     z-index: 2;
+    // }
     .leftside .btn {
         border: none;
     }
@@ -116,8 +107,11 @@
     color: #888;
 }
 // LAYOUT
-.logged-in .webformslider, .logged-in .leftside, .logged-in .rightside {
-    top: 21px; // lowers fixed height for logged-in user
+.logged-in .fullscreen,
+.logged-in .webformslider,
+.logged-in .leftside,
+.logged-in .rightside {
+    top: 90px; // lowers fixed height for logged-in user
 }
 .fullscreen {
     position: fixed;
@@ -126,8 +120,7 @@
     right: 0px;
     bottom: 0px;
     display: block;
-    height: 100vh;
-    border-top: 5px solid $color1;
+    height: calc(100vh - 90px);
 }
 .leftside {
     position: fixed;
@@ -139,7 +132,7 @@
     display: -ms-flexbox;
     display: flex;
     width: 50%;
-    height: 100%;
+    //height: 100%;
     padding-right: 32px;
     padding-left: 32px;
     -webkit-box-pack: center;
@@ -161,7 +154,7 @@
     bottom: 0px;
     overflow-y: auto;
     width: 50%;
-    height: 100%;
+    //height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -308,10 +301,14 @@
             position: static; // enable scrolling
             min-height: 134vw; // increases minimal height for mobile when horizontal
         }
+        .layout-primary-content {
+            padding-top: 74px;
+        }
         .leftside {
             position: relative;
             top: 0; // fix 5px
             width: 100%;
+            min-height:calc(100vh - 90px);
         }
         .rightside {
             position: relative;
@@ -319,6 +316,7 @@
             width: 100%;
             height: auto;
             float: none;
+            top: 0;
         }
         .rightside section.article-content {
             padding: 32px;

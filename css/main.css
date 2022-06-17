@@ -569,7 +569,7 @@ hr {
 .layout-site-header {
   grid-template-columns: 120px 1fr 120px;
   position: fixed;
-  z-index: 2;
+  z-index: 13;
   top: 0;
   left: 0;
   right: 0;

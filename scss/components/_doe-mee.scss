@@ -21,12 +21,6 @@
     .content-header {
         display: none;
     }
-    // .site-branding {
-    //     position: absolute;
-    //     top: 5px;
-    //     left: 0;
-    //     z-index: 2;
-    // }
     .leftside .btn {
         border: none;
     }
@@ -300,9 +294,6 @@
         .fullscreen {
             position: static; // enable scrolling
             min-height: 134vw; // increases minimal height for mobile when horizontal
-        }
-        .layout-primary-content {
-            padding-top: 74px;
         }
         .leftside {
             position: relative;

@@ -1498,9 +1498,6 @@ ul.inline li {
     position: static;
     min-height: 134vw;
   }
-  .node-type-doe-mee .layout-primary-content {
-    padding-top: 74px;
-  }
   .node-type-doe-mee .leftside {
     position: relative;
     top: 0;
@@ -2295,16 +2292,12 @@ ul.menu li {
   /* LTR */
 }
 
-li.expanded,
-li.collapsed,
-li.leaf {
+ul.menu li.expanded,
+ul.menu li.collapsed,
+ul.menu li.leaf {
   padding: 0.2rem 0.5rem 0 0;
   /* LTR */
   margin: 0;
-}
-
-li a.active {
-  color: #000;
 }
 
 td.menu-disabled {

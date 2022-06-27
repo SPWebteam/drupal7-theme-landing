@@ -51,6 +51,46 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 	}
 }
 
+// BANNER AFBEELDING ACHTERGROND
+.paragraphs-item-banner-afbeelding-achtergrond .content {
+	// display: grid;
+	// grid-template-columns: 1fr;
+	// grid-template-rows: minmax($fullscreen_height, 1fr);
+	// align-content: center;
+	// justify-content: center;
+	// text-align: center;
+	.inhoud {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		color: #fff;
+		text-shadow: $text-shadow;
+		text-align: center;
+		padding-bottom: 7.5vh;
+		padding-top: 1rem;
+		a.btn {
+			text-shadow: none;
+			border: none;
+			box-shadow: $box-shadow;
+			line-height: 1.2;
+		}
+		h1 {
+			font-size: 2rem;
+			font-size: calc(2rem + 2vw);
+			color: #fff;
+			line-height: 1.2;
+		}
+		p {
+			font-family: $font-middle;
+			font-size: 1.5rem;
+			font-size: calc(2rem + 2vw);
+			line-height: 1.2;
+		}
+	}
+}
+
 
 // BANNER VOLLEDIGE BREEDTE
 .paragraphs-item-banner-volledige-breedte .content {

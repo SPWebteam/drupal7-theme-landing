@@ -2666,6 +2666,40 @@ nav.top-nav a .text {
   line-height: 1.2;
 }
 
+.paragraphs-item-banner-afbeelding-achtergrond .content .inhoud {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 14px #000;
+  text-align: center;
+  padding-bottom: 7.5vh;
+  padding-top: 1rem;
+}
+
+.paragraphs-item-banner-afbeelding-achtergrond .content .inhoud a.btn, .paragraphs-item-banner-afbeelding-achtergrond .content .inhoud a.btn-invert, .paragraphs-item-banner-afbeelding-achtergrond .content .inhoud a.btn-text {
+  text-shadow: none;
+  border: none;
+  box-shadow: 0 0 7px 0 #000;
+  line-height: 1.2;
+}
+
+.paragraphs-item-banner-afbeelding-achtergrond .content .inhoud h1 {
+  font-size: 2rem;
+  font-size: calc(2rem + 2vw);
+  color: #fff;
+  line-height: 1.2;
+}
+
+.paragraphs-item-banner-afbeelding-achtergrond .content .inhoud p {
+  font-family: "HelveticaNeueLTStd-BdCn", "Helvetica Neue", Helvetica, "Roboto Sans", "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-size: 1.5rem;
+  font-size: calc(2rem + 2vw);
+  line-height: 1.2;
+}
+
 .paragraphs-item-banner-volledige-breedte .content {
   display: grid;
   grid-template-columns: 1fr;

@@ -53,12 +53,6 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 
 // BANNER AFBEELDING ACHTERGROND
 .paragraphs-item-banner-afbeelding-achtergrond .content {
-	// display: grid;
-	// grid-template-columns: 1fr;
-	// grid-template-rows: minmax($fullscreen_height, 1fr);
-	// align-content: center;
-	// justify-content: center;
-	// text-align: center;
 	.inhoud {
 		display: grid;
 		align-items: center;
@@ -90,7 +84,6 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		}
 	}
 }
-
 
 // BANNER VOLLEDIGE BREEDTE
 .paragraphs-item-banner-volledige-breedte .content {

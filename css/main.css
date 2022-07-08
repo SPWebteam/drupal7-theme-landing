@@ -1884,6 +1884,7 @@ span.field-prefix + input {
   display: table-cell;
   float: left;
   margin-top: -8px;
+  cursor: pointer;
 }
 
 .form-type-radio input:checked + label:before,
@@ -1896,11 +1897,6 @@ span.field-prefix + input {
 .form-type-radio input:checked + label,
 .form-type-checkbox input:checked + label {
   color: #ED1C24;
-}
-
-.no-touch .form-type-radio:hover input + label:before,
-.no-touch .form-type-checkbox:hover input + label:before {
-  color: #aaa;
 }
 
 .voting .form-type-radio input[type="radio"] + label:before,

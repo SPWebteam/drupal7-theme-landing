@@ -4,20 +4,24 @@ form {
     margin: auto;
     padding: 0 1rem 2rem 1rem;
 }
+
 legend {
     font-size: 1.5rem;
     font-family: $font-primary;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
+
 fieldset {
     padding: 0 1rem;
     margin: 2rem 0;
 }
-input,textarea {
-  &::placeholder {
-     color: #ccc;
-  }
+
+input,
+textarea {
+    &::placeholder {
+        color: #ccc;
+    }
 }
 
 /* WEBFORM */
@@ -25,10 +29,12 @@ input,textarea {
     margin: 0;
     text-align: right;
 }
+
 .form-item {
     margin-top: 0;
     margin-bottom: 16px;
 }
+
 .form-select {
     padding: 8px;
     font-family: $font-strong;
@@ -38,6 +44,7 @@ input,textarea {
     /*width: 100%;*/
     text-overflow: ellipsis;
 }
+
 .form-item label {
     display: inline-block;
     margin-bottom: 8px;
@@ -46,7 +53,8 @@ input,textarea {
     font-family: $font-middle;
     letter-spacing: .3px;
 }
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
     .form-item label {
         font-size: 1.125rem;
     }
@@ -70,7 +78,7 @@ span.field-prefix + input {
 */
 
 .form-required {
-  color: $color1;
+    color: $color1;
 }
 
 .form-item .description {
@@ -78,9 +86,10 @@ span.field-prefix + input {
     color: #888;
     padding-top: 5px;
 }
+
 .form-item .form-text,
 .form-item .form-textarea {
-    max-width:100%;
+    max-width: 100%;
     width: 100%;
     padding: .72rem;
     background: #fafafa;
@@ -90,33 +99,52 @@ span.field-prefix + input {
 }
 
 .form-item .form-text.form-number {
-    max-width:none;
+    max-width: none;
     width: auto;
 }
+
 // RADIOS AND CHECKBOXES
 .form-checkboxes .form-item,
 .form-radios .form-item {
     display: table; // to prevent label text wrapping underneath
     margin-bottom: .5rem;
 }
-.form-type-radio input[type="radio"] + label,
-.form-type-checkbox input[type="checkbox"] + label {
+
+.form-type-radio input[type="radio"]+label,
+.form-type-checkbox input[type="checkbox"]+label {
     display: table-cell; // to prevent label text wrapping underneath
     padding-top: 10px; // to prevent label text wrapping underneath
 }
+
 .form-type-radio input[type="radio"],
 .form-type-checkbox input[type="checkbox"] {
     opacity: 0; // display:none or visibility:hidden breaks accessibility
     position: absolute;
     left: -9999px;
 }
+
+// QUICKFIX VBO RADIO AND CHECKBOXES
+// vbo view doesn't have labels
+.views-field-views-bulk-operations .form-type-radio input[type="radio"],
+.views-field-views-bulk-operations .form-type-checkbox input[type="checkbox"] {
+    opacity: 1; // display:none or visibility:hidden breaks accessibility
+    position: relative;
+    left: 0;
+}
+
+.views-field-views-bulk-operations .form-type-radio,
+.views-field-views-bulk-operations .form-type-checkbox {
+    margin-bottom: 0;
+}
+
 // fix accessibility for radio/checkbox by add focus effect on label
-.form-type-radio input:focus + label:before,
-.form-type-checkbox input:focus + label:before {
+.form-type-radio input:focus+label:before,
+.form-type-checkbox input:focus+label:before {
     outline: 2px solid #0276BA;
 }
-.form-type-radio input[type="radio"] + label:before,
-.form-type-checkbox input[type="checkbox"] + label:before {
+
+.form-type-radio input[type="radio"]+label:before,
+.form-type-checkbox input[type="checkbox"]+label:before {
     display: inline-block;
     font-family: 'SPruit-icons';
     content: ' ';
@@ -134,15 +162,18 @@ span.field-prefix + input {
     min-height: 40px;
     text-align: center;
 }
-.form-type-radio input:checked + label:before,
-.form-type-checkbox input:checked + label:before {
+
+.form-type-radio input:checked+label:before,
+.form-type-checkbox input:checked+label:before {
     content: 'v';
-    color: $color1!important; //important prevents hover state
+    color: $color1  !important; //important prevents hover state
 }
-.form-type-radio input:checked + label,
-.form-type-checkbox input:checked + label {
+
+.form-type-radio input:checked+label,
+.form-type-checkbox input:checked+label {
     color: $color1;
 }
+
 // FIXME: Breaks for Samsung browsers
 // .no-touch .form-type-radio:hover input + label:before,
 // .no-touch .form-type-checkbox:hover input + label:before {
@@ -152,19 +183,25 @@ span.field-prefix + input {
 
 // RADIOS AND CHECKBOXES - VOTING STYLE
 // add a .voting class as wrapper
-.voting .form-type-radio input[type="radio"] + label:before,
-.voting .form-type-checkbox input[type="checkbox"] + label:before {
-    background: #ffffff; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 51%,#000000 57%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+.voting .form-type-radio input[type="radio"]+label:before,
+.voting .form-type-checkbox input[type="checkbox"]+label:before {
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff 51%, #000000 57%, #000000 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
     border-radius: 5px;
 }
 
 input[type="file"] {
     margin-bottom: .5rem; //adds extra margin between submit button and input for mobile
 }
+
 input.form-submit,
 input.webform-previous,
 input.button-primary {
@@ -180,11 +217,11 @@ input.button-primary {
     margin-left: 8px;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px) {
     input.form-submit {
-      width:100%;
-      margin-bottom: 8px;
-      margin-left: 0;
+        width: 100%;
+        margin-bottom: 8px;
+        margin-left: 0;
     }
 }
 
@@ -193,45 +230,50 @@ input.webform-previous {
     background: #fff;
     color: $color1;
 }
+
 input.webform-previous:hover,
 input.button-primary:hover {
-    background:#000;
-    color:#fff;
-    border-color:#000;
+    background: #000;
+    color: #fff;
+    border-color: #000;
 }
 
 
 /* Form styling custom classes */
 .horizontal {
-  overflow: hidden;
-  .form-item {
-    display: block;
-    float: left;
     overflow: hidden;
-    height: auto;
-    margin-right: 16px;
-  }
+
+    .form-item {
+        display: block;
+        float: left;
+        overflow: hidden;
+        height: auto;
+        margin-right: 16px;
+    }
 }
 
 .block-select .form-item {
-  label {
-    border: 2px solid #333;
-    padding: 16px 24px;
-    background: #fafafa;
-    display: block;
-    cursor: pointer;
-    &:hover{
-      border-color: $color1;
-      color: $color1;
+    label {
+        border: 2px solid #333;
+        padding: 16px 24px;
+        background: #fafafa;
+        display: block;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $color1;
+            color: $color1;
+        }
     }
-  }
-  input {
-    display: none;
-  }
-  input:checked + label {
-    background-color: #333;
-    color: #fff;
-  }
+
+    input {
+        display: none;
+    }
+
+    input:checked+label {
+        background-color: #333;
+        color: #fff;
+    }
 }
 
 
@@ -239,11 +281,14 @@ input.button-primary:hover {
 .required.valid {
     //background: green;
 }
+
 .required.error {
     background: #f2dede;
+
     &::placeholder {
         color: #d4aeae;
-        opacity: 1; /* Firefox */
+        opacity: 1;
+        /* Firefox */
     }
 }
 
@@ -254,21 +299,26 @@ input.button-primary:hover {
 .links {
     display: none; // FIXME: This is currently removing all drupal links.
 }
+
 .form-managed-file .form-file {
     margin-bottom: .5rem; //adds extra margin between choose file and submit button for mobile
 }
+
 .webform-component-textarea .grippie {
     display: none; //removes module gripbar for old browsers
 }
+
 .webform-datepicker .form-select {
     width: auto; //fixes 100% width on form-select
 }
+
 .webform-component-checkboxes,
 .webform-component-radios {
     margin-top: 24px;
 }
+
 .webform-component-select {
-    > label {
+    >label {
         display: block;
     }
 }
@@ -282,23 +332,30 @@ input.button-primary:hover {
         line-height: 1;
         display: block;
         margin: .5rem 0;
+
         ul {
             margin: 0;
             padding-left: 1rem;
         }
     }
-    .form-item input.error, .form-item textarea.error, .form-item select.error {
+
+    .form-item input.error,
+    .form-item textarea.error,
+    .form-item select.error {
         border: 2px solid rgb(236, 27, 35);
     }
 }
 
 // STYLING OF INDIVIDUAL WEBFORM NODES
 .node-webform {
-    .field-introduction, {
-        max-width: $content-width;
-        margin: auto;
-    }
+
+    .field-introduction,
+    {
+    max-width: $content-width;
+    margin: auto;
 }
+}
+
 .webform-confirmation {
     max-width: $content-width;
     margin: auto;
@@ -310,6 +367,7 @@ input.button-primary:hover {
 .webform-progressbar {
     margin-bottom: 1rem;
 }
+
 .webform-progressbar-outer {
     position: relative;
     border: none;
@@ -318,10 +376,12 @@ input.button-primary:hover {
     margin: 0.35em -1px 3rem;
     background-color: #888;
 }
+
 .webform-progressbar-inner {
     background-color: #40D412; //green
     height: 2px;
 }
+
 .webform-progressbar-page {
     position: absolute;
     width: 16px;
@@ -331,24 +391,27 @@ input.button-primary:hover {
     background-color: white;
     border-radius: 50%;
 }
+
 .webform-progressbar-page.current {
     background-color: #40D412; //green
 }
+
 .webform-progressbar-page.completed {
     background-color: #40D412; //green
 }
+
 .webform-progressbar-page .webform-progressbar-page-label {
     position: relative;
     top: 24px;
     margin: 0 -10em;
 }
-.webform-progressbar-number {
-  display: inline-block;
-  background: #eee;
-  padding: 8px;
-  color: #666;
-  font-weight: bold;
-  font-size: .8em;
-  font-family: sans-serif;
-}
 
+.webform-progressbar-number {
+    display: inline-block;
+    background: #eee;
+    padding: 8px;
+    color: #666;
+    font-weight: bold;
+    font-size: .8em;
+    font-family: sans-serif;
+}

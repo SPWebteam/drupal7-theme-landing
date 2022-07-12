@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/shame.scss"
-    ],
-    "names": [],
-    "file": "shame.css"
-}
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"shame.css"}

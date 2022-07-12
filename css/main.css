@@ -2807,7 +2807,6 @@ nav.top-nav a .text {
   display: grid;
   justify-content: center;
   align-content: center;
-  min-height: 90vh;
   padding: 3rem 1rem;
 }
 .paragraphs-item-blok-formulier-met-tekst > .content {

@@ -10,8 +10,10 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 	grid-row-gap: 0px;
 	align-content: center;
 	justify-content: center;
+
 	.field-name-field-afbeelding {
 		grid-area: 1 / 1 / 2 / 2;
+
 		img {
 			display: grid;
 			min-width: 360px;
@@ -21,6 +23,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			min-height: 500px;
 		}
 	}
+
 	.field-name-field-inhoud {
 		grid-area: 1 / 1 / 2 / 2;
 		display: grid;
@@ -30,18 +33,21 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		color: #fff;
 		text-shadow: $text-shadow;
 		padding-bottom: 10vh;
+
 		a.btn {
 			text-shadow: none;
 			border: none;
 			box-shadow: $box-shadow;
 			line-height: 1.2;
 		}
+
 		h1 {
 			font-size: 2rem;
 			font-size: calc(2rem + 2vw);
 			color: #fff;
 			line-height: 1.2;
 		}
+
 		p {
 			font-family: $font-middle;
 			font-size: 1.5rem;
@@ -64,18 +70,21 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		text-align: center;
 		padding-bottom: 7.5vh;
 		padding-top: 7.5vh;
+
 		a.btn {
 			text-shadow: none;
 			border: none;
 			box-shadow: $box-shadow;
 			line-height: 1.2;
 		}
+
 		h1 {
 			font-size: 2rem;
 			font-size: calc(2rem + 2vw);
 			color: #fff;
 			line-height: 1.2;
 		}
+
 		p {
 			font-family: $font-middle;
 			font-size: 1.5rem;
@@ -93,8 +102,10 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 	grid-row-gap: 0px;
 	align-content: center;
 	justify-content: center;
+
 	.field-name-field-afbeelding {
 		grid-area: 1 / 1 / 2 / 2;
+
 		img {
 			display: grid;
 			//min-width: 360px;
@@ -104,6 +115,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			//min-height: 500px;
 		}
 	}
+
 	.field-name-field-inhoud {
 		grid-area: 1 / 1 / 2 / 2;
 		display: grid;
@@ -113,18 +125,21 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		color: #fff;
 		text-shadow: $text-shadow;
 		padding-bottom: 1rem;
+
 		a.btn {
 			text-shadow: none;
 			border: none;
 			box-shadow: $box-shadow;
 			line-height: 1.2;
 		}
+
 		h1 {
 			font-size: 2rem;
 			font-size: calc(2rem + 2vw);
 			color: #fff;
 			line-height: 1.2;
 		}
+
 		p {
 			font-family: $font-middle;
 			font-size: 1.5rem;
@@ -132,7 +147,8 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			line-height: 1.2;
 		}
 	}
-	@media screen and (min-width: 520px){
+
+	@media screen and (min-width: 520px) {
 		.field-name-field-inhoud {
 			padding-bottom: 10vh;
 		}
@@ -144,20 +160,26 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 .paragraphs-item-tekst-met-afbeelding {
 	background: #f1f1f1;
 	padding: 1.5rem;
-	> .content {
+
+	>.content {
 		margin: 1rem 0;
 		background: #fff;
+
 		.inhoud {
 			padding: 2rem;
 		}
+
 		.field-afbeelding img {
 			display: block; //removes whitespace
 		}
+
 		.field-link {
 			display: grid;
+
 			.btn.small {
 				justify-self: end;
 			}
+
 			.btn.standpunt {
 				justify-self: start;
 				border: 1px solid #fff;
@@ -166,50 +188,61 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 				font-family: $font-middle;
 				text-transform: none;
 				text-align: left;
+
 				&:before {
 					content: 'T';
 					font-family: $sp-icons;
 					margin-right: 0.25rem;
 					color: $color1;
 				}
+
 				&:hover {
 					color: #fff;
 				}
 			}
+
 			//end quickfix
 			.field-item {
 				display: grid;
 			}
 		}
 	}
-	@media screen and (max-width: 959px){
+
+	@media screen and (max-width: 959px) {
 		.content {
 			max-width: 600px;
 			margin: 0 auto;
+
 			.field-link {
 				text-align: center;
+
 				.btn.standpunt {
 					font-size: 1rem;
 				}
 			}
+
 			.inhoud {
 				padding-bottom: 2rem;
 			}
 		}
 	}
-	@media screen and (min-width: 960px){
+
+	@media screen and (min-width: 960px) {
 		.content {
 			max-width: 960px;
 			margin: 0 auto;
 			display: flex;
+
 			.afbeelding,
 			.inhoud {
 				max-width: 50%
 			}
+
 			.field-link {
-				.field-item:last-child{
+				.field-item:last-child {
 					text-align: right;
 				}
+
 				.standpunt {
 					text-align: left;
 				}
@@ -223,18 +256,22 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 .paragraphs-item-tekst {
 	padding: 1rem;
 	background: #f1f1f1;
-	> .content{
+
+	>.content {
 		max-width: $content-width;
 		background: #fff;
 		margin: 0 auto;
-		.field-inhoud{
+
+		.field-inhoud {
 			padding: 1rem;
 		}
 	}
 }
-@media screen and (min-width: 720px){
+
+@media screen and (min-width: 720px) {
 	.paragraphs-item-tekst {
 		padding: 3rem 1.5rem;
+
 		.content .field-inhoud {
 			padding: 3rem;
 		}
@@ -244,7 +281,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 
 // INHOUD: BREADCRUMBS
 .paragraphs-item-inhoud-breadcrumbs {
-	> .content {
+	>.content {
 		max-width: $content-width;
 		margin: 0 auto;
 		padding: 0 1rem;
@@ -254,12 +291,14 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 
 // INHOUD: KORTE QUOTE
 .paragraphs-item-inhoud-korte-quote {
-	> .content {
+	>.content {
 		max-width: 720px;
 		margin: 0 auto;
 		padding: 1rem;
+
 		blockquote {
 			margin: 0;
+
 			p {
 				border-top: 1px solid #f1f1f1;
 				border-bottom: 1px solid #f1f1f1;
@@ -267,9 +306,11 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 				margin-bottom: 0;
 				font-family: $font-middle;
 				font-size: 1.5rem;
+
 				&:before {
 					content: "\201C";
 				}
+
 				&:after {
 					content: "\201D";
 				}
@@ -281,12 +322,13 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 
 // INOUD: 1 KOLOM
 .paragraphs-item-inhoud-1-kolom {
-	> .content {
+	>.content {
 		max-width: $content-width;
 		margin: 0 auto;
 		padding: 0 1rem;
+
 		h1.title {
-				margin-top: 2rem;
+			margin-top: 2rem;
 		}
 	}
 }
@@ -294,7 +336,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 
 // INHOUD: 2 KOLLOMEN
 .paragraphs-item-inhoud-2-kolom {
-	> .content {
+	>.content {
 		max-width: $content-width;
 		margin: 0 auto;
 		padding: 0 1rem;
@@ -302,9 +344,10 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		grid-column-gap: 1rem;
 	}
 }
+
 @media screen and (min-width: 480px) {
 	.paragraphs-item-inhoud-2-kolom {
-		> .content {
+		>.content {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
@@ -313,7 +356,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 
 //INHOUD: 3 KOLLOMEN
 .paragraphs-item-inhoud-3-kolom {
-	> .content {
+	>.content {
 		max-width: $content-width;
 		margin: 0 auto;
 		padding: 0 1rem;
@@ -321,9 +364,10 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		grid-column-gap: 1rem;
 	}
 }
+
 @media screen and (min-width: 640px) {
 	.paragraphs-item-inhoud-3-kolom {
-		> .content {
+		>.content {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
@@ -336,38 +380,43 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 	display: grid;
 	justify-content: center;
 	align-content: center;
-	min-height: 90vh;
 	padding: 3rem 1rem;
-	> .content {
+
+	>.content {
 		max-width: 1400px;
 		display: grid;
 		gap: 1rem;
 		grid-template-areas:
 			"form"
 			"inhoud";
+
 		.field-name-field-inhoud {
 			grid-area: inhoud;
 			background: #fff;
 			padding: 0 1rem 2rem 1rem;
 		}
+
 		.field-name-field-formulier {
 			grid-area: form;
 			background: #fff;
 		}
 	}
 }
+
 @media screen and (min-width: $content-width) {
 	.paragraphs-item-blok-formulier-met-tekst {
-		> .content {
+		>.content {
 			display: grid;
 			grid-template-columns: 1fr minmax(auto, 460px);
 			gap: 0;
 			padding: 2rem 3rem;
 			grid-template-areas:
-			  "inhoud form";
+				"inhoud form";
+
 			.field-name-field-inhoud {
 				padding: 1rem 3rem;
 			}
+
 			.field-type-entityreference {
 				padding: 1rem;
 				border-left: 3px dashed #ddd;
@@ -386,59 +435,67 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 	text-align: center;
 	overflow: hidden;
 	color: #fff;
-	> .content {
+
+	>.content {
 		h1 {
 			margin-bottom: 0;
 		}
+
 		.field-name-field-titel-linebreak {
 			color: #fff;
 			font-size: 3rem;
 			margin-top: -2rem;
 		}
+
 		.stem-sp {
 			color: $color2;
 			color: #21235fc7;
 		}
 	}
 }
+
 .paragraphs-item-tk2021-poster:before {
-    font-family: $sp-icons;
-    content: 'T';
-    line-height: 1;
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 8rem;
-    margin-top: -4rem;
+	font-family: $sp-icons;
+	content: 'T';
+	line-height: 1;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 8rem;
+	margin-top: -4rem;
 }
+
 .paragraphs-item-tk2021-poster:after {
-    font-family: $sp-icons;
-    content: 'T';
-    line-height: 1;
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-    font-size: 8rem;
-    height: 4rem;
+	font-family: $sp-icons;
+	content: 'T';
+	line-height: 1;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	font-size: 8rem;
+	height: 4rem;
 }
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 600px) {
 	.paragraphs-item-tk2021-poster {
-		> .content {
+		>.content {
 			.field-name-field-titel-linebreak {
 				font-size: 6rem;
 				margin-top: -4rem;
 			}
 		}
 	}
+
 	.paragraphs-item-tk2021-poster:before {
-	    font-size: 16rem;
-	    margin-top: -8rem;
+		font-size: 16rem;
+		margin-top: -8rem;
 	}
+
 	.paragraphs-item-tk2021-poster:after {
-	    font-size: 16rem;
-	    height: 8rem;
-	}	
+		font-size: 16rem;
+		height: 8rem;
+	}
 }
 
 // HERO: Volledige pagina met slide
@@ -450,9 +507,11 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 	grid-row-gap: 0px;
 	align-content: center;
 	justify-content: center;
+
 	.field-name-field-afbeelding {
 		grid-area: 1 / 1 / 2 / 2;
 		background: #000;
+
 		img {
 			display: grid;
 			min-width: 360px;
@@ -460,22 +519,36 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 			height: $fullscreen_height;
 			object-fit: cover;
 		}
+
 		// Fade effect for images
 		.slide-item {
-		  -webkit-animation-name: fade;
-		  -webkit-animation-duration: 1.5s;
-		  animation-name: fade;
-		  animation-duration: 1s;
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1s;
 		}
+
 		@-webkit-keyframes fade {
-		  from {opacity: .4} 
-		  to {opacity: 1}
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
 		}
+
 		@keyframes fade {
-		  from {opacity: .4} 
-		  to {opacity: 1}
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
 		}
 	}
+
 	.field-name-field-inhoud {
 		grid-area: 1 / 1 / 2 / 2;
 		display: grid;
@@ -486,18 +559,21 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		text-shadow: $text-shadow;
 		padding-bottom: 10vh;
 		z-index: 1;
+
 		a.btn {
 			text-shadow: none;
 			border: none;
 			box-shadow: $box-shadow;
 			line-height: 1.2;
 		}
+
 		h1 {
 			font-size: 2rem;
 			font-size: calc(2rem + 2vw);
 			color: #fff;
 			line-height: 1.2;
 		}
+
 		p {
 			font-family: $font-middle;
 			font-size: 1.5rem;
@@ -506,6 +582,7 @@ $fullscreen_height: calc(100vh - 141px); //70px header 71px footer
 		}
 	}
 }
+
 // ITEM BLOK FORMULIER MET TEKST
 .paragraphs-item-blok-formulier-met-tekst .node-webform header {
 	display: none; //quickfix

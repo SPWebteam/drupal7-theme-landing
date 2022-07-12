@@ -1,0 +1,26 @@
+// VIEW BOODSCHAPPEN
+
+.boodschappen .view-content {
+    background: #f1f1f1;
+    padding: 4vw 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    .views-row {
+        padding: 1rem;
+        background: #fff;
+        max-width: 360px;
+
+        .views-field-created {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .views-field-field-boodschap {
+            font-style: italic;
+        }
+    }
+}

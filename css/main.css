@@ -3286,6 +3286,28 @@ h1.pane-title {
   margin-top: 1rem;
 }
 
+.boodschappen .view-content {
+  background: #f1f1f1;
+  padding: 4vw 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.boodschappen .view-content .views-row {
+  padding: 1rem;
+  background: #fff;
+  max-width: 360px;
+}
+.boodschappen .view-content .views-row .views-field-created {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.boodschappen .view-content .views-row .views-field-field-boodschap {
+  font-style: italic;
+}
+
 .view-inzendingen {
   margin: 0 auto;
   padding: 1rem;

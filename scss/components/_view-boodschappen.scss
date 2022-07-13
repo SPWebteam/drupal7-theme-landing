@@ -1,26 +1,83 @@
 // VIEW BOODSCHAPPEN
 
-.boodschappen .view-content {
+.boodschappen {
     background: #f1f1f1;
     padding: 4vw 1rem;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
-    gap: 1rem;
 
-    .views-row {
-        padding: 1rem;
-        background: #fff;
-        max-width: 360px;
+    .view-content {
+        display: grid;
+        grid-template-columns: minmax(100%, 640px);
+        justify-content: center;
+        gap: 1rem;
 
-        .views-field-created {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        h3 {
+            color: $color1;
+            font-size: 2rem;
+            font-family: $font-body;
+            font-weight: 800;
+            text-align: center;
         }
 
-        .views-field-field-boodschap {
-            font-style: italic;
+        .views-row {
+            padding: 1rem;
+            background: #fff;
+            max-width: 480px;
+            position: relative;
+
+            .views-field-created {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .views-field-field-boodschap {
+                margin-bottom: 0.5rem;
+            }
+
+            .views-field-field-naam {
+                font-weight: 600;
+                font-style: italic;
+            }
+
+        }
+
+        .views-row-even {
+            &:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: -20px;
+                right: auto;
+                top: auto;
+                bottom: 16px;
+                border: 12px solid;
+                border-color: #fff #fff transparent transparent;
+            }
+        }
+
+        .views-row-odd {
+            justify-self: end;
+
+            &:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: auto;
+                right: -20px;
+                top: auto;
+                bottom: 16px;
+                border: 12px solid;
+                border-color: #fff transparent transparent #fff;
+            }
+
+            .views-field-created-1,
+            .views-field-field-naam {
+                text-align: right;
+            }
         }
     }
 }

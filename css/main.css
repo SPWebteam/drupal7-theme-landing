@@ -3286,18 +3286,30 @@ h1.pane-title {
   margin-top: 1rem;
 }
 
-.boodschappen .view-content {
+.boodschappen {
   background: #f1f1f1;
   padding: 4vw 1rem;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  justify-content: center;
+}
+.boodschappen .view-content {
+  display: grid;
+  grid-template-columns: minmax(100%, 640px);
   justify-content: center;
   gap: 1rem;
+}
+.boodschappen .view-content h3 {
+  color: #ED1C24;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  text-align: center;
 }
 .boodschappen .view-content .views-row {
   padding: 1rem;
   background: #fff;
-  max-width: 360px;
+  max-width: 480px;
+  position: relative;
 }
 .boodschappen .view-content .views-row .views-field-created {
   font-size: 0.8rem;
@@ -3305,7 +3317,42 @@ h1.pane-title {
   letter-spacing: 1px;
 }
 .boodschappen .view-content .views-row .views-field-field-boodschap {
+  margin-bottom: 0.5rem;
+}
+.boodschappen .view-content .views-row .views-field-field-naam {
+  font-weight: 600;
   font-style: italic;
+}
+.boodschappen .view-content .views-row-even:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  right: auto;
+  top: auto;
+  bottom: 16px;
+  border: 12px solid;
+  border-color: #fff #fff transparent transparent;
+}
+.boodschappen .view-content .views-row-odd {
+  justify-self: end;
+}
+.boodschappen .view-content .views-row-odd:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -20px;
+  top: auto;
+  bottom: 16px;
+  border: 12px solid;
+  border-color: #fff transparent transparent #fff;
+}
+.boodschappen .view-content .views-row-odd .views-field-created-1,
+.boodschappen .view-content .views-row-odd .views-field-field-naam {
+  text-align: right;
 }
 
 .view-inzendingen {

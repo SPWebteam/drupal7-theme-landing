@@ -1793,7 +1793,7 @@ span.field-prefix + input {
 
 .form-type-radio input[type=radio] + label,
 .form-type-checkbox input[type=checkbox] + label {
-  display: table-cell;
+  display: flex;
   padding-top: 10px;
 }
 
@@ -1823,21 +1823,17 @@ span.field-prefix + input {
 
 .form-type-radio input[type=radio] + label:before,
 .form-type-checkbox input[type=checkbox] + label:before {
-  display: inline-block;
   font-family: "SPruit-icons";
   content: " ";
   color: #fff;
   background: #fff;
-  padding: 6px;
   margin-right: 8px;
   border: 2px solid #333;
-  font-size: 1rem;
-  display: table-cell;
-  float: left;
-  margin-top: -8px;
   cursor: pointer;
-  min-width: 40px;
-  min-height: 40px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
   text-align: center;
 }
 
@@ -3331,7 +3327,7 @@ h1.pane-title {
   left: -20px;
   right: auto;
   top: auto;
-  bottom: 16px;
+  bottom: 32px;
   border: 12px solid;
   border-color: #fff #fff transparent transparent;
 }
@@ -3346,7 +3342,7 @@ h1.pane-title {
   left: auto;
   right: -20px;
   top: auto;
-  bottom: 16px;
+  bottom: 32px;
   border: 12px solid;
   border-color: #fff transparent transparent #fff;
 }

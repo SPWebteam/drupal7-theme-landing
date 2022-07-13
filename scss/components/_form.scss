@@ -112,7 +112,8 @@ span.field-prefix + input {
 
 .form-type-radio input[type="radio"]+label,
 .form-type-checkbox input[type="checkbox"]+label {
-    display: table-cell; // to prevent label text wrapping underneath
+    display: flex;
+    //display: table-cell; // to prevent label text wrapping underneath
     padding-top: 10px; // to prevent label text wrapping underneath
 }
 
@@ -145,21 +146,17 @@ span.field-prefix + input {
 
 .form-type-radio input[type="radio"]+label:before,
 .form-type-checkbox input[type="checkbox"]+label:before {
-    display: inline-block;
     font-family: 'SPruit-icons';
     content: ' ';
     color: #fff;
     background: #fff;
-    padding: 6px;
     margin-right: 8px;
     border: 2px solid #333;
-    font-size: 1rem;
-    display: table-cell; // to prevent label text wrapping underneath
-    float: left; // to prevent label text wrapping underneath
-    margin-top: -8px; // to prevent label text wrapping underneath
     cursor: pointer;
-    min-width: 40px;
-    min-height: 40px;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
     text-align: center;
 }
 
@@ -173,13 +170,6 @@ span.field-prefix + input {
 .form-type-checkbox input:checked+label {
     color: $color1;
 }
-
-// FIXME: Breaks for Samsung browsers
-// .no-touch .form-type-radio:hover input + label:before,
-// .no-touch .form-type-checkbox:hover input + label:before {
-//     color: #aaa;
-// }
-
 
 // RADIOS AND CHECKBOXES - VOTING STYLE
 // add a .voting class as wrapper

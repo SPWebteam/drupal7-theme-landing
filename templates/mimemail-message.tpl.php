@@ -89,7 +89,7 @@
                       <tr><!-- Disclaimer -->
                         <td align="center" class="content" valign="middle">
                           <p align="center" style="color:#a6a6a6; font-size:12px; font-family:Helvetica,Arial,sans-serif; margin-bottom:15px; padding:12px; line-height:13px;">
-                            Je ontvangt deze mail omdat je een formulier op <a href="https://kostenomlaaag.sp.nl">kostenomlaag.sp.nl</a> hebt ingevuld. Is dat niet het geval,
+                            Je ontvangt deze mail omdat je een formulier op <a href="https://kostenomlaag.sp.nl">kostenomlaag.sp.nl</a> hebt ingevuld. Is dat niet het geval,
                             <?php if (!empty($unsubscribe_link)) : ?>
                                klik dan <a href="<?php print $unsubscribe_link; ?>">hier</a> om je af te melden.
                             <?php else : ?>

@@ -1047,8 +1047,8 @@ ul.inline li {
 }
 #sliding-popup .popup-content {
   background-color: #222;
-  min-width: 60vw;
-  padding: 8vw 4vw;
+  max-width: 960px;
+  padding: 4vw;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -1095,6 +1095,9 @@ ul.inline li {
 #sliding-popup .popup-content p a {
   color: inherit;
   text-decoration: underline;
+}
+#sliding-popup .popup-content p p {
+  max-width: 960px;
 }
 #sliding-popup .eu-cookie-withdraw-tab {
   background: rgba(0, 0, 0, 0.8);
